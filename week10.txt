@@ -1,0 +1,51 @@
+Email clients:
+inline styles = style=""
+
+responsive:
+media queries between <style></style>
+use !important after the properties
+
+<table>
+<tr> = table row
+<td> = table data cell (entry in a table)
+<th> = table header
+
+border = border
+cellpadding = padding
+cellspacing = margin
+width = width (600px common?)
+align = align
+
+images must be hosted elsewhere on the internet. absolute file path. all images must include Title and Alt attributes
+
+style = color, size, and text treatments as are most basic fonts
+
+
+wordpress both locally and internet
+
+
+Modernizr
+http://html5doctor.com/using-modernizr-to-detect-html5-features-and-provide-fallbacks/
+http://modernizr.com/
+
+HOW TO EMBED AUDIO/VIDEO - for me: http://www.webmonkey.com/2010/05/embed-videos-in-your-web-pages-using-html5/
+<video> and <audio> -- browser support: https://developer.mozilla.org/en-US/docs/Web/HTML/Supported_media_formats#Browser_compatibility
+
+WebM (vp8/vp9 video and Vorbis or Opus audio)
+
+Ogg (Theora video and Vorbis audio)
+
+MP4 (container) h.264 (codec) -- patented
+
+MP3 = audio only
+
+WAVE (container) PCM (codec) - for .wav files
+
+HAMBURGER MENUS IN CSS ONLY (plus jquery?)
+
+
+SIMPLE CSS TRANSITIONS/ANIMATIONS
+
+
+SVGS
+http://css-tricks.com/using-svg/
