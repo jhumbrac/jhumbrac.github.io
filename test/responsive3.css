@@ -1,0 +1,31 @@
+@media only screen and (min-width:850px) and (max-width:1157px) {
+	body { 
+		background:url(images/background_latptop.jpg) no-repeat fixed;
+		background-size:cover;
+	}
+	.columns { width:50%; }
+}
+@media only screen and (min-width:515px) and (max-width:849px) {
+	body { 
+		background:url(images/background_tablet.jpg) no-repeat fixed;
+		background-size:cover;
+	}
+	.columns { width:100%; }
+	.container {	width:75%;}
+}
+@media only screen and (min-width:450px) and (max-width:514px) {
+	body { 
+		background:url(images/background_tablet.jpg) no-repeat fixed;
+		background-size:cover;
+	}
+	.columns { width:100%; }
+	.container { width:100%; }
+}
+@media only screen and (max-width:449px) {
+	body {
+		background:#222;
+	}
+	.columns { width:100%; }
+	h1 { font-size:7em; }
+	#splash { padding-top:25vh; }
+}

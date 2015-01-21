@@ -1,0 +1,81 @@
+body {
+}
+section {
+	float:left;
+	width:360px;
+}
+div {
+	float:left;
+	height:100px;
+	margin:10px;
+	width:100px;
+}
+img {
+	display:block;
+	float:left;
+}
+
+/***************
+	scheme 2
+****************/
+
+#two div:first-child {
+	background:#E91E63;
+}
+#two div:nth-child(2) {
+	background:#3F51B5;
+}
+#two div:nth-child(3) {
+	background:#03A9F4;
+}
+#two div:nth-child(4) {
+	background:#8BC34A;
+}
+#two div:nth-child(5) {
+	background:#FFC107;
+}
+#two div:nth-child(6) {
+	background:#FF5722;
+}
+#two div:nth-child(7) {
+	background:#607D8B;
+}
+#two div:nth-child(8) {
+	background:#9C27B0;
+}
+#two div:last-child {
+	background:#009688;
+}
+
+
+/***************
+	scheme 1
+****************/
+
+#one div:first-child {
+	background:#F44336;
+}
+#one div:nth-child(2) {
+	background:#9C27B0;
+}
+#one div:nth-child(3) {
+	background:#3F51B5;
+}
+#one div:nth-child(4) {
+	background:#03A9F4;
+}
+#one div:nth-child(5) {
+	background:#009688;
+}
+#one div:nth-child(6) {
+	background:#8BC34A;
+}
+#one div:nth-child(7) {
+	background:#FFEB3B;
+}
+#one div:nth-child(8) {
+	background:#FF9800;
+}
+#one div:last-child {
+	background:#795548;
+}
