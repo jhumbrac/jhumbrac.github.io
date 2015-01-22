@@ -71,6 +71,37 @@ nav a {
 nav a:hover {
 	text-decoration: underline;
 }
+h1 span {
+	padding:.05em;
+}
+h1 span:nth-child(9n+1) {
+	background:#F44336;
+}
+h1 span:nth-child(9n+2) {
+	background:#9C27B0;
+}
+h1 span:nth-child(9n+3) {
+	background:#3F51B5;
+}
+h1 span:nth-child(9n+4) {
+	background:#03A9F4;
+}
+h1 span:nth-child(9n+5) {
+	background:#009688;
+}
+h1 span:nth-child(9n+6) {
+	background:#8BC34A;
+}
+h1 span:nth-child(9n+7) {
+	background:#FFEB3B;
+}
+h1 span:nth-child(9n+8) {
+	background:#FF9800;
+}
+h1 span:nth-child(9n+9) {
+	background:#795548;
+}
+
 #splash {
 	color:#fff;
 	height: 90vh;
@@ -126,7 +157,7 @@ video#bgVid {
 .players h2 {
 	margin-bottom:.5em;
 }
-.players figcaption {
+.players p {
 	overflow:hidden;
 	/*position: relative;
 	top: 50%;
