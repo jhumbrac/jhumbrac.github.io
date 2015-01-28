@@ -17,6 +17,8 @@
 		margin:auto;
 		width:75%;
 	}
+	.mobile-nav { display:block; }
+	nav { display:none; }
 }
 @media only screen and (max-width:499px) {
 	body {
@@ -31,4 +33,6 @@
 	#mainContent {
 		padding:1em 0;
 	}
+	.mobile-nav { display:block; }
+	nav { display:none; }
 }

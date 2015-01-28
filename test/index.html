@@ -1,10 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script language="javascript" type="text/javascript">
+		function playSound(soundfile) {
+			document.getElementById("dummy").innerHTML="<embed src=\""+soundfile+"\" hidden=\"true\" autostart=\"true\" loop=\"false\" />";
+		}
+	</script>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="style.css" />
 	<link rel="stylesheet" type="text/css" href="responsive.css" />
 	<link rel="stylesheet" type="text/css" href="clear.css" />
+	<link href='http://fonts.googleapis.com/css?family=Roboto:100,400' rel='stylesheet' type='text/css'>
 	<title>Responsive Test</title>
 </head>
 <body>
@@ -16,10 +23,28 @@
 			<a href="#">Spam</a>
 			<a href="#">More Spam</a>
 		</nav>
+		<div class="mobile-nav">
+			<div class="menu-btn" id="menu-btn">
+				<div></div>
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<div class="responsive-menu">
+				<ul>
+					<li><a href="#">Spam</a></li>
+					<li><a href="#">Spam</a></li>
+					<li><a href="#">Spam</a></li>
+					<li><a href="#">Spam</a></li>
+					<li><a href="#">More Spam</a></li>
+				</ul>
+			</div>
+		</div>
 	</header>
 	<video autoplay loop muted id="bgVid">
 		<source src="audio/mpBackground_1.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
 	</video>
+	<span id="dummy"></span>
 	<main id="wrapper">
 		<section id="splash" class="container">
 			<h1>And now for something 
@@ -51,50 +76,111 @@
 			</div>
 		</section>
 		<section id="cast" class="clearfix">
-			<div class="players clearfix">
-				<img src="images/chapman.jpg" alt="Graham Chapman">
-				<h2>Graham Chapman</h2>
-				<p>May I take this opportunity of emphasizing that there is no cannibalism in the British Navy. Absolutely none, and when I say none, I mean there is a certain amount, more than we are prepared to admit, but all new ratings are warned that if they wake up in the morning and find any tooth marks at all anywhere on their bodies, they're to tell me immediately so that I can immediately take every measure to hush the whole thing up.</p>
-			</div>
-			<div class="players">
-				<img src="images/cleese.jpg" alt="John Cleese">
-				<h2>John Cleese</h2>
-				<p>All right, but apart from the sanitation, the medicine, education, wine, public order, irrigation, roads, a fresh water system, and public health, what have the Romans ever done for us?</p>
-			</div>
-			<div class="players">
-				<img src="images/palin.jpg" alt="Michael Palin">
-				<h2>Michael Palin</h2>
-				<p>Listen, strange women lying in ponds distributing swords is no basis for a system of government. Supreme executive power derives from a mandate from the masses, not from some farcical aquatic ceremony. Well you can't expect to wield supreme executive power just because some watery tart threw a sword at you. I mean, if I went 'round saying I was an emperor, just because some moistened bint had lobbed a scimitar at me, they'd put me away!</p>
-			</div>
-			<div class="players">
-				<img src="images/jones.jpg" alt="Terry Jones">
-				<h2>Terry Jones</h2>
-				<p>We us only the finest baby frogs, dew-picked and flown from Iraq, cleansed in finest-quality spring water, lightly killed, and then sealed in a succulent Swiss quintuple smooth treble cream milk chocolate envelope and lovingly frosted with glucose.</p>
-			</div>
-			<div class="players">
-				<img src="images/idle2.jpg" alt="Eric Idle">
-				<h2>Eric Idle</h2>
-				<p>Is your wife a..."goer"... eh? Know what I mean? Know what I mean? Nudge nudge. Nudge nudge! Know what I mean? Say no more...Know what I mean?</p>
-			</div>
-			<div class="players">
-				<img src="images/gilliam.jpg" alt="Terry Gilliam">
-				<h2>Terry Gilliam</h2>
-				<p>It's only a model...</p>
+			<div class="container">
+				<div class="players clearfix">
+					<img src="images/chapman.jpg" alt="Graham Chapman">
+					<h2>Graham Chapman</h2>
+					<p>May I take this opportunity of emphasizing that there is no cannibalism in the British Navy. Absolutely none, and when I say none, I mean there is a certain amount, more than we are prepared to admit, but all new ratings are warned that if they wake up in the morning and find any tooth marks at all anywhere on their bodies, they're to tell me immediately so that I can immediately take every measure to hush the whole thing up.</p>
+					<a onclick="playSound('audio/cannibalism.mp3');"><img src="images/play.png"></a>
+				</div>
+				<div class="players">
+					<img src="images/palin.jpg" alt="Michael Palin">
+					<h2>Michael Palin</h2>
+					<p>Listen, strange women lying in ponds distributing swords is no basis for a system of government. Supreme executive power derives from a mandate from the masses, not from some farcical aquatic ceremony. Well you can't expect to wield supreme executive power just because some watery tart threw a sword at you. I mean, if I went 'round saying I was an emperor, just because some moistened bint had lobbed a scimitar at me, they'd put me away!</p>
+					<a onclick="playSound('audio/dennis.mp3');"><img src="images/play.png"></a>
+				</div>
+				<!--<div class="players">
+					<img src="images/cleese.jpg" alt="John Cleese">
+					<h2>John Cleese</h2>
+					<p>All right, but apart from the sanitation, the medicine, education, wine, public order, irrigation, roads, a fresh water system, and public health, what have the Romans ever done for us?</p>
+				</div>
+				<div class="players">
+					<img src="images/cleese3.jpg" alt="John Cleese">
+					<h2>John Cleese</h2>
+					<p>Pointed stick? Oh, oh, oh. We want to learn how to defend ourselves against pointed sticks, do we? Getting all high and mighty, eh? Fresh fruit not good enough for you eh? Well I'll tell you something my lad. When you're walking home tonight and some great homicidal maniac comes after you with a bunch of loganberries, don't come crying to me!</p>
+					<a onclick="playSound('audio/fruit.mp3');"><img src="images/play.png"></a>
+				</div>-->
+				<div class="players">
+					<img src="images/cleese3.jpg" alt="John Cleese">
+					<h2>John Cleese</h2>
+					<p>The great advantage of the tiger in unarmed combat is that he not only eats the raspberry-laden foe but also the raspberries. The tiger however does not relish the peach. The peach assailant should be attacked with a crocodile.</p>
+					<a onclick="playSound('audio/tiger.mp3');"><img src="images/play.png"></a>
+				</div>
+				<div class="players">
+					<div>
+						<img src="images/jones.jpg" alt="Terry Jones">
+						<h2>Terry Jones</h2>
+						<p>We us only the finest baby frogs, dew-picked and flown from Iraq, cleansed in finest-quality spring water, lightly killed, and then sealed in a succulent Swiss quintuple smooth treble cream milk chocolate envelope and lovingly frosted with glucose.</p>
+					</div>
+					<div>
+						<a onclick="playSound('audio/frog.mp3');"><img src="images/play.png"></a>
+					</div>
+				</div>
+				<div class="players">
+					<img src="images/idle2.jpg" alt="Eric Idle">
+					<h2>Eric Idle</h2>
+					<p>Is your wife a..."goer"... eh? Know what I mean? Know what I mean? Nudge nudge. Nudge nudge! Know what I mean? Say no more...Know what I mean?</p>
+				</div>
+				<div class="players">
+					<img src="images/gilliam.jpg" alt="Terry Gilliam">
+					<h2>Terry Gilliam</h2>
+					<p>(0:09)It's only a model...</p>
+				</div>
 			</div>
 		</section>
 		<section id="media">
 			<div class="">
-				<p>There shall, in that time, be rumours of things going astray, erm, and there shall be a great confusion as to where things really are, and nobody will really know where lieth those little things... with the sort of raffia work base that has an attachment. At this time, a friend shall lose his friend's hammer and the young shall not know where lieth the things possessed by their fathers that their fathers put there only just the night before, about eight o'clock.</p>
 				<audio controls>
 					<source src="audio/alwaysLookOnTheBrightSide.mp3" type="audio/mpeg">
 				</audio>
+				<audio controls>
+					<source src="audio/sitOnMyFace.mp3" type="audio/mpeg">
+				</audio>
+				<audio controls>
+					<source src="audio/sirRobin.mp3" type="audio/mpeg">
+				</audio>
+				<audio controls>
+					<source src="audio/lumberjack.mp3" type="audio/mpeg">
+				</audio>
+				<audio controls>
+					<source src="audio/camelot.mp3" type="audio/mpeg">
+				</audio>
 				<iframe width="100%" height="750" src="http://www.youtube.com/embed/KkJnd9rSAQ8" frameborder="0" allowfullscreen></iframe>
 				<!-- width="1280" height="750" -->
+			</div>
+		</section>
+		<section id="blog">
+			<div class="container">
+				<article>
+					<h2>The boring prophet</h2>
+					<p>There shall, in that time, be rumours of things going astray, erm, and there shall be a great confusion as to where things really are, and nobody will really know where lieth those little things... with the sort of raffia work base that has an attachment. At this time, a friend shall lose his friend's hammer and the young shall not know where lieth the things possessed by their fathers that their fathers put there only just the night before, about eight o'clock.</p>
+				</article>
+				<article>
+					<p>Yes I quite agree I mean what's the point of being treated like sheep. What's the point of going abroad if you're just another tourist carted around in buses surrounded by sweaty mindless oafs from Kettering and Coventry in their cloth caps and their cardigans and their transistor radios and their Sunday Mirrors, complaining about the tea - "Oh they don't make it properly here, do they, not like at home" - and stopping at Majorcan bodegas selling fish and chips and Watney's Red Barrel and calamari's and two veg and sitting in their cotton frocks squirting Timothy White's sun cream all over their puffy raw swollen purulent flesh 'cos they "overdid it on the first day."</p>
+					<p>And being herded into endless Hotel Miramars and Bellvueses and Continentales with their modern international luxury roomettes and draught Red Barrel and swimming pools full of fat German businessmen pretending they're acrobats forming pyramids and frightening the children and barging into queues and if you're not at your table spot on seven you miss the bowl of Campbell's Cream of Mushroom soup, the first item on the menu of International Cuisine, and every Thursday night the hotel has a bloody cabaret in the bar, featuring a tiny emaciated dago with nine-inch hips and some bloated fat tart with her hair brylcreemed down and a big arse presenting Flamenco for Foreigners.</p>
+					<p>And then some adenoidal typists from Birmingham with flabby white legs and diarrhea trying to pick up hairy bandy-legged wop waiters called Manuel and once a week there's an excursion to the local Roman Remains to buy cherryade and melted ice cream and bleeding Watney's Red Barrel and one evening you visit the so called typical restaurant with local color and atmosphere and you sit next to a party from Rhyl who keep singing "Torremolinos, torremolinos" and complaining about the food - "It's so greasy isn't it?" - and you get cornered by some drunken greengrocer from Luton with an Instamatic camera and Dr. Scholl sandals and last Tuesday's Daily Express and he drones on and on about how Mr. Smith should be running this country and how many languages Enoch Powell can speak and then he throws up over the Cuba Libres.</p>
+					<p>And sending tinted postcards of places they don't realize they haven't even visited to "All at number 22, weather wonderful, our room is marked with an 'X'.</p>
+					<p>Food very greasy but we've found a charming little local place hidden away in the back streets where they serve Watney's Red Barrel and cheese and onion risps and the accordionist plays 'Maybe it's because I'm a Londoner'." And spending four days on the tarmac at Luton airport on a five-day package tour with nothing to eat but dried BEA-type sandwiches and you can't even get a drink of Watney's Red Barrel because you're still in England and the bloody bar closes every time you're thirsty and there's nowhere to sleep and the kids are crying and vomiting and breaking the plastic ash-trays and they keep telling you it'll only be another hour although your plane is still in Iceland and has to take some Swedes to Yugoslavia before it can load you up at 3 a.m. in the bloody morning and you sit on the tarmac till six because of "unforeseen difficulties", i.e. the permanent strike of Air Traffic Control in Paris - and nobody can go to the lavatory until you take off at 8, and when you get to Malaga airport everybody's swallowing "enterovioform" and queuing for the toilets and queuing for the armed customs officers, and queuing for the bloody bus that isn't there to take you to the hotel that hasn't yet been finished. And when you finally get to the half-built Algerian ruin called the Hotel del Sol by paying half your holiday money to a licensed bandit in a taxi you find there's no water in the pool, there's no water in the taps, there's no water in the bog and there's only a bleeding lizard in the bidet. And half the rooms are double booked and you can't sleep anyway because of the permanent twenty-four-hour drilling of the foundations of the hotel next door - and you're plagued by appalling apprentice chemists from Ealing pretending to be hippies, and middle-class stockbrokers' wives busily buying identical holiday villas in suburban development plots just like Esher, in case the Labour government gets in again, and fat American matrons with sloppy-buttocks and Hawaiian-patterned ski pants looking for any mulatto male who can keep it up long enough when they finally let it all flop out. And the Spanish Tourist Board promises you that the raging cholera epidemic is merely a case of mild Spanish tummy, like the previous outbreak of Spanish tummy in 1660 which killed half London and decimated Europe - and meanwhile the bloody Guardia are busy arresting sixteen-year-olds for kissing in the streets and shooting anyone under nineteen who doesn't like Franco. And then on the last day in the airport lounge everyone's comparing sunburns, drinking Nasty Spumante, buying cartons of duty free "cigarillos" and using up their last pesetas on horrid dolls in Spanish National costume and awful straw donkeys and bullfight posters with your name on "Ordoney, El Cordobes and Brian Pules of Norwich" and 3-D pictures of the Pope and Kennedy and Franco, and everybody's talking about coming again next year and you swear you never will although there you are tumbling bleary-eyed out of a tourist-tight antique Iberian airplane...</p>
+				</article>
 			</div>
 		</section>
 	</main>
 	<footer>
 		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.0078494491568!2d-73.98956450000003!3d40.739852800000016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a3dd253e31%3A0xa0b3b31b8a6f564!2sBroadway+%26+E+21st+St%2C+New+York%2C+NY+10010!5e0!3m2!1sen!2sus!4v1418173566307" width="100%" height="300" frameborder="0" style="border:0"></iframe>
 	</footer>
+	<script type="text/javascript">
+		jQuery(function($){
+			$( '.menu-btn' ).click(function(){
+				$( '.menu-btn' ).click(function(){
+    	    		$('.responsive-menu').toggleClass('expand')
+    	    	})
+			})
+     
+			$( '.close-btn' ).click(function(){
+				$('.responsive-menu').removeClass('expand')
+				$('.menu-btn').removeClass('btn-none')
+			})
+		})
+	</script>
 </body>
 </html>	
