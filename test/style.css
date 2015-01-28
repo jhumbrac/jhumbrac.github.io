@@ -33,12 +33,15 @@ a.cta1, a.cta2 {
 	padding:1.5em 0;
 	text-align:center;
 	text-decoration:none;
+	transition: all 250ms cubic-bezier(0.420, 0.000, 0.580, 1.000); 
+    transition-timing-function: cubic-bezier(0.420, 0.000, 0.580, 1.000);
 }
 a.cta1 {
 	border:.2em #fff solid;
 	color:#fff;
 	margin-top:1.2em;
-	width:15.5em;
+	width:17em;
+	
 }
 a.cta1 span:last-child {
 	color:rgba(34,34,34,.0);
@@ -47,6 +50,8 @@ a.cta1 span:last-child {
 a.cta1:hover {
 	background-color:#E91E63;
 	border:.2em #E91E63 solid;
+	transition: all 250ms cubic-bezier(0.420, 0.000, 0.580, 1.000); 
+    transition-timing-function: cubic-bezier(0.420, 0.000, 0.580, 1.000);
 }
 a.cta1:hover span:first-child {
 	display:none;
@@ -54,7 +59,8 @@ a.cta1:hover span:first-child {
 a.cta1:hover span:last-child {
 	color:rgba(255,255,255,1);
 	display:block;
-	transition-duration:.5s;
+	transition: all 250ms cubic-bezier(0.420, 0.000, 0.580, 1.000); 
+    transition-timing-function: cubic-bezier(0.420, 0.000, 0.580, 1.000);
 }
 a.cta2 {
 	border:.15em #fff solid;
@@ -66,7 +72,8 @@ a.cta2:hover {
 	border:.15em #009688 solid;
 	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 	color:#fff;
-	transition-duration:.2s;
+	transition: all 250ms cubic-bezier(0.420, 0.000, 0.580, 1.000); 
+    transition-timing-function: cubic-bezier(0.420, 0.000, 0.580, 1.000);
 }
 nav {
 	float:right;
@@ -198,7 +205,7 @@ video#bgVid {
 }
 .players {
 	background:rgba(3,169,244,1);
-	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 	border-radius:.5em;
 	color:#fff;
 	float:left;
@@ -216,7 +223,7 @@ video#bgVid {
 }*/
 .players img {
 	border-radius:50%;
-	box-shadow:0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 	display:block;
 	float:left;
 	margin-right:2em;
@@ -226,10 +233,14 @@ video#bgVid {
 	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 	float:left;
 	width:4em;
+	transition: all 250ms cubic-bezier(0.420, 0.000, 0.580, 1.000); 
+    transition-timing-function: cubic-bezier(0.420, 0.000, 0.580, 1.000);
 }
 .players a img:hover {
-	box-shadow:0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-	cursor:pointer;
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+	cursor:pointer; 
+    transition: all 250ms cubic-bezier(0.420, 0.000, 0.580, 1.000); 
+    transition-timing-function: cubic-bezier(0.420, 0.000, 0.580, 1.000);
 }
 .players h2 {
 	margin-bottom:.5em;
@@ -261,6 +272,7 @@ video#bgVid {
 }
 .menu-btn {
 	background:#03A9F4;
+	box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 	padding:1em;
 }
 .menu-btn div {
