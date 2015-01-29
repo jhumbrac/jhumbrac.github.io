@@ -1,5 +1,33 @@
+* { margin:0; padding:0; border-box:box-sizing; }
 body {
-	color:#222;
+	color:#fff;
+	background-image:url('images/background.jpg');
+	background-size:100%;
+	background-repeat: no-repeat;
 	font-size:16px;
 	font-family: arial, helvetica, sans-serif;
+	
+}
+section#splash {
+	height:100vh;
+}
+section#splash div {
+	margin:400px 0 0 200px;
+}
+section#mainContent {
+	background:#E91E63;
+}
+section#cast {
+	background:rgba(129,212,250,.8);
+}
+
+h1 {
+	font-size:7em;
+	line-height:1em;
+}
+.columns {
+	width:33.33%;
+}
+.players {
+	width:50%;
 }
