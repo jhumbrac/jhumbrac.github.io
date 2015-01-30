@@ -17,6 +17,9 @@ header {
 	height:6em;
 	width:100%;
 }
+section {
+	padding:2em;
+}
 footer {
 	background:#222;
 	height:12em;
@@ -156,7 +159,7 @@ h1 span:nth-child(9n+9) {
 #splash {
 	color:#fff;
 	height: 90vh;
-	padding-top:35vh; 
+	padding:35vh 0 0; 
 }
 #mainContent {
 	background:#E91E63;
@@ -190,6 +193,7 @@ video#bgVid {
 }
 #cast {
 	background:rgba(129,212,250,.8);
+	padding:5em 0;
 }
 #blog {
 	background:rgba(0,150,136,1);
@@ -203,11 +207,19 @@ video#bgVid {
 	    -webkit-column-gap: 2em; /* Chrome, Safari, Opera */
 	    -moz-column-gap: 2em; /* Firefox */
 }
+#video {
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	padding:.2em;
+}
 #video video {
 	float:left;
 	margin:0;
-	padding:1em;
+	padding:.1em;
 	width:33.33%;
+}
+#video div {
+	background:rgba(3,169,244,1);
+	float:left;
 }
 .players {
 	background:rgba(3,169,244,1);
@@ -215,10 +227,10 @@ video#bgVid {
 	border-radius:.5em;
 	color:#fff;
 	float:left;
-	margin:1%;
+	margin:.5%;
 	padding:1em 2em 1em 1em;
 	text-align:justify;
-	width:48%;
+	width:49%;
 }
 /*.players div:first-child {
 	background:#03A9F4;

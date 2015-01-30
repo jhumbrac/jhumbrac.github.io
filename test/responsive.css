@@ -17,7 +17,10 @@
 		margin:auto;
 		width:75%;
 	}
-	.mobile-nav { display:block; }
+	.mobile-nav { 
+		display:block;
+		position:fixed; top:0; left:0; right:0;
+	}
 	nav { display:none; }
 }
 @media only screen and (max-width:499px) {
@@ -33,6 +36,9 @@
 	#mainContent {
 		padding:1em 0;
 	}
-	.mobile-nav { display:block; }
+	.mobile-nav { 
+		display:block;
+		position:fixed; top:0; left:0; right:0;
+	}
 	nav { display:none; }
 }
