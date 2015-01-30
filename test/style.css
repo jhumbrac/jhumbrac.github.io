@@ -192,7 +192,7 @@ video#bgVid {
 	background:rgba(129,212,250,.8);
 }
 #blog {
-	background:rgba(0,150,136,.8);
+	background:rgba(0,150,136,1);
 	color:#fff;
 }
 #blog article {
@@ -202,6 +202,12 @@ video#bgVid {
     column-gap: 2em;
 	    -webkit-column-gap: 2em; /* Chrome, Safari, Opera */
 	    -moz-column-gap: 2em; /* Firefox */
+}
+#video video {
+	float:left;
+	margin:0;
+	padding:1em;
+	width:33.33%;
 }
 .players {
 	background:rgba(3,169,244,1);
@@ -266,6 +272,10 @@ video#bgVid {
 .lvl5 {
         box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 }
+
+/*********************
+	Hamburger Menu
+**********************/
 
 .mobile-nav {
 	display:none;
