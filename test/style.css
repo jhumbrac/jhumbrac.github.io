@@ -286,6 +286,7 @@ blockquote {
 	margin: 0.25em auto;
 	padding:1em;
 	position: relative;
+	text-align:justify;
 	width: 33.33em;
 }
 blockquote:before {
