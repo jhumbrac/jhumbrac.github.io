@@ -34,10 +34,18 @@ section#mainContent {
 }
 section#mainContent div {
 	margin:0 auto;
-	width:75em;
+	max-width:75em;
 }
 section#cast {
 	background:rgba(129,212,250,.8);
+}
+section#cast div {
+	margin:0 auto;
+	max-width:75em;
+}
+section#cast .players {
+	float:left;
+	width:50%;
 }
 
 h1 {
