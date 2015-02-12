@@ -15,8 +15,23 @@ section#splash {
 section#splash div {
 	padding:400px 0 0 200px; /* while padding is usually used to create space inside an object, and normally margin would be more appropriate here, margin on the first child can affect the starting point of the parent element. Therefore padding is more appropriate here as I want the parent element (section#splash) to start at the top of the page. You can try this on your own to see what i mean (hint, use the inspector element) */
 }
+section#splash a {
+	border:.2em #fff solid;
+	border-radius:.2em;
+	color:#fff;
+	display:block;
+	margin-top:1.2em;
+	padding:1.5em 0;
+	text-align:center;
+	text-decoration:none;
+	width:17em;
+}
 section#mainContent {
 	background:#E91E63;
+}
+section#mainContent div {
+	margin:0 auto;
+	width:75em;
 }
 section#cast {
 	background:rgba(129,212,250,.8);
@@ -27,7 +42,18 @@ h1 {
 	line-height:1em; /* one of the only tricky things about em's is that they inherit the font size, so in this case 1em on line-height is the equivalent of 7em font size since it's inheriting the above 7em */
 }
 .columns {
+	float:left;
 	width:33.33%;
+}
+.columns a {
+	border:.15em #fff solid;
+	border-radius:.2em;
+	color:#fff;
+	display:block;
+	padding:1.5em 0;
+	text-align:center;
+	text-decoration:none;
+	width:12em;
 }
 .players {
 	width:50%;
