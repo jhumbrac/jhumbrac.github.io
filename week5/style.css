@@ -20,7 +20,6 @@ section#splash div {
 }
 section#splash a {
 	border:.2em #fff solid;
-	border-radius:.2em;
 	color:#fff;
 	display:block;
 	margin-top:1.2em;
@@ -44,10 +43,15 @@ section#cast div {
 	max-width:75em;
 }
 section#cast .players {
+	background:rgba(3,169,244,1);
 	float:left;
-	width:50%;
+	margin:.5%;
+	padding:1em 2em 1em 1em;
+	width:49%;
 }
-
+h1,h2,h3,h4,h5,h6 {
+	margin-bottom:.5em;
+}
 h1 {
 	font-size:7em;
 	line-height:1em; /* one of the only tricky things about em's is that they inherit the font size, so in this case 1em on line-height is the equivalent of 7em font size since it's inheriting the above 7em */
@@ -58,16 +62,12 @@ h1 {
 }
 .columns a {
 	border:.15em #fff solid;
-	border-radius:.2em;
 	color:#fff;
 	display:block;
 	padding:1.5em 0;
 	text-align:center;
 	text-decoration:none;
 	width:12em;
-}
-.players {
-	width:50%;
 }
 .clearfix:after { 
 	content: "."; 
