@@ -106,7 +106,7 @@ h2 {
 /************************
 	colored background
 *************************/
-/*h1 span:nth-child(9n+1) {
+h1 span:nth-child(9n+1) {
 	background:#E91E63;
 }
 h1 span:nth-child(9n+2) {
@@ -132,7 +132,7 @@ h1 span:nth-child(9n+8) {
 }
 h1 span:nth-child(9n+9) {
 	background:#009688;
-}*/
+}
 
 /************************
 	colored text
