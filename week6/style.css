@@ -1,0 +1,79 @@
+* { margin:0; padding:0; box-sizing:border-box; } /* simple css reset i want you all to be using in this course. it may seem counter-productive to have to set all of your margin and padding values instead of using the defaults, but i want you guys to become familiar with the need to set margins and paddings on elements. */
+body {
+	color:#fff;
+	background-image:url('images/background.jpg');
+	background-attachment:fixed;
+	background-size:cover;
+	background-repeat: no-repeat;
+	font-size:16px;
+	font-family: 'Roboto', sans-serif;
+	font-weight:100;
+}
+section {
+	padding:5em 0;
+}
+section#splash {
+	height:100vh; /* viewport height is the measurement of the size of the display. if you make your window smaller on a desktop, you also decrease the viewport size. vh units are interpreted as a % of the viewport. 100vh = 100% of the viewport height. Avoid using vh values over 100. */
+}
+section#splash div {
+	padding:400px 0 0 200px; /* while padding is usually used to create space inside an object, and normally margin would be more appropriate here, margin on the first child can affect the starting point of the parent element. Therefore padding is more appropriate here as I want the parent element (section#splash) to start at the top of the page. You can try this on your own to see what i mean (hint, use the inspector element) */
+}
+section#splash a {
+	border:.2em #fff solid;
+	color:#fff;
+	display:block;
+	margin-top:1.2em;
+	padding:1.5em 0;
+	text-align:center;
+	text-decoration:none;
+	width:17em;
+}
+section#mainContent {
+	background:#E91E63;
+}
+section#mainContent div {
+	margin:0 auto;
+	max-width:75em;
+}
+section#cast {
+	background:rgba(129,212,250,.8);
+}
+section#cast div {
+	margin:0 auto;
+	max-width:75em;
+}
+section#cast .players {
+	background:rgba(3,169,244,1);
+	float:left;
+	margin:.5%;
+	padding:1em 2em 1em 1em;
+	width:49%;
+}
+h1,h2,h3,h4,h5,h6 {
+	margin-bottom:.5em;
+}
+h1 {
+	font-size:7em;
+	line-height:1em; /* one of the only tricky things about em's is that they inherit the font size, so in this case 1em on line-height is the equivalent of 7em font size since it's inheriting the above 7em */
+}
+.columns {
+	float:left;
+	padding:0 1em;
+	width:33.33%;
+}
+.columns a {
+	border:.15em #fff solid;
+	color:#fff;
+	display:block;
+	padding:1.5em 0;
+	text-align:center;
+	text-decoration:none;
+	width:12em;
+}
+.clearfix:after { 
+	content: "."; 
+	visibility: hidden; 
+	display: block; 
+	height: 0; 
+	clear: both;
+}
