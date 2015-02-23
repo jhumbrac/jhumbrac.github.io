@@ -1,4 +1,7 @@
 * { margin:0; padding:0; box-sizing:border-box; } /* simple css reset i want you all to be using in this course. it may seem counter-productive to have to set all of your margin and padding values instead of using the defaults, but i want you guys to become familiar with the need to set margins and paddings on elements. */
+p + p { margin-top: 1em; }
+p + a { margin-top:1.5em; }
+article + article { margin-top:1em; }
 body {
 	color:#fff;
 	background-image:url('images/background.jpg');
@@ -17,16 +20,6 @@ section#splash {
 }
 section#splash div {
 	padding:400px 0 0 200px; /* while padding is usually used to create space inside an object, and normally margin would be more appropriate here, margin on the first child can affect the starting point of the parent element. Therefore padding is more appropriate here as I want the parent element (section#splash) to start at the top of the page. You can try this on your own to see what i mean (hint, use the inspector element) */
-}
-section#splash a {
-	border:.2em #fff solid;
-	color:#fff;
-	display:block;
-	margin-top:1.2em;
-	padding:1.5em 0;
-	text-align:center;
-	text-decoration:none;
-	width:17em;
 }
 section#mainContent {
 	background:#E91E63;
@@ -60,19 +53,48 @@ h1 {
 	font-size:7em;
 	line-height:1em; /* one of the only tricky things about em's is that they inherit the font size, so in this case 1em on line-height is the equivalent of 7em font size since it's inheriting the above 7em */
 }
-.columns {
-	float:left;
-	padding:0 1em;
-	width:33.33%;
-}
-.columns a {
-	border:.15em #fff solid;
+/***************
+      CTAs
+***************/
+a.cta1, a.cta2 {
+	border:.2em #fff solid;
+	border-radius:.2em;
 	color:#fff;
 	display:block;
 	padding:1.5em 0;
 	text-align:center;
 	text-decoration:none;
+}
+a.cta1 {
+	width:17em;
+}
+a.cta1 span:last-child {
+	color:rgba(34,34,34,.0);
+	display:none;
+}
+a.cta1:hover {
+	background-color:#E91E63;
+	border:.2em #E91E63 solid;
+}
+a.cta1:hover span:first-child {
+	display:none;
+}
+a.cta1:hover span:last-child {
+	color:rgba(255,255,255,1);
+	display:block;
+}
+a.cta2 {
 	width:12em;
+}
+a.cta2:hover {
+	background-color: #009688;
+	border:.2em #009688 solid;
+	color:#fff;
+}
+.columns {
+	float:left;
+	padding:0 1em;
+	width:33.33%;
 }
 .players img {
 	border-radius:50%;
