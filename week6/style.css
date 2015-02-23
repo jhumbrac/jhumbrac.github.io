@@ -70,6 +70,40 @@ h1 {
 	text-decoration:none;
 	width:12em;
 }
+#testimonial {
+	background:rgba(0,0,0,.5);
+}
+blockquote {
+	color: rgba(255,255,255,1);
+	font-family: Georgia, serif;
+	font-size: 1.5em;
+	font-style: italic;
+	line-height: 1.45;
+	margin: 0.25em auto;
+	padding:1em;
+	position: relative;
+	text-align:justify;
+	width: 33.33em;
+}
+blockquote:before {
+	color: rgba(255,255,255,.54);
+	content: "\201C";
+	display: block;
+	font-size: 3.33em;
+	position: absolute;left: -20px;top: -20px;
+}
+blockquote cite {
+	color: rgba(255,255,255,.54);
+	display: block;
+	float:right;
+	font-size: 1.25em;
+	font-weight:100;
+	margin-top: .33em;
+}
+ 
+blockquote cite:before {
+	content: "\2014 \2009";
+}
 .clearfix:after { 
 	content: "."; 
 	visibility: hidden; 
