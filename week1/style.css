@@ -1,5 +1,14 @@
 body {
-	color:#222222;
+	background:#0a1359;
+	color:#ffffff;
 	font-size:16px;
 	font-family: arial, helvetica, sans-serif;
 }
+a {
+	color:orange;
+}
+h1,h2 {
+	color:#aaa;
+	font-family:georgia, serif;
+}
+
