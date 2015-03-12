@@ -30,7 +30,7 @@
     width:50%;
   }
 }
-@media only screen and (max-width:961px) {
+@media only screen and (min-width:700px) and (max-width:961px) {
   section#splash div {
     padding:15em 0 0 1em;
   }
@@ -56,5 +56,52 @@
     margin:1em auto;
     text-align:left;
     width:75%;
+  }
+  blockquote {
+    padding:2em;
+    width:100%;
+  }
+  blockquote:before {
+    position:absolute;
+    left:10px;
+    top:10px;
+  }
+}
+@media only screen and (max-width:699px) {
+  section#splash div {
+    padding:15em 0 0 1em;
+  }
+  h1 {
+    font-size:5em;
+  }
+  .columns {
+    float:none;
+    margin-bottom:5em;
+    min-height:18em;
+    padding:0 2em;
+    position:relative;
+    width:90%;
+  }
+  .cta2 {
+    position:absolute;
+    bottom:0;
+  }
+  #video>div {
+    width:100%;
+  }
+  section#cast .players {
+    float:none;
+    margin:1em auto;
+    text-align:left;
+    width:90%;
+  }
+  blockquote {
+    padding:2em;
+    width:100%;
+  }
+  blockquote:before {
+    position:absolute;
+    left:10px;
+    top:10px;
   }
 }
