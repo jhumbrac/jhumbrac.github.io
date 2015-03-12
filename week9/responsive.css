@@ -1,0 +1,29 @@
+@media only screen and (min-width:1261px) and (max-width:1380px) {
+  section#splash div {
+    padding:15em 0 0 5em;
+  }
+}
+@media only screen and (min-width:1045px) and (max-width:1260px) {
+  section#splash div {
+    padding:15em 0 0 1em;
+  }
+}
+@media only screen and (max-width:1044px) {
+  section#splash div {
+    padding:15em 0 0 1em;
+  }
+  h1 {
+    font-size:5em;
+  }
+  .columns {
+    margin-bottom:5em;
+    min-height:17.2em;
+    padding:0 2em;
+    position:relative;
+    width:50%;
+  }
+  .cta2 {
+    position:absolute;
+    bottom:0;
+  }
+}
