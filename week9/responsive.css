@@ -76,7 +76,7 @@
   }
   .columns {
     float:none;
-    margin-bottom:5em;
+    margin:0 auto 5em;
     min-height:18em;
     padding:0 2em;
     position:relative;
