@@ -29,5 +29,26 @@
   #video>div {
     width:50%;
   }
+}
+@media only screen and (max-width:961px) {
+  section#splash div {
+    padding:15em 0 0 1em;
+  }
+  h1 {
+    font-size:5em;
+  }
+  .columns {
+    margin-bottom:5em;
+    min-height:18em;
+    padding:0 2em;
+    position:relative;
+    width:50%;
+  }
+  .cta2 {
+    position:absolute;
+    bottom:0;
+  }
+  #video>div {
+    width:50%;
   }
 }
