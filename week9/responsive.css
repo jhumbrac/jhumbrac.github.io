@@ -51,4 +51,10 @@
   #video>div {
     width:50%;
   }
+  section#cast .players {
+    float:none;
+    margin:1em auto;
+    text-align:left;
+    width:75%;
+  }
 }
