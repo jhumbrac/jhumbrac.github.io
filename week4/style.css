@@ -23,6 +23,7 @@ section#cast {
 }
 
 h1 {
+	font-weight:400;
 	font-size:7em;
 	line-height:1em; /* one of the only tricky things about em's is that they inherit the font size, so in this case 1em on line-height is the equivalent of 7em font size since it's inheriting the above 7em */
 }
