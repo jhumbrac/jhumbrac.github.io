@@ -8,49 +8,30 @@
     padding:0;
     box-sizing:border-box;
   }
+  section#hexagons {
+    width:610px;
+  }
   .item {
     width: 200px;
     height: 230px;
     position: relative;
     display: inline-block;
   }
-  .item2 {
-    width: 200px;
-    height: 230px;
+  .row2 {
+    position:relative;
+    top:178px;
+    left:-103px;
+  }
+  .row3 {
     position: relative;
-    display: inline-block;
+    top:122px;
   }
-  .item3 {
-    width: 200px;
-    height: 230px;
+  .row4 {
     position: relative;
-    display: inline-block;
+    top:300px;
+    left:-306px;
   }
-  .item4 {
-    width: 200px;
-    height: 230px;
-    position: relative;
-    display: inline-block;
-  }
-  .hexagonPosition1 {
-    position: absolute;
-    width: 200px;
-    height: 400px;
-    top: -85px;
-  }
-  .hexagonPosition2 {
-    position: absolute;
-    width: 200px;
-    height: 400px;
-    top: -85px;
-  }
-  .hexagonPosition3 {
-    position: absolute;
-    width: 200px;
-    height: 400px;
-    top: -85px;
-  }
-  .hexagonPosition4 {
+  .hexagonPosition {
     position: absolute;
     width: 200px;
     height: 400px;
@@ -95,7 +76,7 @@
     -ms-transition: all 0.5s ease;
     transition: all 0.5s ease;
   }
-  .item p {
+  #hexagons p {
     position:absolute;
     top:50%;
     transform:translateY(-50%);
@@ -107,7 +88,7 @@
 <body>
   <section id="hexagons">
     <div class="item">
-      <div class="hexagonRotation1 hexagonPosition1">
+      <div class="hexagonRotation1 hexagonPosition">
         <div class="hexagonRotation2">
           <div class="hexagonRotation3">
             <p>Katie's Hexagons</p>
@@ -115,8 +96,8 @@
         </div>
       </div>
     </div>
-    <div class="item">
-      <div class="hexagonRotation1 hexagonPosition2">
+    <div class="item row2">
+      <div class="hexagonRotation1 hexagonPosition">
         <div class="hexagonRotation2">
           <div class="hexagonRotation3">
             <p>Katie's Hexagons</p>
@@ -124,8 +105,8 @@
         </div>
       </div>
     </div>
-    <div class="item">
-      <div class="hexagonRotation1 hexagonPosition2">
+    <div class="item row2">
+      <div class="hexagonRotation1 hexagonPosition">
         <div class="hexagonRotation2">
           <div class="hexagonRotation3">
             <p>Katie's Hexagons</p>
@@ -133,8 +114,8 @@
         </div>
       </div>
     </div>
-    <div class="item">
-      <div class="hexagonRotation1 hexagonPosition3">
+    <div class="item row3">
+      <div class="hexagonRotation1 hexagonPosition">
         <div class="hexagonRotation2">
           <div class="hexagonRotation3">
             <p>Katie's Hexagons</p>
@@ -142,8 +123,8 @@
         </div>
       </div>
     </div>
-    <div class="item">
-      <div class="hexagonRotation1 hexagonPosition3">
+    <div class="item row3">
+      <div class="hexagonRotation1 hexagonPosition">
         <div class="hexagonRotation2">
           <div class="hexagonRotation3">
             <p>Katie's Hexagons</p>
@@ -151,8 +132,8 @@
         </div>
       </div>
     </div>
-    <div class="item">
-      <div class="hexagonRotation1 hexagonPosition4">
+    <div class="item row4">
+      <div class="hexagonRotation1 hexagonPosition">
         <div class="hexagonRotation2">
           <div class="hexagonRotation3">
             <p>Katie's Hexagons</p>
