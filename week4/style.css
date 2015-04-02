@@ -1,4 +1,4 @@
-* { margin:0; padding:0; border-box:box-sizing; } /* simple css reset i want you all to be using in this course. it may seem counter-productive to have to set all of your margin and padding values instead of using the defaults, but i want you guys to become familiar with the need to set margins and paddings on elements. */
+* { margin:0; padding:0; box-sizing:border-box; } /* simple css reset i want you all to be using in this course. it may seem counter-productive to have to set all of your margin and padding values instead of using the defaults, but i want you guys to become familiar with the need to set margins and paddings on elements. */
 body {
 	color:#fff;
 	background-image:url('images/background.jpg');
