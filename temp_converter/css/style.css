@@ -46,6 +46,7 @@ div.answer {
     position:absolute;
     top:2.9em;
     left:50%;
+    -webkit-transform:translateX(-50%);
     transform: translateX(-50%);
     z-index:-1;
 }
@@ -92,6 +93,7 @@ label {
 p { 
     font-size: 2em;
     position: absolute;top:50%;
+    -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
     text-align: center;
     width:80%;
@@ -102,9 +104,9 @@ p {
 }
 .ripple {
 	display: block; position: absolute;
-	/*background: hsl(180, 40%, 80%);*/
-    background:hsla(360, 100%, 100%, 0.57);
+	background:hsla(360, 100%, 100%, 0.57);
 	border-radius: 100%;
+	-webkit-transform: scale(0);
 	transform: scale(0);
 }
 .ripple.animate {
