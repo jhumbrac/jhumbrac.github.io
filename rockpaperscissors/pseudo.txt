@@ -1,0 +1,26 @@
+Rock paper scissors pseudo
+
+rock beats scissors
+scissors beats paper
+paper beats rock
+
+player 1 selects
+computer generates random number that correlates to selection
+
+selection is compared
+winner is determined
+
+if player 1 wins = you win!
+if computer wins = you lose! ("what a loser" - jim carey dumb and dumber quote?)
+
+results are entered into scoreboard
+
+game is repeated
+
+if "rules" is selected then alert "rock < paper < scissors < rock"
+
+once game starts
+    display "it's on"
+    countdown from 3 // while loop or animate?
+    display player 1's selection icon on left and comp on right
+    values are evaluated and winner is determined

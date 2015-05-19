@@ -1,0 +1,101 @@
+* { margin:0; padding:0; box-sizing: border-box; }
+@font-face {
+	font-family: "Flaticon";
+	src: url("flaticon.eot");
+	src: url("flaticon.eot#iefix") format("embedded-opentype"),
+	url("flaticon.woff") format("woff"),
+	url("flaticon.ttf") format("truetype"),
+	url("flaticon.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+body {
+    color:rgba(0,0,0,.87);
+    font-family: helvetica, arial, sans-serif;
+    font-size:20px;
+    text-align: center;
+}
+main {
+    max-width:960px;
+    margin:auto;
+}
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+	font-family: Flaticon;
+        font-size: 4em;
+font-style: normal;
+margin-left: 0;
+}.flaticon-hairsalon7:before {
+	content: "\e000";
+}
+.flaticon-lizards:before {
+	content: "\e001";
+}
+.flaticon-question30:before {
+	content: "\e002";
+}
+.flaticon-rock8:before {
+	content: "\e003";
+}
+.flaticon-text70:before {
+	content: "\e004";
+}
+.flaticon-woman118:before {
+	content: "\e005";
+}
+h1 {
+    margin:1em 0;
+}
+h2 {
+    margin-top: 1em;
+}
+h3 {
+    color:rgba(0,0,0,.54);
+}
+button {
+    background-color:rgba(0,0,0,.87);
+    border:none;
+    color:#fff;
+    padding: 1em 2em;
+}
+button:focus {
+    outline:none;
+}
+button:hover {
+    
+}
+#scoreboard {
+    margin-top:1em;
+    text-align:center;
+}
+#scoreboard section {
+    border:.1em solid rgba(0,0,0,.54);
+    float:left;
+    margin:2.5%;
+    padding:1em;
+    width:45%;
+}
+#scoreboard p {
+    font-size:4em;
+}
+#gameBoard {
+    margin-top:1em;
+    text-align: center;
+}
+#gameBoard section {
+    float:left;
+    padding:0em;
+    width:50%;
+}
+section#selection {
+    margin-top:2em;
+    padding:0;
+    width:100%;
+}
+.clearfix:after { 
+	content: "."; 
+	visibility: hidden; 
+	display: block; 
+	height: 0; 
+	clear: both;
+}

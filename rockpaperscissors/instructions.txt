@@ -1,0 +1,11 @@
+FEWD 4 Week 6 Lab Instructions
+
+Build a web page using HTML, CSS, and JavaScript within this folder which allows users to click a Rock, Paper, or Scissors button, compares the selection to the value chosen by a computer randomly, and updates the Scoreboard. Finally, once the button is clicked, writes text beneath the buttons displaying what the user played, what the computer played, and the result. See the "inspiration.png" for visual assistance.  Consider using an array in your solution
+
+   var selectionArray = ["Rock", "Paper", "Scissors"];
+   
+Feel free to use jQuery in your your answer, however, use the following function in your code to simulate the computer's choice, where the min parameter is the lowest integer value desired (included) and max parameter is the highest (excluded):
+
+function getRandomInt(min, max) {
+  return Math.floor(Math.random() * (max - min)) + min;
+}
