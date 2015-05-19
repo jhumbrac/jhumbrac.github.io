@@ -10,29 +10,22 @@
         <h1>Rock, Paper, Scissors, Lizard, Spock!</h1>
         <p>Need a refresher on the <a href="#">rules</a>?</p>
         <section id="scoreboard" class="clearfix">
-            <div id="clock"><p>Rock</p></div>
-            <h2>Score</h2>
+            <div><p>Rock</p></div>
+            <h2>Scoreboard</h2>
             <section>
-                <i id="player" class="flaticon-question30"></i>
-                <h3>You played</h3>
+                <p id="playerScore">0</p>
+                <h3>You</h3>
             </section>
-            <div id="score" class="clearfix">
-                <section>
-                    <p id="playerScore">0</p>
-                    <h3>You</h3>
-                </section>
-                <section>
-                    <p id="computerScore">0</p>
-                    <h3>Opponent</h3>
-                </section>
-            </div>
             <section>
-                <i id="opponent" class="flaticon-question30"></i>
-                <h3>Opponent played</h3>
+                <p id="computerScore">0</p>
+                <h3>Opponent</h3>
             </section>
         </section>
         <section id="gameBoard" class="clearfix">
             <h2>Choose Wisely</h2>
+            <section>
+                <i id="player" class="flaticon-question30"></i>
+                <h3>You played</h3>
                 <section id="selection">
                     <button id="rock">Rock</button>
                     <button id="paper">Paper</button>
@@ -40,6 +33,10 @@
                     <button id="lizard">Lizard</button>
                     <button id="spock">Spock</button>
                 </section>
+            </section>
+            <section>
+                <i id="opponent" class="flaticon-question30"></i>
+                <h3>Opponent played</h3>
             </section>
         </section>
     </main>

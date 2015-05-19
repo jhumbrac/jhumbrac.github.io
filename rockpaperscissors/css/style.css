@@ -51,11 +51,13 @@ h2 {
 }
 h3 {
     color:rgba(0,0,0,.54);
+    font-size:1em;
 }
 button {
     background-color:rgba(0,0,0,.87);
     border:none;
     color:#fff;
+    cursor: pointer;
     padding: 1em 2em;
 }
 button:focus {
@@ -65,19 +67,60 @@ button:hover {
     
 }
 #scoreboard {
-    margin-top:1em;
+    background-color:#306c5b;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    color:#fff;
+    margin:4em auto 0;
     text-align:center;
+    position:relative;
 }
-#scoreboard section {
-    border:.1em solid rgba(0,0,0,.54);
+#clock {
+    background-color:#306c5b;
+    border-radius:50%;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    height:7em;
+    position:absolute;top:0;left:50%;
+    transform: translate(-50%,-50%);
+    width:7em;
+}
+#clock p {
+    font-size:1em;
+    position:absolute;top:50%; left:50%;
+    transform: translate(-50%,-50%)
+}
+#scoreboard>section {
     float:left;
-    margin:2.5%;
-    padding:1em;
-    width:45%;
+    width:33.33%;
 }
-#scoreboard p {
-    font-size:4em;
+#score {
+    float:left;
+    width:33.33%;
 }
+
+#score section {
+    float:left;
+    margin:5%;
+    width:40%;
+}
+#scoreboard h2 {
+    padding-top:2.5em;
+}
+#scoreboard section>p {
+    box-shadow: inset 0 3px 6px rgba(0,0,0,0.16), inset 0 3px 6px rgba(0,0,0,0.23);
+    font-size:3em;
+    padding:.25em .5em;
+}
+#scoreboard h3 {
+    color:#fff;
+}
+/*#scoreboard p {
+    background-image:url('../images/flip-top.png'), url('../images/flip-btm.png');
+    background-repeat: no-repeat, no-repeat;
+    background-position:top center, bottom center;
+    color:#f9fe44;
+    font-size:3em;
+    line-height:1.2em;
+}*/
 #gameBoard {
     margin-top:1em;
     text-align: center;
