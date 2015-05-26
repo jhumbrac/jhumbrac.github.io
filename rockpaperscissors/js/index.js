@@ -8,28 +8,24 @@ function rules() {
     alert("Scissors cuts Paper \nPaper covers Rock \nRock crushes Lizard \nLizard poisons Spock \nSpock smashes Scissors \nScissors decapitates Lizard \nLizard eats Paper \nPaper disproves Spock \nSpock vaporizes Rock \n\(and as it always has\) Rock crushes scissors");
 }
 function rock() {
-    $("#player").removeClass();
-    $("#player").addClass(gamePieces[0]);
+    $("#player").removeClass().addClass(gamePieces[0]);
 }
 function paper() {
-    $("#player").removeClass();
-    $("#player").addClass(gamePieces[1]);
+    $("#player").removeClass().addClass(gamePieces[1]);
 }
 function scissors() {
-    $("#player").removeClass();
-    $("#player").addClass(gamePieces[2]);
+    $("#player").removeClass().addClass(gamePieces[2]);
 }
 function lizard() {
-    $("#player").removeClass();
-    $("#player").addClass(gamePieces[3]);
+    $("#player").removeClass().addClass(gamePieces[3]);
 }
 function spock() {
-    $("#player").removeClass();
-    $("#player").addClass(gamePieces[4]);
+    $("#player").removeClass().addClass(gamePieces[4]);
 }
 function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min)) + min;
 }
+
 function play() {
     var computer = computerPlay();
     function computerPlay() {
@@ -122,7 +118,7 @@ function play() {
                 playerScore++;
             } else if ($("#opponent").hasClass(gamePieces[3])) {
                 $("#gameBoard h2").html("Lizard poisons Spock... You Lose!");
-                computerScore++;                
+                computerScore++;
             } else {
                 $("#gameBoard h2").html("Tie... lame!");
             }
@@ -130,10 +126,25 @@ function play() {
         $("#computerScore").html(computerScore);
         $("#playerScore").html(playerScore);
     }
+}           
+function countDown() {
+    $(".clock").html("Rock").show().delay(200).fadeOut("fast", function(){
+        $(".clock").html("Paper").show().delay(200).fadeOut("fast", function() {
+            $(".clock").html("Scissors").show().delay(200).fadeOut("fast", function() {
+                $(".clock").html("Lizard").show().delay(200).fadeOut("fast", function() {
+                    $(".clock").html("Spock").show().delay(200).fadeOut("fast", function() {
+                        $(".clock").html("").show();
+                        play();
+                    });
+                });
+            });
+        });
+    });
 }
+
 $("a").click(rules);
-$("#rock").click(function(){rock(); play();});
-$("#paper").click(function(){paper(); play();});
-$("#scissors").click(function(){scissors(); play();});
-$("#lizard").click(function(){lizard(); play();});
-$("#spock").click(function(){spock(); play();});
+$("#rock").click(function(){rock(); countDown()});
+$("#paper").click(function(){paper(); countDown()});
+$("#scissors").click(function(){scissors(); countDown()});
+$("#lizard").click(function(){lizard(); countDown()});
+$("#spock").click(function(){spock(); countDown()});
