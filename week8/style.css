@@ -22,7 +22,7 @@ section#splash {
 	height:100vh; /* viewport height is the measurement of the size of the display. if you make your window smaller on a desktop, you also decrease the viewport size. vh units are interpreted as a % of the viewport. 100vh = 100% of the viewport height. Avoid using vh values over 100. */
 }
 section#splash div {
-	padding:400px 0 0 200px; /* while padding is usually used to create space inside an object, and normally margin would be more appropriate here, margin on the first child can affect the starting point of the parent element. Therefore padding is more appropriate here as I want the parent element (section#splash) to start at the top of the page. You can try this on your own to see what i mean (hint, use the inspector element) */
+	padding:15em 0 0 200px; /* while padding is usually used to create space inside an object, and normally margin would be more appropriate here, margin on the first child can affect the starting point of the parent element. Therefore padding is more appropriate here as I want the parent element (section#splash) to start at the top of the page. You can try this on your own to see what i mean (hint, use the inspector element) */
 }
 section#mainContent {
 	background:#E91E63;
