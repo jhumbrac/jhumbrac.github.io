@@ -1,0 +1,78 @@
+* { margin:0; padding:0; box-sizing: border-box; }
+body {
+    color:#333;
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+}
+header {
+    text-align: center;
+}
+section#mentors {
+    max-width:1000px;
+    margin:auto;
+}
+section#mentors section {
+    float:left;
+    padding:2em;
+    width:33.33%;
+}
+section#mentors section#weekend {
+    float:none;
+    clear:both;
+    text-align:center;
+    width:100%;
+}
+section#mentors img {
+    width:100%;
+}
+section#mentors a {
+    background-color: #fa4542;
+    -webkit-box-shadow:0 3px 0 0 #be0201;
+    -moz-box-shadow:0 3px 0 0 #be0201;
+    box-shadow:0 3px 0 0 #be0201;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    -ms-border-radius:3px;
+    -o-border-radius:3px;
+    border-radius:3px;
+    -webkit-font-smoothing:antialiased;
+    color:#fff;
+    display:inline-block;
+    font-smoothing: antialiased;
+    margin:.5em 0 3px;
+    padding:1em 2em 1em;
+    -webkit-transition:all .15s ease-in-out;
+    -moz-transition:all .15s ease-in-out;
+    -o-transition:all .15s ease-in-out;
+    transition:all .15s ease-in-out;
+    text-decoration:none;
+    
+}
+section#mentors a.book {
+    background-color: #358df2;
+    -webkit-box-shadow:0 3px 0 0 #1a5de6;
+    -moz-box-shadow:0 3px 0 0 #1a5de6;
+    box-shadow:0 3px 0 0 #1a5de6;
+}
+section#mentors a:hover {
+    background:#f6201d;
+}
+section#mentors a.book:hover {
+    background:#4d9bf4;
+}
+p {
+    margin-top:1em;
+}
+section#mentors section#weekend {
+    float:none;
+    clear:both;
+    text-align:center;
+    width:100%;
+}
+.clearfix:after { 
+	content: "."; 
+	visibility: hidden; 
+	display: block; 
+	height: 0; 
+	clear: both;
+}
