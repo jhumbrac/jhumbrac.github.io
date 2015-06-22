@@ -1,14 +1,14 @@
 * { margin:0; padding:0; box-sizing: border-box; }
 body {
     color:#333;
-    font-family: 'Oswald', sans-serif;
+    font-family: georgia, serif;
     font-size: 16px;
 }
 header {
     text-align: center;
 }
 section#intro {
-	padding:1em 3em;
+	padding:1em 3em 0;
 }
 section#mentors, section#intro {
     max-width:1000px;
@@ -29,6 +29,7 @@ section#mentors img {
     width:100%;
 }
 section#mentors p {
+	font-size:.75em;
 	margin:1em 0 0;
 }
 section#mentors a {
@@ -72,6 +73,7 @@ section#mentors section#weekend {
     width:100%;
 }
 h1,h2,h3,h4,h5,h6 {
+	font-family: 'Oswald', sans-serif;
 	margin-bottom:.5em;
 }
 p {
