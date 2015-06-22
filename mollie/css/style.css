@@ -7,7 +7,7 @@ body {
 header {
     text-align: center;
 }
-section#mentors {
+section#mentors, section#intro {
     max-width:1000px;
     margin:auto;
 }
@@ -60,14 +60,17 @@ section#mentors a:hover {
 section#mentors a.book:hover {
     background:#4d9bf4;
 }
-p {
-    margin-top:1em;
-}
 section#mentors section#weekend {
     float:none;
     clear:both;
     text-align:center;
     width:100%;
+}
+p {
+    margin-top:1em;
+}
+ul {
+	margin-left:1.25em;
 }
 .clearfix:after { 
 	content: "."; 
