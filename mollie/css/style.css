@@ -7,6 +7,9 @@ body {
 header {
     text-align: center;
 }
+section#intro {
+	padding:3em;
+}
 section#mentors, section#intro {
     max-width:1000px;
     margin:auto;
