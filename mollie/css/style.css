@@ -2,7 +2,7 @@
 body {
     color:#333;
     font-family: georgia, serif;
-    font-size: 16px;
+    font-size: 14px;
 }
 header {
     text-align: center;
@@ -29,7 +29,7 @@ section#mentors img {
     width:100%;
 }
 section#mentors p {
-	font-size:.75em;
+	font-size:1em;
 	margin:1em 0 0;
 }
 section#mentors a {
