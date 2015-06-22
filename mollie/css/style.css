@@ -28,6 +28,9 @@ section#mentors section#weekend {
 section#mentors img {
     width:100%;
 }
+section#mentors p {
+	margin:1em 0 0;
+}
 section#mentors a {
     background-color: #fa4542;
     -webkit-box-shadow:0 3px 0 0 #be0201;
@@ -49,7 +52,6 @@ section#mentors a {
     -o-transition:all .15s ease-in-out;
     transition:all .15s ease-in-out;
     text-decoration:none;
-    
 }
 section#mentors a.book {
     background-color: #358df2;
