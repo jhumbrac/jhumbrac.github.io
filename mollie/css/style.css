@@ -76,7 +76,7 @@ p {
     margin-bottom:1em;
 }
 ul {
-	margin-left:1.25em;
+	margin:0 0 1em 1.25em;
 }
 .clearfix:after { 
 	content: "."; 
