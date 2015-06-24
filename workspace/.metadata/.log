@@ -1,0 +1,62 @@
+!SESSION 2014-11-25 22:22:40.063 -----------------------------------------------
+eclipse.buildId=M20110210-1200
+java.version=1.6.0_65
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.php.product -keyring /Users/johnhumbracht/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.php.product -keyring /Users/johnhumbracht/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.jface 2 0 2014-11-25 22:22:53.188
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-11-25 22:22:53.189
+!MESSAGE A conflict occurred for ALT+COMMAND+Q P:
+Binding(ALT+COMMAND+Q P,
+	ParameterizedCommand(Command(org.eclipse.ui.views.showView,Show View,
+		Shows a particular view,
+		Category(org.eclipse.ui.category.views,Views,Commands for opening views,true),
+		org.eclipse.ui.handlers.ShowViewHandler@f7bd29,
+		[Lorg.eclipse.ui.internal.commands.Parameter;@8a3cf3e,,true),[Lorg.eclipse.core.commands.Parameterization;@3a7af3e0),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,cocoa,system)
+Binding(ALT+COMMAND+Q P,
+	ParameterizedCommand(Command(org.eclipse.ui.views.showView,Show View,
+		Shows a particular view,
+		Category(org.eclipse.ui.category.views,Views,Commands for opening views,true),
+		org.eclipse.ui.handlers.ShowViewHandler@f7bd29,
+		[Lorg.eclipse.ui.internal.commands.Parameter;@8a3cf3e,,true),[Lorg.eclipse.core.commands.Parameterization;@5e21151e),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,cocoa,system)
+
+!ENTRY org.eclipse.core.net 1 0 2014-11-25 22:22:53.376
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+!SESSION 2014-11-25 22:23:43.660 -----------------------------------------------
+eclipse.buildId=M20110210-1200
+java.version=1.6.0_65
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.php.product -keyring /Users/johnhumbracht/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.php.product -keyring /Users/johnhumbracht/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.jface 2 0 2014-11-25 22:23:53.291
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-11-25 22:23:53.291
+!MESSAGE A conflict occurred for ALT+COMMAND+Q P:
+Binding(ALT+COMMAND+Q P,
+	ParameterizedCommand(Command(org.eclipse.ui.views.showView,Show View,
+		Shows a particular view,
+		Category(org.eclipse.ui.category.views,Views,Commands for opening views,true),
+		org.eclipse.ui.handlers.ShowViewHandler@49431028,
+		[Lorg.eclipse.ui.internal.commands.Parameter;@51d9d7ab,,true),[Lorg.eclipse.core.commands.Parameterization;@34de4588),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,cocoa,system)
+Binding(ALT+COMMAND+Q P,
+	ParameterizedCommand(Command(org.eclipse.ui.views.showView,Show View,
+		Shows a particular view,
+		Category(org.eclipse.ui.category.views,Views,Commands for opening views,true),
+		org.eclipse.ui.handlers.ShowViewHandler@49431028,
+		[Lorg.eclipse.ui.internal.commands.Parameter;@51d9d7ab,,true),[Lorg.eclipse.core.commands.Parameterization;@6ca6fed5),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,cocoa,system)
+
+!ENTRY org.eclipse.core.net 1 0 2014-11-25 22:23:53.414
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences

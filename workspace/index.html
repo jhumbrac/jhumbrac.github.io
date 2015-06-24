@@ -1,0 +1,203 @@
+<!doctype html>
+<html>
+<body>
+<div class="overlay" style="position:fixed; top:0; left:0; width:100%; height:100%; background-color:rgba(255,255,255,.9);z-index:1801;">
+    <div id="popup" style="background-color:rgb(242,242,242); position:relative; z-index:1802; width:500px; margin:150px auto;">
+        <p style="position:absolute; top:.5em; right:1em; cursor:pointer; padding:5px; font-size:2em; z-index:1803;" class="close-btn">x</p>
+        <div class="sqs-block newsletter-block sqs-block-newsletter newsletter-form-has-regular-container" data-block-type="51" id="block-yui_3_17_2_2_1433768851782_62582">
+            <div class="sqs-block-content" id="yui_3_17_2_1_1433802395310_1486">
+                <div class="newsletter-form-wrapper newsletter-form-show-name" id="yui_3_17_2_1_1433802395310_1485">
+                    <form class="newsletter-form" autocomplete="on" method="POST" onsubmit="return (function(form) { Y.use
+                      ('squarespace-form-submit', 'node',
+                      function (Y) { (new Y.Squarespace.FormSubmit({ formNode: Y.Node(form) })).submit('55759c5fe4b00808366a816e', '') }); return false;})(this)" id="yui_3_17_2_1_1433802395310_1484">
+
+                        <header class="newsletter-form-header" id="yui_3_17_2_1_1433802395310_1483">
+                            <h2 class="newsletter-form-header-title" id="yui_3_17_2_1_1433802395310_1482">Welcome to COUEF!</h2>
+                            <div class="newsletter-form-header-description"><p>We'd love to keep you in the loop on new products and upcoming promotions. Sign up for our newsletter here.</p></div>
+                        </header>
+
+                        <div class="newsletter-form-body">
+                            <div class="newsletter-form-fields-wrapper form-fields">
+                                <fieldset id="name-yui_3_17_2_2_1433768851782_62590" class="newsletter-form-name-fieldset form-item fields name required">
+                                    <div class="newsletter-form-field-wrapper field first-name">
+                                        <label class="newsletter-form-field-label title">First Name</label>
+                                        <input class="newsletter-form-field-element field-element field-control" name="fname" x-autocompletetype="given-name" type="text" spellcheck="false" placeholder="First Name" maxlength="30" data-title="First">
+                                    </div>
+
+                                    <div class="newsletter-form-field-wrapper field last-name">
+                                        <label class="newsletter-form-field-label title">Last Name</label>
+                                        <input class="newsletter-form-field-element field-element field-control" name="lname" x-autocompletetype="surname" type="text" spellcheck="false" placeholder="Last Name" maxlength="30" data-title="Last">
+                                    </div>
+                                </fieldset>
+                                <div id="email-yui_3_17_2_2_1433768851782_62589" class="newsletter-form-field-wrapper form-item field email required">
+                                    <label class="newsletter-form-field-label title" for="email-yui_3_17_2_2_1433768851782_62589-field">Email Address</label>
+                                    <input id="email-yui_3_17_2_2_1433768851782_62589-field" class="newsletter-form-field-element field-element" name="email" x-autocompletetype="email" type="text" spellcheck="false" placeholder="Email Address">
+                                </div>
+                            </div>
+
+                            <div class="newsletter-form-button-wrapper submit-wrapper">
+                                <button class="newsletter-form-button sqs-system-button sqs-editable-button-layout sqs-editable-button-style sqs-editable-button-shape" type="submit" value="Join"><span class="newsletter-form-spinner sqs-spin light large"></span><span class="newsletter-form-button-label">Join</span><span class="newsletter-form-button-icon"></span></button>
+                            </div>
+                        </div>
+
+
+                        <div class="newsletter-form-footnote">
+                            <p>Your privacy means the world to us, so you can count on the fact that we will never publish or share your contact information with anyone outside of our organization.</p>
+                        </div>
+                        <div class="hidden form-submission-text">Thank you!</div>
+                        <div class="hidden form-submission-html" data-submission-html=""></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>
+    $(document).ready((function (factory) {
+	if (typeof define === 'function' && define.amd) {
+		// AMD (Register as an anonymous module)
+		define(['jquery'], factory);
+	} else if (typeof exports === 'object') {
+		// Node/CommonJS
+		module.exports = factory(require('jquery'));
+	} else {
+		// Browser globals
+		factory(jQuery);
+	}
+}(function ($) {
+
+	var pluses = /\+/g;
+
+	function encode(s) {
+		return config.raw ? s : encodeURIComponent(s);
+	}
+
+	function decode(s) {
+		return config.raw ? s : decodeURIComponent(s);
+	}
+
+	function stringifyCookieValue(value) {
+		return encode(config.json ? JSON.stringify(value) : String(value));
+	}
+
+	function parseCookieValue(s) {
+		if (s.indexOf('"') === 0) {
+			// This is a quoted cookie as according to RFC2068, unescape...
+			s = s.slice(1, -1).replace(/\\"/g, '"').replace(/\\\\/g, '\\');
+		}
+
+		try {
+			// Replace server-side written pluses with spaces.
+			// If we can't decode the cookie, ignore it, it's unusable.
+			// If we can't parse the cookie, ignore it, it's unusable.
+			s = decodeURIComponent(s.replace(pluses, ' '));
+			return config.json ? JSON.parse(s) : s;
+		} catch(e) {}
+	}
+
+	function read(s, converter) {
+		var value = config.raw ? s : parseCookieValue(s);
+		return $.isFunction(converter) ? converter(value) : value;
+	}
+
+	var config = $.cookie = function (key, value, options) {
+
+		// Write
+
+		if (arguments.length > 1 && !$.isFunction(value)) {
+			options = $.extend({}, config.defaults, options);
+
+			if (typeof options.expires === 'number') {
+				var days = options.expires, t = options.expires = new Date();
+				t.setMilliseconds(t.getMilliseconds() + days * 864e+5);
+			}
+
+			return (document.cookie = [
+				encode(key), '=', stringifyCookieValue(value),
+				options.expires ? '; expires=' + options.expires.toUTCString() : '', // use expires attribute, max-age is not supported by IE
+				options.path    ? '; path=' + options.path : '',
+				options.domain  ? '; domain=' + options.domain : '',
+				options.secure  ? '; secure' : ''
+			].join(''));
+		}
+
+		// Read
+
+		var result = key ? undefined : {},
+			// To prevent the for loop in the first place assign an empty array
+			// in case there are no cookies at all. Also prevents odd result when
+			// calling $.cookie().
+			cookies = document.cookie ? document.cookie.split('; ') : [],
+			i = 0,
+			l = cookies.length;
+
+		for (; i < l; i++) {
+			var parts = cookies[i].split('='),
+				name = decode(parts.shift()),
+				cookie = parts.join('=');
+
+			if (key === name) {
+				// If second argument (value) is a function it's a converter...
+				result = read(cookie, value);
+				break;
+			}
+
+			// Prevent storing a cookie that we couldn't decode.
+			if (!key && (cookie = read(cookie)) !== undefined) {
+				result[name] = cookie;
+			}
+		}
+
+		return result;
+	};
+
+	config.defaults = {};
+
+	$.removeCookie = function (key, options) {
+		// Must not alter options, thus extending a fresh object...
+		$.cookie(key, '', $.extend({}, options, { expires: -1 }));
+		return !$.cookie(key);
+	};
+
+})));
+</script>
+<script>
+  $(document).ready(function(){
+      if ($.cookie('test_status') != '1') {
+      // function to show our popups
+      function showPopup(whichpopup){
+          var docHeight = $(document).height(); //grab the height of the page
+          var scrollTop = $(window).scrollTop(); //grab the px value from the top of the page to where you're scrolling
+          $('.overlay').show().css({'height' : docHeight}); //display your popup background and set height to the page height
+          $('#popup'+whichpopup).show().css({'margin-top': scrollTop+200+'px'}); //show the appropriate popup and set the content 20px from the window top
+      }
+
+      // function to close our popups
+      function closePopup(){
+          $('.overlay').hide(); //hide the overlay
+      }
+
+    /*  // timer if we want to show a popup after a few seconds.
+      //get rid of this if you don't want a popup to show up automatically
+      setTimeout(function() {
+          // Show popup3 after 2 seconds
+          showPopup(3);
+      }, 5000);
+*/
+      // hide popup when user clicks on close button or if user clicks anywhere outside the container
+      $('.close-btn', '.overlay').click(function(){
+          closePopup();
+      });
+
+      // hide the popup when user presses the esc key
+      $(document).keyup(function(e) {
+          if (e.keyCode == 27) { // if user presses esc key
+              closePopup();
+          }
+        $.cookie('test_status', '1', { expires: 7}); })
+      };
+  });
+</script>
+</body>
+</html>
