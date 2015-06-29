@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CoooOOOkie Crisp</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+
+	<body>
+		<h1>DON'T LOOK AT ME YET!</h1>
+
+		<div id="popupwrapper">
+			<div id="popup">
+				<h2>Cookies...</h2>
+				<a id="close">X</a>
+			</div>
+		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="jquery.cookie.js"></script>
+		<script>
+			$(document).ready(function(){
+				if($.cookie("popup") != "hidden") {
+					$("#popupwrapper").show();
+
+					function closePopup() {
+						$("#popupwrapper").fadeOut(50);
+						$.cookie("popup", "hidden", { expires: 7, path: '/' });
+					}
+
+					$("#close").click(closePopup);
+
+					$(window).keyup(function(evt){
+						if(evt.which == 27) {
+							closePopup();
+						}
+					});
+				}
+			});
+		</script>
+	</body>
+</html>
