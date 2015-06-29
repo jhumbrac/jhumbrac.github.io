@@ -140,7 +140,7 @@
 </script>
 <script>
   $(document).ready(function(){
-      if ($.cookie('popup') != 'hidden') {
+      if ($.cookie('test_status') != '1') {
       // function to show our popups
       function showPopup(whichpopup){
           var docHeight = $(document).height(); //grab the height of the page
@@ -151,7 +151,6 @@
       // function to close our popups
       function closePopup(){
           $('.overlay').hide(); //hide the overlay
-          $.cookie('popup', 'hidden', { expires: 7, path: '/' });
       }
     /*  // timer if we want to show a popup after a few seconds.
       //get rid of this if you don't want a popup to show up automatically
@@ -169,7 +168,7 @@
           if (e.keyCode == 27) { // if user presses esc key
               closePopup();
           }
-      });
-      }
+        $.cookie('test_status', '1', { expires: 7}); })
+      };
   });
 </script>

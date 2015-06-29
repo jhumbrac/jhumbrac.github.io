@@ -1,6 +1,9 @@
+<!doctype html>
+<html>
+<body>
 <div class="overlay" style="position:fixed; top:0; left:0; width:100%; height:100%; background-color:rgba(255,255,255,.9);z-index:1801;">
     <div id="popup" style="background-color:rgb(242,242,242); position:relative; z-index:1802; width:500px; margin:150px auto;">
-        <p style="position:absolute; top:.5em; right:1em; cursor:pointer; padding:5px; font-size:2em; z-index:1803;" class="close-btn">x</p>
+        <p style="position:absolute; top:.5em; right:1em; cursor:pointer; padding:5px; font-size:2em; z-index:1803;" id="close-btn">x</p>
         <div class="sqs-block newsletter-block sqs-block-newsletter newsletter-form-has-regular-container" data-block-type="51" id="block-yui_3_17_2_2_1433768851782_62582">
             <div class="sqs-block-content" id="yui_3_17_2_1_1433802395310_1486">
                 <div class="newsletter-form-wrapper newsletter-form-show-name" id="yui_3_17_2_1_1433802395310_1485">
@@ -49,98 +52,10 @@
         </div>
     </div>
 </div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script>
-    $(document).ready((function (factory) {
-	if (typeof define === 'function' && define.amd) {
-		// AMD (Register as an anonymous module)
-		define(['jquery'], factory);
-	} else if (typeof exports === 'object') {
-		// Node/CommonJS
-		module.exports = factory(require('jquery'));
-	} else {
-		// Browser globals
-		factory(jQuery);
-	}
-}(function ($) {
-	var pluses = /\+/g;
-	function encode(s) {
-		return config.raw ? s : encodeURIComponent(s);
-	}
-	function decode(s) {
-		return config.raw ? s : decodeURIComponent(s);
-	}
-	function stringifyCookieValue(value) {
-		return encode(config.json ? JSON.stringify(value) : String(value));
-	}
-	function parseCookieValue(s) {
-		if (s.indexOf('"') === 0) {
-			// This is a quoted cookie as according to RFC2068, unescape...
-			s = s.slice(1, -1).replace(/\\"/g, '"').replace(/\\\\/g, '\\');
-		}
-		try {
-			// Replace server-side written pluses with spaces.
-			// If we can't decode the cookie, ignore it, it's unusable.
-			// If we can't parse the cookie, ignore it, it's unusable.
-			s = decodeURIComponent(s.replace(pluses, ' '));
-			return config.json ? JSON.parse(s) : s;
-		} catch(e) {}
-	}
-	function read(s, converter) {
-		var value = config.raw ? s : parseCookieValue(s);
-		return $.isFunction(converter) ? converter(value) : value;
-	}
-	var config = $.cookie = function (key, value, options) {
-		// Write
-		if (arguments.length > 1 && !$.isFunction(value)) {
-			options = $.extend({}, config.defaults, options);
-			if (typeof options.expires === 'number') {
-				var days = options.expires, t = options.expires = new Date();
-				t.setMilliseconds(t.getMilliseconds() + days * 864e+5);
-			}
-			return (document.cookie = [
-				encode(key), '=', stringifyCookieValue(value),
-				options.expires ? '; expires=' + options.expires.toUTCString() : '', // use expires attribute, max-age is not supported by IE
-				options.path    ? '; path=' + options.path : '',
-				options.domain  ? '; domain=' + options.domain : '',
-				options.secure  ? '; secure' : ''
-			].join(''));
-		}
-		// Read
-		var result = key ? undefined : {},
-			// To prevent the for loop in the first place assign an empty array
-			// in case there are no cookies at all. Also prevents odd result when
-			// calling $.cookie().
-			cookies = document.cookie ? document.cookie.split('; ') : [],
-			i = 0,
-			l = cookies.length;
-		for (; i < l; i++) {
-			var parts = cookies[i].split('='),
-				name = decode(parts.shift()),
-				cookie = parts.join('=');
-			if (key === name) {
-				// If second argument (value) is a function it's a converter...
-				result = read(cookie, value);
-				break;
-			}
-			// Prevent storing a cookie that we couldn't decode.
-			if (!key && (cookie = read(cookie)) !== undefined) {
-				result[name] = cookie;
-			}
-		}
-		return result;
-	};
-	config.defaults = {};
-	$.removeCookie = function (key, options) {
-		// Must not alter options, thus extending a fresh object...
-		$.cookie(key, '', $.extend({}, options, { expires: -1 }));
-		return !$.cookie(key);
-	};
-})));
-</script>
-<script>
+
+<!-- <script>
   $(document).ready(function(){
-      if ($.cookie('popup') != 'hidden') {
+      if ($.cookie('test_status') != '1') {
       // function to show our popups
       function showPopup(whichpopup){
           var docHeight = $(document).height(); //grab the height of the page
@@ -148,11 +63,12 @@
           $('.overlay').show().css({'height' : docHeight}); //display your popup background and set height to the page height
           $('#popup'+whichpopup).show().css({'margin-top': scrollTop+200+'px'}); //show the appropriate popup and set the content 20px from the window top
       }
+
       // function to close our popups
       function closePopup(){
           $('.overlay').hide(); //hide the overlay
-          $.cookie('popup', 'hidden', { expires: 7, path: '/' });
       }
+
     /*  // timer if we want to show a popup after a few seconds.
       //get rid of this if you don't want a popup to show up automatically
       setTimeout(function() {
@@ -164,12 +80,35 @@
       $('.close-btn', '.overlay').click(function(){
           closePopup();
       });
+
       // hide the popup when user presses the esc key
       $(document).keyup(function(e) {
           if (e.keyCode == 27) { // if user presses esc key
               closePopup();
           }
-      });
-      }
+        $.cookie('test_status', '1', { expires: 7}); })
+      };
   });
-</script>
+</script> -->
+    <script>
+        $(document).ready(function(){
+				if($.cookie("popup") != "hidden") {
+					$(".overlay").show();
+
+					function closePopup() {
+						$(".overlay").fadeOut(50);
+						$.cookie("popup", "hidden", { expires: 7, path: '/' });
+					}
+
+					$("#close-btn").click(closePopup);
+
+					$(window).keyup(function(evt){
+						if(evt.which == 27) {
+							closePopup();
+						}
+					});
+				}
+			});
+    </script>
+</body>
+</html>
