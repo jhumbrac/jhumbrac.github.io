@@ -11,4 +11,7 @@ h1,h2 {
 	color:#aaa;
 	font-family:georgia, serif;
 }
+h1 {
+	font-size:3em;
+}
 
