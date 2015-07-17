@@ -2,6 +2,8 @@
 body {
     color:#333;
     font-size:16px;
+    font-family: 'Lato', sans-serif;
+    font-weight:400;
 }
 section {
     padding:5em 0;
@@ -32,7 +34,9 @@ section#splash h1 {
     line-height:.75em;
 }
 section#splash span {
-    font-size:.66em
+    font-size:.66em;
+    font-family: 'Lato', sans-serif;
+    font-weight:400;
 }
 section#splash div {
     position:absolute;top:50%;left:50%;
@@ -68,13 +72,13 @@ section#splash img {
 **************/
 
 header {
-    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22)
-    padding:.5em;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    padding:1em;
     position:relative;
 }
 header img {
     float:left;
-    width:100px;
+    width:20em;
 }
 nav {
     position:absolute;top:50%;right:1em;
@@ -82,10 +86,15 @@ nav {
     z-index: 1;
 }
 nav a {
-    color:#222;
+    border-radius:.2em;
+    color:#333;
     margin:.5em;
     text-decoration:none;
     padding:1em;
+}
+nav a:hover {
+    background-color:#f1683c;
+    color:#fff;
 }
 footer {
     background-color:#333;
@@ -102,13 +111,18 @@ footer p {
 figure {
     float:left;
     padding:1em;
-    width:25%;
+    width:16.66%;
 }
 figure img {
     width:100%;
 }
 figcaption {
     text-align: center;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Roboto Slab', serif;
+    font-weight:400;
+    margin-bottom:.5em;
 }
 p {
     line-height:1.2em;
@@ -125,16 +139,23 @@ p {
     border-bottom:2px solid red;
     padding-bottom: 5em;
 }
-div.page+div.page {
-    margin-top:5em;
+.yak {
+    background:url(images/95217830.jpg) no-repeat top fixed;
+    background-size:cover;
+    padding:0;
 }
-
+.yak div {
+    background:rgba(0,0,0,.74);
+    color:#fff;
+    padding:5em 0;
+    text-align:center;
+}
 /**************
     buttons
 **************/
 .cta {
     background-color:rgba(163,200,58,1);
-    border-radius:.1em;
+    border-radius:.2em;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     color:#fff;
     display:inline-block;
