@@ -1,5 +1,6 @@
 * { margin:0; padding:0; box-sizing:border-box; }
 body {
+    color:#333;
     font-size:16px;
 }
 section {
@@ -9,10 +10,38 @@ section {
     home
 **************/
 section#splash {
-    background-image:url()
-    height:100vh;
+    background:url(http://cache2.asset-cache.net/xc/479590788.jpg?v=2&c=IWSAsset&k=2&d=mI4-wz346yggQQnEq7Bzh0zB_u1w39w2Jmd523XMAiOAL9yato9yYeMqYn5z--Vx0) no-repeat fixed;
+    background-size:cover;
+    height:75vh;
+    position:relative;
 }
-
+div.quote {
+    background-color:rgba(70,166,103,1);
+    padding:5em 0;
+}
+blockquote {
+    color:#fff;
+    font-size:2em;
+    margin:auto;
+    text-align:center;
+    width:50%;
+}
+section#splash h1 {
+    color:#fff;
+    font-size:3em;
+    line-height:.75em;
+}
+section#splash span {
+    font-size:.66em
+}
+section#splash div {
+    position:absolute;top:50%;left:50%;
+    transform:translate(-50%,-50%);
+    text-align:center;
+}
+section#splash img {
+    width:10em;
+}
 
 /**************
     marketing
@@ -38,22 +67,37 @@ section#splash {
     contact
 **************/
 
-
+header {
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22)
+    padding:.5em;
+    position:relative;
+}
 header img {
     float:left;
     width:100px;
 }
 nav {
-    float:right;
+    position:absolute;top:50%;right:1em;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+nav a {
+    color:#222;
+    margin:.5em;
+    text-decoration:none;
+    padding:1em;
 }
 footer {
-    background-color:gray;
+    background-color:#333;
     color:#fff;
     padding:5em 0;
     text-align: center;
 }
 footer a {
     color:#fff;
+}
+footer p {
+    margin:auto;
 }
 figure {
     float:left;
@@ -67,6 +111,7 @@ figcaption {
     text-align: center;
 }
 p {
+    line-height:1.2em;
     width:50%;
 }
 #aboutIntro img {
@@ -82,6 +127,20 @@ p {
 }
 div.page+div.page {
     margin-top:5em;
+}
+
+/**************
+    buttons
+**************/
+.cta {
+    background-color:rgba(163,200,58,1);
+    border-radius:.1em;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    color:#fff;
+    display:inline-block;
+    font-size:1.5em;
+    padding:1em 2em;
+    text-decoration:none;
 }
 /**************
     Shadow
