@@ -1,8 +1,44 @@
 * { margin:0; padding:0; box-sizing:border-box; }
-body { }
+body {
+    font-size:16px;
+}
 section {
     padding:5em 0;
 }
+/**************
+    home
+**************/
+section#splash {
+    background-image:url()
+    height:100vh;
+}
+
+
+/**************
+    marketing
+**************/
+
+/**************
+    social
+**************/
+
+/**************
+    creation
+**************/
+
+/**************
+    about us
+**************/
+
+/**************
+    blog
+**************/
+
+/**************
+    contact
+**************/
+
+
 header img {
     float:left;
     width:100px;
@@ -29,6 +65,9 @@ figure img {
 }
 figcaption {
     text-align: center;
+}
+p {
+    width:50%;
 }
 #aboutIntro img {
     border-radius:50%;
