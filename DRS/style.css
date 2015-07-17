@@ -1,0 +1,265 @@
+* { margin:0; padding:0; box-sizing:border-box; }
+section + section { margin:50px 0 0 0; }
+* + p, p + * { margin-top:20px; }
+
+
+body {
+	background: url('images/portalroom_02.jpg') no-repeat;
+	background-size: cover;
+	background-attachment:fixed;
+	color:#222;
+	font-family: sans-serif;
+	font-size:18px;
+	line-height:1.62em;
+	margin:0;
+}
+section { 
+	background-color:#fff;
+	box-shadow:0px 5px 6px -3px rgba(0,0,0,.4);
+}
+header {
+	background-color: rgba(50,142,254,.8);
+	box-shadow:0px 5px 6px -3px rgba(0,0,0,.4);
+	color:#fff;
+	height:200px;
+	margin:0px;
+	padding:25px;
+	width:100%;
+}
+footer {
+	background:#222;
+	color:#fff;
+	font-size:14px;
+	margin:50px 0 0 0;
+	padding:50px 0 0;
+}
+footer a {
+	color:#fff;
+	text-decoration:none;
+}
+footer a:hover { text-decoration:underline; }
+footer h4 { margin-bottom:-5px; }
+footer img{ 
+	transform: translateY(35%);
+	margin-right:10px;
+}
+footer ul {
+	margin:0 auto;
+	list-style-type:none;
+}
+footer .cta1 { 
+	margin-top: 10px;
+	width:250px;
+}
+#footerContent {
+	margin:0 auto 50px;
+	max-width:1200px;
+}
+.footerColumn {
+	float:left;
+	width:25%;
+}
+
+.footerIcons li{
+	display:inline;
+	float:left;
+	margin-right:10px;
+	text-decoration:none;
+	width:110px;
+}
+header h1 {
+	font-size:1em;
+	font-weight:normal;
+}
+h2 {
+	font-family:garamond, serif;
+	font-size:3.24em;
+	line-height:1em;
+}
+h3 {
+	font-family:garamond, serif;
+	font-size:1.62em;
+	font-weight:normal;
+}
+#accolades br {
+	line-height:1.62em;
+}
+#accolades li {
+	display:inline;
+	float:left;
+	font-size:14px;
+	line-height:1.2em;
+	padding:20px;
+	text-decoration:none;
+	vertical-align:baseline;
+	width:25%;
+}
+#accolades img {
+	display:block;
+	margin:0 auto;
+	max-height:160px;
+	width:auto;
+	
+}
+#fight {
+	margin:0 auto;
+	width:1200px;
+}
+#fightContent {
+	float:left;
+	padding:100px 25px;
+	width:655px;
+}
+#judgement {
+	background-color: rgba(50,142,254,1);
+	color:#fff;
+	float:right;
+	height:466px;
+	padding:70px;
+	width:430px;
+}
+#logoTagline {
+	float:left;
+	width:660px;
+}
+#reputation {
+	max-width:1200px;
+	margin:0 auto;
+	padding:50px;
+}
+#splash {
+	background:rgba(0,0,0,.7);
+	height:100vh;
+	margin-bottom:-50px;
+}
+#splashContent {
+	background:none;
+	box-shadow:0 0 0 0;
+	clear:both;
+	color:#fff;
+	margin:0 auto;
+	padding:25px;
+	width:655px;
+	position:relative;
+	top:40%;
+	transform: translateY(-50%);
+}
+.accent { color: rgba(203,90,20,1); }
+.copyright { 
+	color:#fff;
+	font-size:12px;
+	float:right;
+	padding:0 20px 20px;
+}
+.cta1 {
+	background-color: none;
+	border: 1px #fff solid;
+	color:#fff;
+	padding:25px;
+	text-align:center;
+	width:325px;
+}
+.cta1:hover {
+	background-color: rgba(50,142,254,1);
+	border:1px rgba(50,142,254,1) solid;
+	transition:.2s;
+}
+.cta2 {
+	border: 1px #222 solid;
+	color:#222;
+	padding:25px;
+	text-align:center;
+	width:185px;
+}
+.cta2:hover {
+	background-color: rgba(203,90,20,1);
+	border:1px rgba(203,90,20,1) solid;
+	transition:.2s;
+}
+a.cta1 {
+	color:#fff;
+	display:block;
+	text-decoration: none;
+}
+a.cta2 {
+	color:#222;
+	display:block;
+	text-decoration:none;
+}
+a.cta2:hover { color:#fff; }
+
+.footerNav a {
+
+}
+.headerNav { 
+	float:right;
+	max-width:500px;
+}
+.headerNav li{
+	display:inline;
+}
+.headerNav a { 
+	color:#fff;
+	float:right;
+	margin:50px 50px 0 0;
+	text-decoration:none;
+}
+.headerNav a:hover { text-decoration:underline; }
+p.condensed {
+	font-family: 'Lato', sans-serif;
+	font-size:4.85em;
+	font-weight:300;
+	line-height:1em;
+	text-rendering: optimizeLegibility;
+}
+.phone { 
+	margin-right:5px;
+	width:15px;
+}
+
+.playButton {
+	display:block;
+	margin:0 auto;
+	width:200px;
+	position:relative;
+	top:50%;
+	transform: translateY(-50%);
+}	
+
+.videoPlaceHolder1 {
+	background:#605b98;
+	float:left;
+	height:309px;
+	width:25%;
+}
+.videoPlaceHolder2 {
+	background:#febc72;
+	float:left;
+	height:309px;
+	width:25%;
+}
+.videoPlaceHolder3 {
+	background:#2214cb;
+	float:left;
+	height:309px;
+	width:25%;
+}
+.videoPlaceHolder4 {
+	background:#cb5a14;
+	float:left;
+	height:309px;
+	width:25%;
+}
+.videoPlaceHolder1:hover, .videoPlaceHolder2:hover, .videoPlaceHolder3:hover, .videoPlaceHolder4:hover {
+	background: rgba(50,142,254,.8);
+	transition: background .5s linear;
+}
+
+
+.clearfix:after {
+	content: ".";
+	visibility: hidden;
+	display:block;
+	height:0;
+	clear:both;
+}
