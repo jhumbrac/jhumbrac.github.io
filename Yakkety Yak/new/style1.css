@@ -22,7 +22,7 @@ div.quote {
     background-size:cover;
 }
 div.overlay {
-    background-color:rgba(39, 94, 58, 0.8);
+    background-color:rgba(70, 166, 103, .8);
     padding:5em 0;
 }
 blockquote {
