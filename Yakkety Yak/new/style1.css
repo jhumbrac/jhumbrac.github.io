@@ -1,4 +1,4 @@
-* { margin:0; padding:0; box-sizing:border-box; }
+* { margin:0; padding:0; box-sizing:border-box;  }
 body {
     color:#333;
     font-size:16px;
@@ -28,11 +28,6 @@ blockquote {
     text-align:center;
     width:50%;
 }
-section#splash h1 {
-    color:#fff;
-    font-size:3em;
-    line-height:.75em;
-}
 section#splash span {
     font-size:.66em;
     font-family: 'Lato', sans-serif;
@@ -50,7 +45,40 @@ section#splash img {
 /**************
     marketing
 **************/
-
+#contentMarketing div>section {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    border-radius:.2em;
+    float:left;
+    margin:.5%;
+    min-height:25em;
+    padding:2em;
+    width:49%;
+}
+#contentMarketing .wrapper {
+    clear:both;
+    padding:5em 0;
+}
+section#contentSplash {
+    background:url(images/lowpoly.jpg) fixed center no-repeat;
+    background-size:cover;
+    height:75vh;
+}
+#contentMarketing section img {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    border-radius: 50%;
+    display:block;
+    margin:0 auto .5em;
+    width:25%;
+}
+#contentMarketing footer {
+    clear:both;
+}
+#contentMarketing p {
+    width:100%;
+}
+#contentMarketing h2 {
+    text-align: center;
+}
 /**************
     social
 **************/
@@ -114,7 +142,10 @@ figure {
     width:16.66%;
 }
 figure img {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    border-radius:50%;
     width:100%;
+    
 }
 figcaption {
     text-align: center;
@@ -123,6 +154,11 @@ h1,h2,h3,h4,h5,h6 {
     font-family: 'Roboto Slab', serif;
     font-weight:400;
     margin-bottom:.5em;
+}
+h1 {
+    color:#fff;
+    font-size:3em;
+    line-height:.75em;
 }
 p {
     line-height:1.2em;
