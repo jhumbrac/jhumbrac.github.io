@@ -77,6 +77,54 @@ section#ourMission .imgDiv {
     background: url(images/bwKeyboard.jpg) center no-repeat;
     background-size:cover;
 }
+article {
+    float:left;
+    height:300px;
+    overflow:hidden;
+    position:relative;
+    width:20%;
+}
+article div {
+    background:#F1693C;
+    color:#fff;
+    height:100%;
+    padding:1em;
+    position:absolute;
+    top:100%;
+    transition: all 500ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
+    transition-timing-function: cubic-bezier(0.420, 0.000, 0.580, 1.000);
+}
+article:hover div {
+    top:0;
+}
+article p {
+    font-size:.75em;
+    width:100%;
+}
+article:nth-child(1) {
+    background:url(http://yakketyyakllc.com/wp-content/uploads/2015/07/Yakkety-Yak.png) center no-repeat;
+    background-size:cover;
+}
+article:nth-child(2) {
+    background:url(http://yakketyyakllc.com/wp-content/uploads/2015/06/Dollarphotoclub_78036640-1024x683.jpg) center no-repeat;
+    background-size:cover;
+}
+article:nth-child(3) {
+    background:url(http://yakketyyakllc.com/wp-content/uploads/2015/06/gp-173-27-1024x1024.jpg) center no-repeat;
+    background-size:cover;
+}
+article:nth-child(4) {
+    background:url(http://yakketyyakllc.com/wp-content/uploads/2015/06/BEST.png) center no-repeat;
+    background-size:cover;
+}
+article:nth-child(5) {
+    background:url(http://yakketyyakllc.com/wp-content/uploads/2015/06/Measuring-your-Content-Marketing-Success-1024x768.png) center no-repeat;
+    background-size:cover;
+}
+article:nth-child(6) {
+    background:url(http://yakketyyakllc.com/wp-content/uploads/2015/05/Untitled-design-2-1024x768.png) center no-repeat;
+    background-size:cover;
+}
 /**************
     marketing
 **************/
