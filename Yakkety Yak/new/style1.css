@@ -1,7 +1,7 @@
 * { margin:0; padding:0; box-sizing:border-box;  }
 body {
     color:#333;
-    font-size:16px;
+    font-size:18px;
     font-family: 'Lato', sans-serif;
     font-weight:400;
 }
@@ -12,13 +12,17 @@ section {
     home
 **************/
 section#splash {
-    background:url(http://cache2.asset-cache.net/xc/479590788.jpg?v=2&c=IWSAsset&k=2&d=mI4-wz346yggQQnEq7Bzh0zB_u1w39w2Jmd523XMAiOAL9yato9yYeMqYn5z--Vx0) no-repeat fixed;
+    background:url(images/homeBg.jpg) no-repeat fixed;
     background-size:cover;
     height:75vh;
     position:relative;
 }
 div.quote {
-    background-color:rgba(70,166,103,1);
+    background:url(images/VintageKeyboard.jpg) no-repeat fixed;
+    background-size:cover;
+}
+div.overlay {
+    background-color:rgba(39, 94, 58, 0.8);
     padding:5em 0;
 }
 blockquote {
@@ -34,42 +38,45 @@ section#splash span {
     font-weight:400;
 }
 section#splash div {
-    position:absolute;top:50%;left:50%;
-    transform:translate(-50%,-50%);
+    position:absolute;top:50%;
+    transform:translateY(-50%);
     text-align:center;
+    width:100%;
 }
 section#splash img {
     width:10em;
 }
 section#homeAbout,section#ourMission {
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    height: 24em;
     padding:0;
 }
-section#homeAbout img {
-    float:right;
+section#homeAbout .imgDiv {
     width:33.33%;
 }
-section#homeAbout div, section#ourMission div {
+section#homeAbout .textDiv, section#ourMission .textDiv {
     padding:5em 0;
-    width:66.66%;
     position:relative;
+    width:66.66%;
 }
-section#homeAbout div {
+section#homeAbout div, section#ourMission div {
     float:left;
-}
-section#ourMission div {
-    float:right;
-}
-section#ourMission img {
-    float:left;
+    height:100%;
     width:33.33%;
 }
 section#ourMission p, section#homeAbout p {
     float:none;
-    position:absolute;left:50%;
-    transform:translateX(-50%);
+    position:absolute;left:50%;top:50%;
+    transform:translate(-50%, -50%);
 }
-
+section#homeAbout .imgDiv {
+    background: url(images/oldTypeWriter.jpg) center no-repeat;
+    background-size:cover;
+}
+section#ourMission .imgDiv {
+    background: url(images/bwKeyboard.jpg) center no-repeat;
+    background-size:cover;
+}
 /**************
     marketing
 **************/
@@ -176,6 +183,7 @@ figure img {
     
 }
 figcaption {
+    font-size:.75em;
     text-align: center;
 }
 h1,h2,h3,h4,h5,h6 {
