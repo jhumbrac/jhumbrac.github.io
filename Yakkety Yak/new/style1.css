@@ -41,6 +41,34 @@ section#splash div {
 section#splash img {
     width:10em;
 }
+section#homeAbout,section#ourMission {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    padding:0;
+}
+section#homeAbout img {
+    float:right;
+    width:33.33%;
+}
+section#homeAbout div, section#ourMission div {
+    padding:5em 0;
+    width:66.66%;
+    position:relative;
+}
+section#homeAbout div {
+    float:left;
+}
+section#ourMission div {
+    float:right;
+}
+section#ourMission img {
+    float:left;
+    width:33.33%;
+}
+section#ourMission p, section#homeAbout p {
+    float:none;
+    position:absolute;left:50%;
+    transform:translateX(-50%);
+}
 
 /**************
     marketing
