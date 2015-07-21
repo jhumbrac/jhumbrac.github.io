@@ -1,6 +1,6 @@
 * { margin:0; padding:0; box-sizing:border-box;  }
 body {
-    color:#555;
+    color:#888;
     font-size:18px;
     font-family: 'Lato', sans-serif;
     font-weight:400;
@@ -78,7 +78,7 @@ section#ourMission .imgDiv {
     background-size:cover;
 }
 section#services a {
-    color:#555;
+    color:#888;
     text-decoration: none;
 }
 article {
@@ -173,7 +173,9 @@ section#contentSplash {
 /**************
     creation
 **************/
-
+#contentCreationIntro h1 {
+    color:#888;
+}
 /**************
     about us
 **************/
@@ -204,7 +206,7 @@ nav {
 }
 nav a {
     border-radius:.2em;
-    color:#555;
+    color:#888;
     margin:.5em;
     padding:1em;
     text-decoration:none;
@@ -216,7 +218,7 @@ nav a:hover {
     color:#fff;
 }
 footer {
-    background-color:#333;
+    background-color:#222;
     color:#fff;
     padding:5em 0;
     text-align: center;
