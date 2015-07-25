@@ -169,7 +169,22 @@ section#contentSplash {
 /**************
     social
 **************/
-
+#socialMediaIntro {
+    background: url(images/lowpoly.jpg) center fixed;
+    background-size:cover;
+    color:#fff;
+    height:75vh;
+    position:relative;
+}
+#socialMediaIntro div {
+    position:absolute;
+    top:50%;left:5em;
+    transform:translateY(-50%);
+    width:50%;
+}
+#socialMediaIntro p {
+    width:100%;
+}
 /**************
     creation
 **************/
@@ -281,6 +296,16 @@ p {
     color:#fff;
     padding:5em 0;
     text-align:center;
+}
+.icon {
+    color:#888;
+    font-size:2em;
+    margin:0 .25em;
+    text-decoration:none;
+    
+}
+.icon:hover {
+    color:#F1693C;
 }
 /**************
     buttons
