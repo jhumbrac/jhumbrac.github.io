@@ -212,12 +212,13 @@ section#contentSplash {
 }
 #contentMarketing2 p {
     background:#fff;
+    color:#888;
     clear:both;
     display:none;
     padding:2em;
     width:100%;
 }
-.dropDown {
+#contentMarketing2 p.dropDown {
     display:block;
 }
 #contentMarketing2 h2 {
