@@ -189,7 +189,7 @@ section#contentSplash {
 }
 #contentMarketing2 div>section div {
     margin:auto;
-    width:27em;
+    width:28em;
 }
 
 #contentMarketing2 .wrapper {
@@ -399,7 +399,7 @@ p {
 }
 
 
-.clearfix:after { 
+.clearfix:after, #contentMarketing2 div>section div:after { 
 	content: "."; 
 	visibility: hidden; 
 	display: block; 
