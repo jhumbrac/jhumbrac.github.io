@@ -211,9 +211,14 @@ section#contentSplash {
     clear:both;
 }
 #contentMarketing2 p {
+    background:#fff;
     clear:both;
     display:none;
+    padding:2em;
     width:100%;
+}
+.dropDown {
+    display:block;
 }
 #contentMarketing2 h2 {
     float:left;

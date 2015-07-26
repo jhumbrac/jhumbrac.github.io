@@ -1,6 +1,7 @@
 <!doctype html>
 <html>
 <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <meta charset="utf-8">
     <title>Yakkety Yak LLC</title>
     <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
@@ -243,7 +244,7 @@
     </section>
     <div class="wrapper clearfix">
         <section id="contentStrategy2">
-            <a href="#">+</a>
+            <a>+</a>
             <div>
                 <img src="svgs/businessPlanning.svg" alt="checklist icon">
                 <h2>Content Strategy</h2>
@@ -251,7 +252,7 @@
             <p>Yakkety Yak will work with your business to define your target audience and customer personas. From there we develop a voice and tone specifically designed to appeal to your ideal customer and apply that to all of your communications platforms, from website copy to Twitter. The goal is to develop content with one custom tone, designed to appeal to a specific target audience, to drive the most revenue for your organization. </p>
         </section>
         <section id="editorialCalendars2">
-            <a href="#">+</a>
+            <a>+</a>
             <div>
                 <img src="svgs/corporateEvents.svg" alt="calendar icon">
                 <h2>Editorial Calendars</h2>
@@ -259,7 +260,7 @@
             <p>Part of building a successful content strategy is staying organized. Yakkety Yak will map out the blog, newsletter and social media schedule for your organization on a quarterly basis. Breaking down the content into subject matter buckets, we will brainstorm blog ideas and ways to communicate your company messaging clearly and consistently. Yakkety Yak offers consulting services in the area of editorial calendar creation, so please contact us for more information.</p>
         </section>
         <section id="contentAudit2">
-            <a href="#">+</a>
+            <a>+</a>
             <div>
                 <img src="svgs/marketingMaterials.svg" alt="marketing icon">
                 <h2>Content Audit</h2>
@@ -267,7 +268,7 @@
             <p>During a content audit, Yakkety Yak will review all of your existing company website content, marketing materials and company blogs to identify content gaps, areas for improvement and outdated or irrelevant materials. Working either independently or hand in hand with your marketing team, we will formulate recommendations on how to better define your company voice, how to increase visibility and improve engagement.</p>
         </section>
         <section id="websiteCopy2">
-            <a href="#">+</a>
+            <a>+</a>
             <div>
                 <img src="svgs/seo.svg">
                 <h2>Website Copy</h2>
@@ -275,7 +276,7 @@
             <p>Yakkety Yak will review, rewrite or create your website copy from scratch. From company information, descriptions for products and services, to basic copywriting services, our team will ensure your content is properly branded and target for your ideal customer.</p>
         </section>
         <section id="companyNewsletter2">
-            <a href="#">+</a>
+            <a>+</a>
             <div>
                 <img src="svgs/newsletters.svg">
                 <h2>Company Newsletter</h2>
@@ -283,7 +284,7 @@
             <p>A company newsletter written for clients and subscribers is a great way to direct readers to your original blog content, company news and current promotions. As part of the content strategy, Yakkety Yak will compile original newsletter content, while also including links to the blog content to drive readers back to the website. The newsletters can be targeted to specific business segments, and also be directed to a more general audience. Through email marketing, we help you control your message so recipients keep your business top of mind.</p>
         </section>
         <section id="socialMediaMarketing2">
-            <a href="#">+</a>
+            <a>+</a>
             <div>
                 <img src="svgs/socialMedia.svg">
                 <h2>Social Media</h2>
@@ -291,7 +292,7 @@
             <p>Yakkety Yak will provide a monthly social media calendar that will also coincide with the blog schedule. This calendar will be presented monthly. Upon approval, Yakkety Yak will distribute the content on multiple social media outlets.  We will focus our social media efforts on Facebook, Twitter, Google+ and LinkedIn on the following schedule. <a href="#">Read more on our social media services here</a></p>
         </section>
         <section id="customBlogs2">
-            <a href="#">+</a>
+            <a>+</a>
             <div>
                 <img src="svgs/contentManagement.svg">
                 <h2>Custom Blogs</h2>
@@ -419,5 +420,12 @@
         <p>Copyright &copy;2015 Website by <a href="http://johnhumbracht.com">John Humbracht Design and Development</a></p>
     </footer>
 </div>
+    <script type="text/javascript">
+        jQuery(function($){
+            $("#contentMarketing2 div>section a").click(function(){
+                $("#contentMarketing2 p").toggleClass("dropDown")
+            })
+        })  
+    </script>
 </body>
 </html>
