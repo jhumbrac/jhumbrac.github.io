@@ -167,6 +167,62 @@ section#contentSplash {
     text-align: center;
 }
 /**************
+    marketing2
+**************/
+#contentMarketing2 div>section {
+    background:#F1693C;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    border-radius:.2em;
+    color:#fff;
+    margin:.5% auto;
+    min-height:25em;
+    padding:2em;
+    width:90%;
+}
+#contentMarketing2 div>section a {
+    color:#fff;
+    display:block;
+    font-size:5em;
+    float:left;
+    line-height: 0;
+    text-decoration:none;
+}
+#contentMarketing2 div>section div {
+    background:#fff;
+    color:#888;
+    clear:both;
+    padding:4em;
+    width:100%;
+}
+#contentMarketing2 div>section img {
+    float:left;
+    width:5em;
+}
+#contentMarketing2 .wrapper {
+    clear:both;
+    padding:5em 0;
+}
+section#contentSplash {
+    background:url(images/lowpoly.jpg) fixed center no-repeat;
+    background-size:cover;
+    height:75vh;
+}
+#contentMarketing2 section img {
+    display:block;
+    float:left;
+    margin:0 auto .5em;
+    width:25%;
+}
+#contentMarketing2 footer {
+    clear:both;
+}
+#contentMarketing2 p {
+    width:100%;
+}
+#contentMarketing2 h2 {
+    text-align: center;
+}
+/**************
     social
 **************/
 #socialMediaIntro {
