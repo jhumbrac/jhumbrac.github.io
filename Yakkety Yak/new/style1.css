@@ -132,12 +132,17 @@ article:nth-child(6) {
 /**************
     marketing
 **************/
+#contentMarketing {
+    background:rgba(70,166,103,.5);
+}
 #contentMarketing div>section {
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    background:rgba(70,166,103,1);
     border-radius:.2em;
+    color:#fff;
     float:left;
     margin:.5%;
-    min-height:25em;
+    min-height:26em;
     padding:2em;
     width:49%;
 }
@@ -169,6 +174,9 @@ section#contentSplash {
 /**************
     marketing2
 **************/
+#contentMarketing2 {
+    background:rgba(241, 105, 60, 0.75);
+}
 #contentMarketing2 div>section {
     background:#F1693C;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
@@ -210,7 +218,7 @@ section#contentSplash {
 #contentMarketing2 footer {
     clear:both;
 }
-#contentMarketing2 p {
+#contentMarketing2 section p {
     background:#fff;
     color:#888;
     clear:both;
@@ -218,7 +226,7 @@ section#contentSplash {
     padding:2em;
     width:100%;
 }
-#contentMarketing2 p.dropDown {
+#contentMarketing2 section p.dropDown {
     display:block;
 }
 #contentMarketing2 h2 {
@@ -266,6 +274,7 @@ section#aboutIntro img {
 **************/
 
 header {
+    background:#fff;
     box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
     padding:1em;
     position:relative;
@@ -335,7 +344,7 @@ h1 {
     line-height:.75em;
 }
 p {
-    line-height:1.2em;
+    line-height:1.25em;
     width:50%;
 }
 .wrapper {
