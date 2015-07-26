@@ -175,7 +175,6 @@ section#contentSplash {
     border-radius:.2em;
     color:#fff;
     margin:.5% auto;
-    min-height:25em;
     padding:2em;
     width:90%;
 }
@@ -184,20 +183,15 @@ section#contentSplash {
     display:block;
     font-size:5em;
     float:left;
-    line-height: 0;
+    line-height: .5;
+    margin:0 .25em;
     text-decoration:none;
 }
 #contentMarketing2 div>section div {
-    background:#fff;
-    color:#888;
-    clear:both;
-    padding:4em;
-    width:100%;
+    margin:auto;
+    width:27em;
 }
-#contentMarketing2 div>section img {
-    float:left;
-    width:5em;
-}
+
 #contentMarketing2 .wrapper {
     clear:both;
     padding:5em 0;
@@ -210,8 +204,8 @@ section#contentSplash {
 #contentMarketing2 section img {
     display:block;
     float:left;
-    margin:0 auto .5em;
-    width:25%;
+    margin:0 .5em;
+    width:3em;
 }
 #contentMarketing2 footer {
     clear:both;
@@ -220,7 +214,9 @@ section#contentSplash {
     width:100%;
 }
 #contentMarketing2 h2 {
-    text-align: center;
+    float:left;
+    font-size:2em;
+    margin:0 1em;
 }
 /**************
     social
