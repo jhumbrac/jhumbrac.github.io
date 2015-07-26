@@ -211,6 +211,7 @@ section#contentSplash {
     clear:both;
 }
 #contentMarketing2 p {
+    display:none;
     width:100%;
 }
 #contentMarketing2 h2 {
