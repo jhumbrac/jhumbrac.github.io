@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 19.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="-260.4 183 115.4 115.2" style="enable-background:new -260.4 183 115.4 115.2;" xml:space="preserve">
+	 viewBox="-261 183.8 115.4 115.2" style="enable-background:new -261 183.8 115.4 115.2;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#6F3417;}
 	.st1{fill:#F1693C;}
@@ -17,9 +17,12 @@
             xmlns:xmpG="http://ns.adobe.com/xap/1.0/g/"
             xmlns:dc="http://purl.org/dc/elements/1.1/"
             xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/"
+            xmlns:stRef="http://ns.adobe.com/xap/1.0/sType/ResourceRef#"
             xmlns:stEvt="http://ns.adobe.com/xap/1.0/sType/ResourceEvent#">
          <xmp:CreatorTool>Adobe Illustrator CC 2015 (Macintosh)</xmp:CreatorTool>
-         <xmp:CreateDate>2015-07-17T20:05:06-05:00</xmp:CreateDate>
+         <xmp:CreateDate>2015-07-26T13:38:36-05:00</xmp:CreateDate>
+         <xmp:MetadataDate>2015-07-26T13:38:36-05:00</xmp:MetadataDate>
+         <xmp:ModifyDate>2015-07-26T13:38:36-05:00</xmp:ModifyDate>
          <xmp:Thumbnails>
             <rdf:Alt>
                <rdf:li rdf:parseType="Resource">
@@ -30,10 +33,8 @@
                </rdf:li>
             </rdf:Alt>
          </xmp:Thumbnails>
-         <xmp:MetadataDate>2015-07-17T20:05:06-05:00</xmp:MetadataDate>
-         <xmp:ModifyDate>2015-07-17T20:05:06-05:00</xmp:ModifyDate>
          <xmpTPg:MaxPageSize rdf:parseType="Resource">
-            <stDim:w>115.399998</stDim:w>
+            <stDim:w>115.400002</stDim:w>
             <stDim:h>115.199997</stDim:h>
             <stDim:unit>Pixels</stDim:unit>
          </xmpTPg:MaxPageSize>
@@ -57,16 +58,27 @@
             </rdf:Seq>
          </xmpTPg:SwatchGroups>
          <dc:format>image/svg+xml</dc:format>
-         <xmpMM:DerivedFrom rdf:parseType="Resource"/>
-         <xmpMM:DocumentID>xmp.did:1d6ea1c6-17c0-4001-bc55-4a69b02fd0c4</xmpMM:DocumentID>
-         <xmpMM:InstanceID>xmp.iid:1d6ea1c6-17c0-4001-bc55-4a69b02fd0c4</xmpMM:InstanceID>
-         <xmpMM:OriginalDocumentID>xmp.did:1d6ea1c6-17c0-4001-bc55-4a69b02fd0c4</xmpMM:OriginalDocumentID>
+         <xmpMM:DerivedFrom rdf:parseType="Resource">
+            <stRef:instanceID>xmp.iid:9a944adc-1b98-49db-8466-6a1f1c1fbadb</stRef:instanceID>
+            <stRef:documentID>xmp.did:9a944adc-1b98-49db-8466-6a1f1c1fbadb</stRef:documentID>
+            <stRef:originalDocumentID>xmp.did:9a944adc-1b98-49db-8466-6a1f1c1fbadb</stRef:originalDocumentID>
+         </xmpMM:DerivedFrom>
+         <xmpMM:DocumentID>xmp.did:194d0e9b-fc64-4c52-8dcf-ad22ed690998</xmpMM:DocumentID>
+         <xmpMM:InstanceID>xmp.iid:194d0e9b-fc64-4c52-8dcf-ad22ed690998</xmpMM:InstanceID>
+         <xmpMM:OriginalDocumentID>xmp.did:9a944adc-1b98-49db-8466-6a1f1c1fbadb</xmpMM:OriginalDocumentID>
          <xmpMM:History>
             <rdf:Seq>
                <rdf:li rdf:parseType="Resource">
                   <stEvt:action>saved</stEvt:action>
-                  <stEvt:instanceID>xmp.iid:1d6ea1c6-17c0-4001-bc55-4a69b02fd0c4</stEvt:instanceID>
-                  <stEvt:when>2015-07-17T20:05:06-05:00</stEvt:when>
+                  <stEvt:instanceID>xmp.iid:9a944adc-1b98-49db-8466-6a1f1c1fbadb</stEvt:instanceID>
+                  <stEvt:when>2015-07-26T13:38:17-05:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Illustrator CC 2015 (Macintosh)</stEvt:softwareAgent>
+                  <stEvt:changed>/</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:194d0e9b-fc64-4c52-8dcf-ad22ed690998</stEvt:instanceID>
+                  <stEvt:when>2015-07-26T13:38:36-05:00</stEvt:when>
                   <stEvt:softwareAgent>Adobe Illustrator CC 2015 (Macintosh)</stEvt:softwareAgent>
                   <stEvt:changed>/</stEvt:changed>
                </rdf:li>
@@ -100,36 +112,36 @@
 	</metadata>
 <g>
 	<g>
-		<path class="st0" d="M-147.8,240.2c0,30-24.4,54.4-54.5,54.4c-30,0-54.5-24.4-54.5-54.4s24.4-54.4,54.5-54.4
-			C-172.1,185.7-147.8,210.1-147.8,240.2z"/>
-		<ellipse class="st1" cx="-202.7" cy="240.6" rx="57.7" ry="57.6"/>
+		<path class="st0" d="M-148.4,241c0,30-24.4,54.4-54.5,54.4c-30,0-54.5-24.4-54.5-54.4s24.4-54.4,54.5-54.4
+			C-172.7,186.5-148.4,210.9-148.4,241z"/>
+		<ellipse class="st1" cx="-203.3" cy="241.4" rx="57.7" ry="57.6"/>
 	</g>
 	<g>
-		<rect x="-239.3" y="203" class="st0" width="73" height="75"/>
-		<path class="st1" d="M-241.5,201.6v39.7h39.7v-39.7H-241.5z M-213.6,222.7h-4.4c0,7.1,0,15.8,0,15.8h-6.6c0,0,0-8.7,0-15.8h-3.1
-			v-5.6h3.1v-3.6c0-2.6,1.2-6.6,6.6-6.6h4.9v5.4c0,0-3,0-3.5,0c-0.6,0-1.4,0.3-1.4,1.5v3.3h5L-213.6,222.7z"/>
-		<path class="st1" d="M-202.9,201.6v39.7h39.7v-39.7H-202.9z M-170,216.5c0,0.3,0,0.6,0,0.8c0,8.6-6.5,18.5-18.5,18.5
+		<rect x="-239.9" y="203.8" class="st0" width="73" height="75"/>
+		<path class="st1" d="M-242.1,202.4v39.7h39.7v-39.7H-242.1z M-214.2,223.5h-4.4c0,7.1,0,15.8,0,15.8h-6.6c0,0,0-8.7,0-15.8h-3.1
+			v-5.6h3.1v-3.6c0-2.6,1.2-6.6,6.6-6.6h4.9v5.4c0,0-3,0-3.5,0c-0.6,0-1.4,0.3-1.4,1.5v3.3h5L-214.2,223.5z"/>
+		<path class="st1" d="M-203.5,202.4v39.7h39.7v-39.7H-203.5z M-170.6,217.3c0,0.3,0,0.6,0,0.8c0,8.6-6.5,18.5-18.5,18.5
 			c-3.7,0-7.1-1.1-10-2.9c0.5,0.1,1,0.1,1.6,0.1c3.1,0,5.9-1,8.1-2.8c-2.8-0.1-5.3-1.9-6.1-4.5c0.4,0.1,0.8,0.1,1.2,0.1
 			c0.6,0,1.2-0.1,1.7-0.2c-3-0.6-5.2-3.2-5.2-6.4v-0.1c0.9,0.5,1.9,0.8,2.9,0.8c-1.7-1.2-2.9-3.2-2.9-5.4c0-1.2,0.3-2.3,0.9-3.3
 			c3.2,3.9,8,6.5,13.4,6.8c-0.1-0.5-0.2-1-0.2-1.5c0-3.6,2.9-6.5,6.5-6.5c1.9,0,3.6,0.8,4.7,2.1c1.5-0.3,2.9-0.8,4.1-1.6
-			c-0.5,1.5-1.5,2.8-2.9,3.6c1.3-0.2,2.6-0.5,3.7-1C-167.6,214.4-168.8,215.6-170,216.5z"/>
+			c-0.5,1.5-1.5,2.8-2.9,3.6c1.3-0.2,2.6-0.5,3.7-1C-168.2,215.2-169.4,216.4-170.6,217.3z"/>
 		<g>
-			<path class="st1" d="M-169.3,268.8L-169.3,268.8L-169.3,268.8L-169.3,268.8z"/>
-			<path class="st1" d="M-202.9,239.4v39.7h39.7v-39.7H-202.9z M-188.5,268.7h-4.3v-12.8h4.3V268.7z M-190.7,254.2L-190.7,254.2
-				c-1.5,0-2.4-1-2.4-2.2c0-1.3,1-2.2,2.4-2.2c1.5,0,2.4,1,2.4,2.2C-188.2,253.2-189.2,254.2-190.7,254.2z M-173.2,268.7h-4.2v-6.8
-				c0-1.7-0.6-2.9-2.2-2.9c-1.2,0-1.9,0.8-2.2,1.6c-0.1,0.3-0.1,0.7-0.1,1v7.1h-4.3c0,0,0.1-11.6,0-12.8h4.3v1.8
-				c0.6-0.9,1.6-2.1,3.8-2.1c2.8,0,4.9,1.8,4.9,5.8L-173.2,268.7L-173.2,268.7z"/>
+			<path class="st1" d="M-169.9,269.6L-169.9,269.6L-169.9,269.6L-169.9,269.6z"/>
+			<path class="st1" d="M-203.5,240.2v39.7h39.7v-39.7L-203.5,240.2L-203.5,240.2z M-189.1,269.5h-4.3v-12.8h4.3V269.5z M-191.3,255
+				L-191.3,255c-1.5,0-2.4-1-2.4-2.2c0-1.3,1-2.2,2.4-2.2c1.5,0,2.4,1,2.4,2.2C-188.8,254-189.8,255-191.3,255z M-173.8,269.5h-4.2
+				v-6.8c0-1.7-0.6-2.9-2.2-2.9c-1.2,0-1.9,0.8-2.2,1.6c-0.1,0.3-0.1,0.7-0.1,1v7.1h-4.3c0,0,0.1-11.6,0-12.8h4.3v1.8
+				c0.6-0.9,1.6-2.1,3.8-2.1c2.8,0,4.9,1.8,4.9,5.8V269.5L-173.8,269.5z"/>
 		</g>
 		<g>
-			<path class="st1" d="M-224.7,265.5c-3.8,0-6.9,2.4-6.9,5.2c0,2.9,2.7,5.2,6.5,5.2c5.3,0,7.1-2.2,7.1-5.1c0-0.3,0-0.7-0.1-1
-				c-0.4-1.6-2.1-2.5-4.1-3.9C-223,265.6-223.8,265.5-224.7,265.5z"/>
-			<path class="st1" d="M-241.5,239.4v39.7h39.7v-39.7H-241.5z M-216.9,253.2c0,2.1-1.1,3.7-2.8,5c-1.6,1.2-1.9,1.8-1.9,2.8
-				c0,0.9,1.9,2.2,2.8,2.9c3,2.3,3.6,3.7,3.6,6.5c0,3.5-3.8,7-10,7c-5.4,0-10-2.2-10-5.7c0-3.6,3.8-7.3,9.2-7.3c0.6,0,1.1,0,1.7,0
-				c-0.7-0.7-1.3-1.3-1.3-2.4c0-0.6,0.2-1.3,0.5-1.8c-0.3,0-0.6,0-0.9,0c-4.5,0-7.1-3.1-7.1-7.1c0-3.8,4-7.3,8.7-7.3
-				c2.4,0,9.3,0,9.3,0l-2.1,2.2h-2.5C-217.8,248.9-216.9,250.9-216.9,253.2z M-203.4,252.6h-4.3v4.3h-2.2v-4.3h-4.3v-2.2h4.3v-4.3
-				h2.2v4.3h4.3V252.6z"/>
-			<path class="st1" d="M-225.7,247.2c-2.5-0.1-4.2,2.5-3.8,5.8c0.4,3.3,2.8,5.6,5.3,5.7c2.5,0.1,4-2.1,3.5-5.4
-				C-221,250-223.2,247.3-225.7,247.2z"/>
+			<path class="st1" d="M-225.3,266.3c-3.8,0-6.9,2.4-6.9,5.2c0,2.9,2.7,5.2,6.5,5.2c5.3,0,7.1-2.2,7.1-5.1c0-0.3,0-0.7-0.1-1
+				c-0.4-1.6-2.1-2.5-4.1-3.9C-223.6,266.4-224.4,266.3-225.3,266.3z"/>
+			<path class="st1" d="M-242.1,240.2v39.7h39.7v-39.7L-242.1,240.2L-242.1,240.2z M-217.5,254c0,2.1-1.1,3.7-2.8,5
+				c-1.6,1.2-1.9,1.8-1.9,2.8c0,0.9,1.9,2.2,2.8,2.9c3,2.3,3.6,3.7,3.6,6.5c0,3.5-3.8,7-10,7c-5.4,0-10-2.2-10-5.7
+				c0-3.6,3.8-7.3,9.2-7.3c0.6,0,1.1,0,1.7,0c-0.7-0.7-1.3-1.3-1.3-2.4c0-0.6,0.2-1.3,0.5-1.8c-0.3,0-0.6,0-0.9,0
+				c-4.5,0-7.1-3.1-7.1-7.1c0-3.8,4-7.3,8.7-7.3c2.4,0,9.3,0,9.3,0l-2.1,2.2h-2.5C-218.4,249.7-217.5,251.7-217.5,254z M-204,253.4
+				h-4.3v4.3h-2.2v-4.3h-4.3v-2.2h4.3v-4.3h2.2v4.3h4.3V253.4z"/>
+			<path class="st1" d="M-226.3,248c-2.5-0.1-4.2,2.5-3.8,5.8c0.4,3.3,2.8,5.6,5.3,5.7c2.5,0.1,4-2.1,3.5-5.4
+				C-221.6,250.8-223.8,248.1-226.3,248z"/>
 		</g>
 	</g>
 </g>
