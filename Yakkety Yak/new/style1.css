@@ -174,14 +174,12 @@ section#contentSplash {
 /**************
     marketing2
 **************/
-#contentMarketing2 {
-    background:rgba(241, 105, 60, 0.75);
-}
 #contentMarketing2 div>section {
     background:#F1693C;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     border-radius:.2em;
     color:#fff;
+    cursor: pointer;
     margin:.5% auto;
     padding:2em;
     width:90%;

@@ -424,6 +424,7 @@
         jQuery(function($){
             $("#contentMarketing2 div>section").click(function(){
                 $(this).find("p").toggleClass("dropDown");
+                $(this).find("a").html($(this).find("a").text() == "-" ? "+" : "-");
             });
         });
     </script>
