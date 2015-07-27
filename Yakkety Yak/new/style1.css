@@ -12,7 +12,7 @@ section {
     home
 **************/
 section#splash {
-    background:url(images/homeBg.jpg) no-repeat fixed;
+    background:url(images/typewriterBg.jpeg) no-repeat fixed;
     background-size:cover;
     height:75vh;
     position:relative;
