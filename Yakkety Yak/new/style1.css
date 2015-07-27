@@ -74,7 +74,7 @@ section#homeAbout .imgDiv {
     background-size:cover;
 }
 section#ourMission .imgDiv {
-    background: url(images/bwKeyboard.jpg) center no-repeat;
+    background: url(images/homeBg.jpg) center no-repeat;
     background-size:cover;
 }
 section#services a {
@@ -181,7 +181,7 @@ section#contentSplash {
     cursor: pointer;
     margin:.5% auto;
     padding:0;
-    width:90%;
+    width:99%;
 }
 #contentMarketing2 div>section a {
     color:#fff;
@@ -226,7 +226,7 @@ section#contentSplash {
     color:#fff;
     clear:both;
     display:none;
-    padding:2em;
+    padding:5em;
     width:100%;
 }
 #contentMarketing2 section p.dropDown {
@@ -251,6 +251,9 @@ section#contentSplash {
 }
 #socialMedia p {
     width:66.66%;
+}
+#socialMedia section {
+    padding:1em;
 }
 #socialMediaIntro {
     background: url(images/lowpoly.jpg) center fixed;
@@ -310,8 +313,70 @@ section#contentSplash {
 /**************
     creation
 **************/
-#contentCreationIntro h1 {
-    color:#888;
+#contentCreationIntro {
+    background:url(images/workStation1.jpeg) center no-repeat fixed;
+    background-size:cover;
+    height:75vh;
+    position:relative;
+}
+#contentCreationIntro div {
+    background:#f1683c;
+    border-radius:.2em;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    color:#fff;
+    padding:2em;
+    position:absolute;
+    top:50%;left:50%;
+    transform:translate(-50%,-50%);
+    width:40em;
+}
+#contentCreationIntro p {
+    width:100%;
+}
+#caseStudies {
+    height:24em;
+    padding:0;
+}
+#caseStudies .imgDiv {
+    background:url(images/ipadKeyboard.jpeg) center no-repeat;
+}
+#pressReleases {
+    background:#f1683c;
+    color:#fff;
+    padding:5em;
+}
+#pressReleases div, #marketingMaterials div, #copywriting div {
+    width:50%;
+    margin:auto;
+}
+#pressReleases p, #marketingMaterials p, #copywriting p {
+    width:100%;
+}
+#whitePapers {
+    height:24em;
+    padding:0;
+}
+#whitePapers .imgDiv {
+    background:url(images/workStation2.jpg) center no-repeat;
+    background-size:cover;
+}
+#marketingMaterials {
+    background:rgba(241, 104, 60, 0.75);
+    color:#fff;
+    padding:5em;
+}
+#productDescriptions {
+    height:24em;
+    padding:0;
+}
+#productDescriptions .imgDiv {
+    background:url(images/bwKeyboard.jpg) center no-repeat;
+    background-size:cover;
+}
+#copywriting {
+    background:#f1683c;
+    color:#fff;
+    padding:5em;
 }
 /**************
     about us
@@ -401,7 +466,7 @@ h1,h2,h3,h4,h5,h6 {
 h1 {
     color:#fff;
     font-size:3em;
-    line-height:.75em;
+    line-height:1em;
 }
 p {
     line-height:1.5em;
