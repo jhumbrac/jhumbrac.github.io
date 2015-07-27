@@ -175,13 +175,12 @@ section#contentSplash {
     marketing2
 **************/
 #contentMarketing2 div>section {
-    background:#F1693C;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     border-radius:.2em;
     color:#fff;
     cursor: pointer;
     margin:.5% auto;
-    padding:2em;
+    padding:0;
     width:90%;
 }
 #contentMarketing2 div>section a {
@@ -197,7 +196,13 @@ section#contentSplash {
     margin:auto;
     width:28em;
 }
-
+#contentMarketing2 div>section>div {
+    background:#F1693C;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    height:100%;
+    padding:2em;
+    width:100%;
+}
 #contentMarketing2 .wrapper {
     clear:both;
     padding:5em 0;
@@ -217,8 +222,8 @@ section#contentSplash {
     clear:both;
 }
 #contentMarketing2 section p {
-    background:#fff;
-    color:#888;
+    background:rgba(163,200,58,1);
+    color:#fff;
     clear:both;
     display:none;
     padding:2em;
@@ -250,6 +255,9 @@ section#contentSplash {
 }
 #socialMediaIntro p {
     width:100%;
+}
+#socialMediaCalendar h3 {
+    margin-top:.5em;
 }
 /**************
     creation
@@ -321,15 +329,17 @@ figure img {
     border-radius:50%;
     transition: all 250ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
     transition-timing-function: cubic-bezier(0.420, 0.000, 0.580, 1.000);
+    transform:scale(.95);
     width:100%;
     
+}
+a figure:hover img {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    transform:scale(1);
 }
 figcaption {
     font-size:.75em;
     text-align: center;
-}
-a figure:hover img {
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 h1,h2,h3,h4,h5,h6 {
     font-family: 'Roboto Slab', serif;
@@ -367,9 +377,14 @@ p {
 .icon {
     color:#888;
     font-size:2em;
-    margin:0 .25em;
-    text-decoration:none;
-    
+    margin:0 .25em 0 .25em;
+    text-decoration:none;   
+}
+.icon:first-child {
+    margin:0 .25em 0 0;
+}
+.icon:last-child {
+    margin:0 0 0 .25em;
 }
 .icon:hover {
     color:#F1693C;
@@ -384,6 +399,7 @@ p {
     color:#fff;
     display:inline-block;
     font-size:1.5em;
+    margin-top:.5em;
     padding:1em 2em;
     text-decoration:none;
     transition: all 250ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
@@ -391,6 +407,7 @@ p {
 }
 .cta:hover {
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    background-color:rgba(70,166,103,1);
 }
 /**************
     Shadow
