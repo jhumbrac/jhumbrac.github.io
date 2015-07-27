@@ -142,7 +142,7 @@ article:nth-child(6) {
     color:#fff;
     float:left;
     margin:.5%;
-    min-height:26em;
+    min-height:28em;
     padding:2em;
     width:49%;
 }
@@ -240,6 +240,18 @@ section#contentSplash {
 /**************
     social
 **************/
+#socialMedia {
+    color:#fff;
+}
+#socialMedia a {
+    color:#fff;
+}
+#socialMedia a:hover {
+    color:rgba(163,200,58,1);
+}
+#socialMedia p {
+    width:66.66%;
+}
 #socialMediaIntro {
     background: url(images/lowpoly.jpg) center fixed;
     background-size:cover;
@@ -256,8 +268,44 @@ section#contentSplash {
 #socialMediaIntro p {
     width:100%;
 }
+#socialMediaCalendar {
+    background:#43A047;
+    height:28em;
+    padding:0;
+}
+#socialMediaCalendar .imgDiv {
+    background: url(svgs/corporateEvents.svg) center no-repeat;
+}
 #socialMediaCalendar h3 {
     margin-top:.5em;
+}
+#socialMediaAdvertising {
+    background:#66BB6A;
+    height:28em;
+    padding:0;
+}
+#socialMediaAdvertising .imgDiv {
+    background:url(svgs/pressReleases.svg) center no-repeat;
+}
+#socialMediaReporting {
+    background:#43a047;
+    height:26em;
+    padding:0;
+}
+#socialMediaReporting div {
+    float:left;
+    height:100%;
+}
+#socialMediaReporting .imgDiv {
+    background:url(svgs/businessPlanning.svg) center no-repeat;
+}
+#graphics {
+    background:#2E7D32;
+    height:24em;
+    padding:0;
+}
+#graphics .imgDiv {
+    background: url(svgs/brandStrategy.svg) center no-repeat;
 }
 /**************
     creation
@@ -302,6 +350,10 @@ nav a {
     text-decoration:none;
     transition: all 250ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
     transition-timing-function: cubic-bezier(0.420, 0.000, 0.580, 1.000);
+}
+nav a:last-child {
+    background-color:#f1683c;
+    color:#fff;
 }
 nav a:hover {
     background-color:#f1683c;
@@ -352,7 +404,7 @@ h1 {
     line-height:.75em;
 }
 p {
-    line-height:1.25em;
+    line-height:1.5em;
     width:50%;
 }
 .wrapper {
@@ -388,6 +440,17 @@ p {
 }
 .icon:hover {
     color:#F1693C;
+}
+.imgDiv {
+    float:left;
+    height:100%;
+    width:33.33%;
+}
+.textDiv {
+    float:left;
+    padding:5em 5em;
+    position:relative;
+    width:66.66%;
 }
 /**************
     buttons
