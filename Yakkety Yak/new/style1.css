@@ -23,14 +23,13 @@ div.quote {
 }
 div.overlay {
     background-color:rgba(70, 166, 103, .8);
-    padding:5em 0;
+    padding:5em 0;text-align:center;
 }
 blockquote {
     color:#fff;
     font-size:2em;
     margin:auto;
-    text-align:center;
-    width:50%;
+    width:66.66%;
 }
 section#splash span {
     font-size:.66em;
@@ -498,6 +497,13 @@ p {
     padding:5em 0;
     text-align:center;
 }
+.dropLinks, #contentMarketing2 .dropLinks {
+    display:block;
+    font-size:1em;
+    font-weight: bold;
+    margin:1em 0 0;
+    text-transform: uppercase;
+}
 .icon {
     color:#888;
     font-size:2em;
@@ -553,11 +559,12 @@ section#newsletter {
 form {
     display:inline-block;
 }
-input[type="text"] {
+input[type="text"], input[type="text"]:focus {
     border-radius:.2em;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     border:1px solid #888;
     font-size:1.5em;
+    outline:none;
     padding:1em;
     width:15em;
 }

@@ -37,6 +37,7 @@
     <div class="quote">
         <div class="overlay">
             <blockquote>Yakkety Yak works as an extension of your marketing team to improve engagement, increase exposure and send the right message to your customers.</blockquote>
+            <a href="#" class="cta">Find out how</a>
         </div>
     </div>
     <section id="ourMission" class="clearfix">
@@ -222,7 +223,7 @@
             <img src="svgs/socialMedia2.svg">
             <h2>Social Media</h2>
             <p>Yakkety Yak will provide a monthly social media calendar that will also coincide with the blog schedule. This calendar will be presented monthly. Upon approval, Yakkety Yak will distribute the content on multiple social media outlets.  We will focus our social media efforts on Facebook, Twitter, Google+ and LinkedIn on the following schedule.</p>
-            <a href="#">Read more on our social media services here</a>
+            <a href="#" class="dropLinks">Read more on our social media services here</a>
         </section>
         <section id="customBlogs">
             <img src="svgs/contentManagement2.svg">
@@ -308,7 +309,7 @@
                     <h2>Social Media</h2>
                 </div>
             </div>
-            <p>Yakkety Yak will provide a monthly social media calendar that will also coincide with the blog schedule. This calendar will be presented monthly. Upon approval, Yakkety Yak will distribute the content on multiple social media outlets.  We will focus our social media efforts on Facebook, Twitter, Google+ and LinkedIn on the following schedule. <a href="#">Read more on our social media services here</a></p>
+            <p>Yakkety Yak will provide a monthly social media calendar that will also coincide with the blog schedule. This calendar will be presented monthly. Upon approval, Yakkety Yak will distribute the content on multiple social media outlets.  We will focus our social media efforts on Facebook, Twitter, Google+ and LinkedIn on the following schedule.<br><a href="#" class="dropLinks">Read more on our social media services</a></p>
         </section>
         <section id="customBlogs2">
             <div>
@@ -477,7 +478,7 @@
         jQuery(function($){
             $("#contentMarketing2 div>section").click(function(){
                 $(this).find("p").slideToggle("dropDown");
-                $(this).find("a").html($(this).find("a").text() == "-" ? "+" : "-");
+                $(this).find("div>a").html($(this).find("div>a").text() == "-" ? "+" : "-");
             });
         });
     </script>
