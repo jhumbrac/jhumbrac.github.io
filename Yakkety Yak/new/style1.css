@@ -245,12 +245,6 @@ section#contentSplash {
 #socialMedia {
     color:#fff;
 }
-#socialMedia a {
-    color:#fff;
-}
-#socialMedia a:hover {
-    color:rgba(163,200,58,1);
-}
 #socialMedia p {
     width:66.66%;
 }
@@ -283,6 +277,12 @@ section#contentSplash {
 }
 #socialMediaCalendar h3 {
     margin-top:.5em;
+}
+#socialMediaCalendar a {
+    color:#fff;
+}
+#socialMediaCalendar a:hover {
+    color:rgba(163,200,58,1);
 }
 #socialMediaAdvertising {
     background:#66BB6A;
@@ -332,8 +332,8 @@ section#contentSplash {
     transform:translate(-50%,-50%);
     width:40em;
 }
-#contentCreationIntro p {
-    width:100%;
+#contentCreation p {
+    width:66.66%;
 }
 #caseStudies {
     height:24em;
@@ -351,7 +351,8 @@ section#contentSplash {
     width:50%;
     margin:auto;
 }
-#pressReleases p, #marketingMaterials p, #copywriting p {
+
+#contentCreationIntro p, #pressReleases p, #marketingMaterials p, #copywriting p {
     width:100%;
 }
 #whitePapers {
@@ -470,6 +471,10 @@ h1 {
     font-size:3em;
     line-height:1em;
 }
+h2 {
+    font-size:2em;
+    line-height: 1.25em;
+}
 p {
     line-height:1.5em;
     width:50%;
@@ -520,11 +525,12 @@ p {
     width:66.66%;
 }
 /**************
-    buttons
+    buttons and forms
 **************/
 .cta {
     background-color:rgba(163,200,58,1);
     border-radius:.2em;
+    border:none;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     color:#fff;
     display:inline-block;
@@ -538,6 +544,22 @@ p {
 .cta:hover {
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     background-color:rgba(70,166,103,1);
+}
+section#newsletter {
+    background:#f1683c;
+    color:#fff;
+    text-align:center;
+}
+form {
+    display:inline-block;
+}
+input[type="text"] {
+    border-radius:.2em;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    border:1px solid #888;
+    font-size:1.5em;
+    padding:1em;
+    width:15em;
 }
 /**************
     Shadow
@@ -557,7 +579,19 @@ p {
 .lvl5 {
         box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 }
-
+/**************
+    Colors
+**************/
+.darkGreen {
+    background-color:rgba(70,166,103,1)
+ }
+.lightGreen {
+    background-color:rgba(163,200,58,1);
+    color:;
+}
+.orange {
+     background-color:#f1683c;
+}
 
 .clearfix:after, #contentMarketing2 div>section div:after { 
 	content: "."; 
