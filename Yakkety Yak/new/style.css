@@ -57,15 +57,12 @@ section#homeAbout,section#ourMission {
 section#homeAbout .imgDiv {
     width:33.33%;
 }
-section#homeAbout .textDiv, section#ourMission .textDiv {
-    padding:5em 0;
-    position:relative;
-    width:66.66%;
+.textDiv {
+    
 }
 section#homeAbout div, section#ourMission div {
     float:left;
     height:100%;
-    width:33.33%;
 }
 section#ourMission p, section#homeAbout p {
     float:none;
