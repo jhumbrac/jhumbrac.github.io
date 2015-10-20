@@ -1,7 +1,7 @@
 * { 
     margin:0; padding:0; box-sizing:border-box; 
-    transition: all 250ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
-    transition-timing-function: cubic-bezier(0.420, 0.000, 0.580, 1.000);
+    /*transition: all 250ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
+    transition-timing-function: cubic-bezier(0.420, 0.000, 0.580, 1.000);*/
 }
 /* DELETE THIS WHEN FINISHED */
 .page {
@@ -140,8 +140,19 @@ article:nth-child(6) {
     background-size:cover;
 }
 /**************
-    marketing
+    marketing2
 **************/
+section:nth-of-type(even) .dropWrapper img {
+    float:left;
+}
+section:nth-of-type(odd) .dropWrapper img {
+    float:right;
+}
+.dropWrapper > a {
+    display:none;
+}
+.page>section {
+}
 #contentMarketing2>section {
     background:#F1693C;
 }
@@ -163,10 +174,14 @@ section#contentSplash {
 #contentMarketing2 footer {
     clear:both;
 }
-#contentMarketing2 section p {
-    background:rgba(163,200,58,1);
+#contentMarketing2 section p.dropDown {
+    display:block;
 }
-
+#contentMarketing2 h2 {
+    float:left;
+    font-size:2em;
+    margin:0 1em;
+}
 /**************
     social
 **************/
@@ -201,7 +216,7 @@ section#contentSplash {
 #socialMediaCalendar a { /* fonticon color */
     color:#fff;
 }
-#socialMediaCalendar a:hover {
+#socialMediaIntro a:hover {
     color:rgba(163,200,58,1);
 }
 #socialMediaAdvertising {
@@ -469,6 +484,7 @@ input[type="text"], input[type="text"]:focus {
     padding:1em;
     width:15em;
 }
+
 /**************
     Shadow
 **************/
@@ -501,79 +517,78 @@ input[type="text"], input[type="text"]:focus {
      background-color:#f1683c;
 }
 
-.clearfix:after, #contentMarketing2>section div:after,#contentMarketing div>section div:after, .page>section:after, .dropWrapper:after { 
+.clearfix:after, #contentMarketing2>section div:after,#contentMarketing div>section div:after, .page>section:after { 
 	content: "."; 
 	visibility: hidden; 
 	display: block; 
 	height: 0; 
 	clear: both;
 }
-
-
-.page>section {
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-    border-radius:.2em;
-    color:#fff;
-    cursor: pointer;
-    margin:.5% auto;
-    padding:2em 0;
-    width:99%;
+@media only screen and (max-width:1000px) {
+    .page>section {
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        border-radius:.2em;
+        color:#fff;
+        cursor: pointer;
+        margin:.5% auto;
+        padding:2em 0;
+        width:99%;
+    }
+    .dropWrapper > a {
+        color:#fff;
+        display:block;
+        font-size:5em;
+        line-height: .5;
+        margin:0 .25em;
+        text-decoration:none;
+        position:absolute;
+        left:.5em;
+    }
+    .imgDiv {
+        display: block;
+        float: left;
+        margin: 0 .5em;
+        width: 3em;
+    }
+    .dropWrapper {
+        margin:.5em auto;
+        width:32em;
+    }
+    section:nth-of-type(even)>.dropWrapper * {
+        float:left;
+    }
+    section:nth-of-type(odd)>.dropWrapper * {
+        float:right;
+    }
+    .dropWrapper h2 {
+        font-size:2em;
+        margin:0 1em;
+        text-align:center;
+    }
+    #contentMarketing2 section p, #socialMedia section p {
+        color:#fff;
+        clear:both;
+        display:none;
+        padding:5em;
+        width:100%;
+    }
+    #contentMarketing2 section p.dropDown, #socialMedia section p.dropDown {
+        display:block;
+    }
+    #socialMedia section {
+        background-color:rgba(70,166,103,1);
+    }
+    #contentMarketing2 section p {
+        background:rgba(163,200,58,1);
+    }
+    #socialMedia section p {
+        background:#66BB6A;
+    }
+    .dropWrapper:after { 
+        content: "."; 
+        visibility: hidden; 
+        display: block; 
+        height: 0; 
+        clear: both;
+    }
 }
-.dropWrapper>a {
-    color:#fff;
-    display:block;
-    font-size:5em;
-    line-height: .5;
-    margin:0 .25em;
-    text-decoration:none;
-    position:absolute;
-    left:1em;
-}
-.imgDiv {
-    display: block;
-    float: left;
-    margin: 0 .5em;
-    width: 3em;
-}
-.dropWrapper {
-    margin:.5em auto;
-    width:32em;
-}
-section:nth-of-type(even)>.dropWrapper * {
-    float:left;
-}
-section:nth-of-type(odd)>.dropWrapper * {
-    float:right;
-}
-.dropWrapper h2 {
-    font-size:2em;
-    margin:0 1em;
-    text-align:center;
-}
-#contentMarketing2 section p, #socialMedia section p {
-    color:#fff;
-    clear:both;
-    display:none;
-    padding:5em;
-    width:100%;
-}
-#contentMarketing2 section p.dropDown, #socialMedia section p.dropDown {
-    display:block;
-}
-#socialMedia section {
-    background-color:rgba(70,166,103,1);
-}
-#socialMedia section p {
-    background:#66BB6A;
-}
-/*******************
-    pre-responsive
-*******************/
-/* plus buttons
-div>a {
-    display:none;
-}
-
-pointer
-
-dropdown block
