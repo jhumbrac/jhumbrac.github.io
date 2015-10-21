@@ -142,19 +142,20 @@ article:nth-child(6) {
 /**************
     marketing2
 **************/
-section:nth-of-type(even) .dropWrapper img {
+section:nth-of-type(even) .dropWrapper *, section:nth-of-type(even) .dropText {
     float:left;
 }
-section:nth-of-type(odd) .dropWrapper img {
+section:nth-of-type(odd) .dropWrapper *, section:nth-of-type(odd) .dropText {
     float:right;
+}
+.dropWrapper h2, .dropText {
+    padding:1rem 2rem 0;
+    width:66.67%;
 }
 .dropWrapper > a {
     display:none;
 }
 .page>section {
-}
-#contentMarketing2>section {
-    background:#F1693C;
 }
 #contentMarketing2 .wrapper {
     clear:both;
@@ -165,22 +166,17 @@ section#contentSplash {
     background-size:cover;
     height:75vh;
 }
-#contentMarketing2 section img {
+/*#contentMarketing2 section img {
     display:block;
     float:left;
     margin:0 .5em;
     width:3em;
-}
+}*/
 #contentMarketing2 footer {
     clear:both;
 }
 #contentMarketing2 section p.dropDown {
     display:block;
-}
-#contentMarketing2 h2 {
-    float:left;
-    font-size:2em;
-    margin:0 1em;
 }
 /**************
     social
@@ -188,9 +184,7 @@ section#contentSplash {
 #socialMedia {
     color:#fff;
 }
-#socialMedia p {
-    width:66.66%;
-}
+
 #socialMediaIntro {
     background: url(images/lowpoly.jpg) center fixed;
     background-size:cover;
@@ -198,7 +192,7 @@ section#contentSplash {
     height:75vh;
     position:relative;
 }
-#socialMediaIntro div {
+#socialMediaIntro > div {
     position:absolute;
     top:50%;left:5em;
     transform:translateY(-50%);
@@ -215,9 +209,6 @@ section#contentSplash {
 }
 #socialMediaCalendar a { /* fonticon color */
     color:#fff;
-}
-#socialMediaIntro a:hover {
-    color:rgba(163,200,58,1);
 }
 #socialMediaAdvertising {
     background:#66BB6A;
@@ -258,11 +249,6 @@ section#contentSplash {
 #caseStudies .imgDiv {
     background:url(images/ipadKeyboard.jpeg) center no-repeat;
 }
-#pressReleases {
-    background:#f1683c;
-    color:#fff;
-    padding:5em;
-}
 #pressReleases div, #marketingMaterials div, #copywriting div {
     width:50%;
     margin:auto;
@@ -279,11 +265,6 @@ section#contentSplash {
     background:url(images/workStation2.jpg) center no-repeat;
     background-size:cover;
 }
-#marketingMaterials {
-    background:rgba(241, 104, 60, 0.75);
-    color:#fff;
-    padding:5em;
-}
 #productDescriptions {
     height:24em;
     padding:0;
@@ -292,10 +273,41 @@ section#contentSplash {
     background:url(images/bwKeyboard.jpg) center no-repeat;
     background-size:cover;
 }
-#copywriting {
+/*************************
+    background patterns
+*************************/
+#contentMarketing2>section:nth-of-type(4n+1) {
+    background:rgba(241, 104, 60, 0.75);
+    color:#fff;
+    padding:5em 0;
+}
+#contentMarketing2>section:nth-of-type(4n+3) {
     background:#f1683c;
     color:#fff;
-    padding:5em;
+    padding:5em 0;
+}
+#contentMarketing2>section:nth-of-type(1) {
+    background:url(images/workStation1.jpeg) center no-repeat fixed;
+    background-size:cover;
+    height:75vh;
+    position:relative;
+}
+
+#contentCreation>section:nth-of-type(4n+1) {
+    background:rgba(241, 104, 60, 0.75);
+    color:#fff;
+    padding:5em 0;
+}
+#contentCreation>section:nth-of-type(4n+3) {
+    background:#f1683c;
+    color:#fff;
+    padding:5em 0;
+}
+#contentCreation>section:nth-of-type(1) {
+    background:url(images/workStation1.jpeg) center no-repeat fixed;
+    background-size:cover;
+    height:75vh;
+    position:relative;
 }
 /**************
     about us
@@ -393,7 +405,6 @@ h2 {
 }
 p {
     line-height:1.5em;
-    width:50%;
 }
 .wrapper {
     max-width:1200px;
@@ -414,7 +425,8 @@ p {
     padding:5em 0;
     text-align:center;
 }
-.dropLinks, #contentMarketing2 .dropLinks {
+.dropLinks {
+    color:#fff;
     display:block;
     font-size:1em;
     font-weight: bold;
@@ -422,7 +434,7 @@ p {
     text-transform: uppercase;
 }
 .icon {
-    color:#888;
+    color:#fff;
     font-size:2em;
     margin:0 .25em 0 .25em;
     text-decoration:none;   
@@ -438,6 +450,7 @@ p {
 }
 .imgDiv {
     float:left;
+    height:100%;
     width:33.33%;
 }
 .textDiv {
@@ -445,6 +458,9 @@ p {
     padding:5em 5em;
     position:relative;
     width:66.66%;
+}
+.dropText {
+    display:block;
 }
 /**************
     buttons and forms
@@ -517,7 +533,7 @@ input[type="text"], input[type="text"]:focus {
      background-color:#f1683c;
 }
 
-.clearfix:after, #contentMarketing2>section div:after,#contentMarketing div>section div:after, .page>section:after { 
+.clearfix:after, .page>section:after { 
 	content: "."; 
 	visibility: hidden; 
 	display: block; 
@@ -534,6 +550,10 @@ input[type="text"], input[type="text"]:focus {
         padding:2em 0;
         width:99%;
     }
+    .dropWrapper {
+        margin:.5em auto;
+        width:32em;
+    }
     .dropWrapper > a {
         color:#fff;
         display:block;
@@ -544,28 +564,29 @@ input[type="text"], input[type="text"]:focus {
         position:absolute;
         left:.5em;
     }
+    section:nth-of-type(even) .dropWrapper * {
+        float:left;
+    }
+    section:nth-of-type(odd) .dropWrapper * {
+        float:left;
+    }
+    .dropWrapper h2 {
+        font-size:2em;
+        margin:0 1em;
+        padding:0;
+        text-align:center;
+        width:auto;
+    }
     .imgDiv {
         display: block;
         float: left;
         margin: 0 .5em;
         width: 3em;
     }
-    .dropWrapper {
-        margin:.5em auto;
-        width:32em;
+    .dropText p {
+        width:100%;
     }
-    section:nth-of-type(even)>.dropWrapper * {
-        float:left;
-    }
-    section:nth-of-type(odd)>.dropWrapper * {
-        float:right;
-    }
-    .dropWrapper h2 {
-        font-size:2em;
-        margin:0 1em;
-        text-align:center;
-    }
-    #contentMarketing2 section p, #socialMedia section p {
+    /*#contentMarketing2 section p, #socialMedia section p*/ .dropText {
         color:#fff;
         clear:both;
         display:none;
@@ -575,15 +596,58 @@ input[type="text"], input[type="text"]:focus {
     #contentMarketing2 section p.dropDown, #socialMedia section p.dropDown {
         display:block;
     }
+    #socialMediaIntro {
+        background:#66BB6A;
+        height:auto;
+        padding:2em;
+    }
+    #socialMediaIntro div {
+        margin:auto;
+        position:static;
+        transform: none;
+        width:99%;
+    }
     #socialMedia section {
         background-color:rgba(70,166,103,1);
     }
-    #contentMarketing2 section p {
-        background:rgba(163,200,58,1);
-    }
-    #socialMedia section p {
+    #socialMedia .dropText {
         background:#66BB6A;
     }
+    #contentMarketing2>section {
+        background:#F1693C;
+    }
+    #contentMarketing2 .dropText {
+        background:rgba(163,200,58,1);
+    }
+    #contentMarketing2>section:nth-of-type(4n+1) {
+        background:#F1693C;
+        padding:2em 0;
+    }
+    #contentMarketing2>section:nth-of-type(4n+3) {
+        background:#f1683c;
+        color:#fff;
+        padding:2em 0;
+    }
+    #contentMarketing2>section:nth-of-type(1) {
+        background:rgba(241, 104, 60, 0.75);
+        height:auto;
+        padding:2em;
+        position:relative;
+    }
+    #contentCreation>section:nth-of-type(4n+1) {
+        background:rgba(241, 104, 60, 0.75);
+        padding:2em 0;
+    }
+    #contentCreation>section:nth-of-type(4n+3) {
+        background:#f1683c;
+        padding:2em 0;
+    }
+    #contentCreation>section:nth-of-type(1) {
+        background:rgba(241, 104, 60, 0.75);
+        height:auto;
+        position:relative;
+    }
+    
     .dropWrapper:after { 
         content: "."; 
         visibility: hidden; 
