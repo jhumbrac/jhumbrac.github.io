@@ -157,10 +157,6 @@ section:nth-of-type(odd) .dropWrapper *, section:nth-of-type(odd) .dropText {
 }
 .page>section {
 }
-#contentMarketing2 .wrapper {
-    clear:both;
-    padding:5em 0;
-}
 section#contentSplash {
     background:url(images/lowpoly.jpg) fixed center no-repeat;
     background-size:cover;
@@ -453,6 +449,10 @@ p {
     height:100%;
     width:33.33%;
 }
+img.imgDiv {
+    margin:0 4%;
+    width:25%;
+}
 .textDiv {
     float:left;
     padding:5em 5em;
@@ -551,7 +551,8 @@ input[type="text"], input[type="text"]:focus {
         width:99%;
     }
     .dropWrapper {
-        margin:.5em auto;
+        float:right;
+        margin:.5em 10% .5em 0;
         width:32em;
     }
     .dropWrapper > a {
@@ -577,7 +578,7 @@ input[type="text"], input[type="text"]:focus {
         text-align:center;
         width:auto;
     }
-    .imgDiv {
+    img.imgDiv {
         display: block;
         float: left;
         margin: 0 .5em;
