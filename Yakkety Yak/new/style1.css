@@ -155,8 +155,6 @@ section:nth-of-type(odd) .dropWrapper *, section:nth-of-type(odd) .dropText {
 .dropWrapper > a {
     display:none;
 }
-.page>section {
-}
 section#contentSplash {
     background:url(images/lowpoly.jpg) fixed center no-repeat;
     background-size:cover;
@@ -170,9 +168,6 @@ section#contentSplash {
 }*/
 #contentMarketing2 footer {
     clear:both;
-}
-#contentMarketing2 section p.dropDown {
-    display:block;
 }
 /**************
     social
@@ -199,9 +194,6 @@ section#contentSplash {
 }
 #socialMediaCalendar {
     background:#43A047;
-}
-#socialMediaCalendar h3 {
-    margin-top:1em;
 }
 #socialMediaCalendar a { /* fonticon color */
     color:#fff;
@@ -406,10 +398,6 @@ p {
     max-width:1200px;
     margin:auto;
 }
-.page {
-    border-bottom:2px solid red;
-    padding-bottom: 5em;
-}
 .yak {
     background:url(images/95217830.jpg) no-repeat top fixed;
     background-size:cover;
@@ -593,9 +581,6 @@ input[type="text"], input[type="text"]:focus {
         display:none;
         padding:5em;
         width:100%;
-    }
-    #contentMarketing2 section p.dropDown, #socialMedia section p.dropDown {
-        display:block;
     }
     #socialMediaIntro {
         background:#66BB6A;
