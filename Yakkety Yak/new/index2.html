@@ -452,10 +452,15 @@
 </div>
     <script type="text/javascript">
         jQuery(function($){
-            $(".page > section").click(function(){
-                $(this).find(".dropText").slideToggle("dropDown");
-                $(this).find(".dropWrapper>a").html($(this).find("a").text() == "-" ? "+" : "-");
-            });
+            $(window).resize(function() {
+                var width = $(window).width();
+                if (width < 1000) {
+                    $(".page > section").click(function(){
+                        $(this).find(".dropText").slideToggle("dropDown");
+                        $(this).find(".dropWrapper>a").html($(this).find("a").text() == "-" ? "+" : "-");
+                    });
+                }
+            })
         });
     </script>
 </body>
