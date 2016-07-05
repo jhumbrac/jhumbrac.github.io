@@ -19,6 +19,7 @@ section {
 	padding:5em 0;
 }
 section#splash {
+	background:rgba(0,0,0,.25);
 	height:100vh; /* viewport height is the measurement of the size of the display. if you make your window smaller on a desktop, you also decrease the viewport size. vh units are interpreted as a % of the viewport. 100vh = 100% of the viewport height. Avoid using vh values over 100. */
 }
 section#splash div {
