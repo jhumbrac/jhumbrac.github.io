@@ -164,7 +164,7 @@ option:first-of-type {
     position: relative;
     overflow: visible;
 }
-#results section {
+.mobileWrap section {
     float:left;
     margin:.5%;
     width:24%;
@@ -204,8 +204,6 @@ option:first-of-type {
     vertical-align:middle;
     display:inline-block;
     margin-top:-2px
-}
-#results p {
 }
 #t1 > * {
     border-bottom: 1px solid rgba(108, 100, 99, .5);
@@ -303,9 +301,6 @@ form.active {
 @media only screen and (max-width:1080px) {
     .holder {
         width: 945px;
-        /* overflow:scroll; */
-        /* position: absolute; */
-        /* left: 350px; */
     }
     .slider {
         width: 66.66%;
@@ -315,7 +310,7 @@ form.active {
     #results .columns {
         width:300px;
     }
-    #results > section {
+    .mobileWrap > section {
         width: 32.33%;
     }
     .slider:after {
@@ -331,16 +326,31 @@ form.active {
     .slider, .slider:after {
         width:50%;
     }
-    #results > section {
+    .mobileWrap > section {
         width:49%;
     }
 }
 @media only screen and (max-width:680px) {
-    #results > section {
+    .mobileWrap > section {
         font-size:.75em;
-        width:32.33%;
+        width: 200px;
+    }
+    #results .columns {
+        width:275px;
+    }
+    .holder {
+        width:875px;
     }
     .slider, .slider:after {
-        width:66.66%;
+        overflow:initial;
+    }
+    .slider:after {
+        width:100%;
+        background:white;
+        position:absolute;left:0;
+    }
+    .mobileWrap {
+        width:100%;
+        overflow-x:scroll;
     }
 }
