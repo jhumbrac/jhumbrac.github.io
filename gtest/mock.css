@@ -342,15 +342,20 @@ form.active {
         width:875px;
     }
     .slider, .slider:after {
-        overflow:initial;
+        /* overflow:initial; */
+        width: auto;
     }
     .slider:after {
-        width:100%;
+        width: 1100px;
         background:white;
-        position:absolute;left:0;
+        position:absolute;
+        left:0;
     }
     .mobileWrap {
-        width:100%;
+        width: 1100px;
+        /* overflow-x:scroll; */
+    }
+    #results {
         overflow-x:scroll;
     }
 }
