@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+<head>
+    <title>Geisenger Mock Disclaimer page</title>
+    <link rel="stylesheet" type="text/css" href="mock.css">
+    <script src="assets/jquery-3.2.1.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <header>
+        <nav>
+            <div>
+                <a href="#">home</a>
+                <a href="#">patient care</a>
+                <a href="#">health plan</a>
+                <a href="#">research</a>
+                <a href="#">education</a>
+                <a href="#" class="right cta">account</a>
+                <a href="#" class="right">careers</a>
+            </div>
+        </nav>
+        <div>
+            <img src="assets/logo.png" alt="Geisenger logo" class="logo">
+            <img src="assets/caring.svg" alt="Caring logo" class="caring">
+        </div>
+    </header>
+    <main id="form">
+        <h1>Tell us about yourself</h1>
+        <div class="wrapper">
+            <section>
+                <h2 class="accordion">Question 1: Who will be covered?</h2>
+                <form class="active" id="f1">
+                    <input type="radio" name="who" value="Me (1 person)">Me (1 person)<br>
+                    <input type="radio" name="who" value="Me and my spouse (2 people)">Me and my spouse (2 people)<br>
+                    <input type="radio" name="who" value="My family">My family
+                </form>
+            </section>
+            <section id="surcharge">
+                <h2 class="accordion">Question 1b: Does your spouse or domestic partner that you are enrolling in Geisinger benefits have group medical coverage available through his or her employer?</h2>
+                <form class="f1b">
+                    <input type="radio" name="surcharge" value="yes">Yes<br>
+                    <input type="radio" name="surcharge" value="yes">No
+                </form>
+            </section>
+            <section>
+                <h2 class="accordion">Question 2: What is your annual salary range?</h2>
+                <form id="f2">
+                    <input type="radio" name="salary" value="< $31,200">&lt; $31,200 per year or &lt; $15.00 per hour<br>
+                    <input type="radio" name="salary" value="$31,201 - $63,565">$31,201 - $63,565 per year or $15.00 - $30.56 per hour<br>
+                    <input type="radio" name="salary" value="$63,566 - $127,199">$63,566 - $127,199 per year or $30.57 - $61.15 per hour<br>
+                    <input type="radio" name="salary" value="$127,200 - $269,999">$127,200 - $269,999 per year or $61.16 - $129.80 per hour<br>
+                    <input type="radio" name="salary" value="$270,000 +">&gt; $270,000 per year or &gt; $129.80 per hour
+                </form>
+            </section>
+            <section>
+                <h2 class="accordion">Question 3: Have you achieved your MyHealth Rewards Goals?</h2>
+                <form id="f3">
+                    <input type="radio" name="goals" value="yes">Yes<br>
+                    <input type="radio" name="goals" value="no">No
+                </form>
+            </section>
+            <section>
+                <h2 class="accordion">Question 4: Potential health issues?</h2>
+                <form id="f4">
+                    <select name="issues">
+                        <option value="" hidden disabled selected>Please Select One...</option>
+                        <option value="Well visits">Compare My Wellness Visits</option>
+                        <option value="Flu">Catch the Flu</option>
+                        <option value="Outpatient Surgery">Receive Outpatient Surgery</option>
+                    </select>
+                </form>
+            </section>
+            <a href="mock.html" class="cta">See your results</a>
+            <a href="form.html" class="cta">Start over</a>
+        </div>
+    </main>
+    <script>
+        $('.accordion').click(function(){
+            $(this)
+                .next('form')
+                .not(':animated')
+                .toggleClass('active');
+        })
+        $('input').click(function(){
+            $('form')
+                .removeClass('active');
+        })
+        $('option').click(function(){
+            $('form')
+                .removeClass('active');
+        })
+        $('#f1 input').click(function(){
+            $('#f2').addClass('active');
+        })
+        $('#f2 input').click(function(){
+            $('#f3').addClass('active');
+        })
+        $('#f3 input').click(function(){
+            $('#f4').addClass('active');
+        })
+    </script>
+<!--    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+          acc[i].onclick = function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight){
+              panel.style.maxHeight = null;
+            } else {
+              panel.style.maxHeight = panel.scrollHeight + "px";
+            } 
+          }
+        }
+    </script> -->
+</body>
+</html>
