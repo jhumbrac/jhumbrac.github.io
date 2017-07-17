@@ -75,7 +75,7 @@ main {
 /* Disclaimer Page */
 #disclaimer {
     font-size: 1em;
-    padding-bottom: 4em;
+    padding: 0 1em 4em;
 }
 #disclaimer section {
     background: rgba(0,118,207, 1);
@@ -126,6 +126,9 @@ main {
     text-decoration:none;
     width:15em;
     margin: 1em;
+}
+#surcharge {
+    display:none;
 }
 form {
     background: rgba(0, 118, 207, .1);
@@ -206,6 +209,30 @@ option:first-of-type {
     display:inline-block;
     margin-top:-2px
 }
+#key {
+    position:relative;
+}
+#key .cta {
+    color: inherit;
+    position: absolute;
+    left: 50%;
+    transform:translateX(-50%);
+    bottom: -6em;
+    width: 16em;
+    text-decoration: none;
+    border: none;
+    font-size:.75em;
+}
+
+a.cta {}
+#results .cta span {
+    color: #fff;
+    padding: .25em .75em;
+    display: inline-block;
+    background-color: #ed6f00;
+    border-top-left-radius: .5em;
+    border-bottom-right-radius: .5em;
+}
 #t1 > * {
     border-bottom: 1px solid rgba(108, 100, 99, .5);
 }
@@ -233,16 +260,16 @@ option:first-of-type {
 #t1 h4 {
         /* background:#0076cf; */
 }
-#t2 {
+#t2, #t2 ~ .moreInfo{
     background: rgba(105, 60, 94, .1);
     border: .1em solid #693c5e;
 }
 #t2 h3 {
         background:rgba(105, 60, 94, .4);
 }
-#t3 {
+#t3, #t3 ~ .moreInfo {
     background: rgba(237, 139, 0, .1);
-    border: 1px solid #ed8b00;
+    border: .1em solid #ed8b00;
 }
 #t3 h2 {
         background: #ed8b00;
@@ -262,7 +289,7 @@ option:first-of-type {
     display: none;
     border-bottom-right-radius: 3em;
 }
-.active {
+.active, .active ~ .moreInfo {
     display: block !important;
 }
 form.active {
@@ -290,6 +317,7 @@ form.active {
     content:" ";
     height:0;
 }
+.instructions {display:none;}
 /*
 .columns>*:last-child {
     max-height: 0;
@@ -321,6 +349,17 @@ form.active {
         height:2em;
         position:absolute;
         width: 66.66%;
+    }
+    .mobileWrap {
+        position:relative;
+    }
+    .instructions {
+        display:block;
+        position: absolute;
+        top: -4em;
+        font-size: .75em;
+        right: 10%;
+        /* transform: translateX(-50%); */
     }
 }
 @media only screen and (max-width:800px) {
@@ -373,6 +412,16 @@ form.active {
     #results {
         overflow-x:scroll;
     }
+    .instructions {
+        position: absolute;
+        right: initial;
+        left:1em;
+    }
+}
+@media only screen and (max-width: 575px) {
+    #disclaimer {
+        font-size:.8em;
+    }
 }
 @media only screen and (max-width: 450px) {
     form {
@@ -381,5 +430,8 @@ form.active {
     #form .cta {
         width:100%;
         margin: 1em 0;
+    }
+    #disclaimer section {
+        padding:4em 3em 6em;
     }
 }

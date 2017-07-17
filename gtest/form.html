@@ -31,14 +31,14 @@
             <section>
                 <h2 class="accordion">Question 1: Who will be covered?</h2>
                 <form class="active" id="f1">
-                    <input type="radio" name="who" value="Me (1 person)">Me (1 person)<br>
-                    <input type="radio" name="who" value="Me and my spouse (2 people)">Me and my spouse (2 people)<br>
-                    <input type="radio" name="who" value="My family">My family
+                    <input class="noSpouse" type="radio" name="who" value="Me (1 person)">Me (1 person)<br>
+                    <input class="spouse" type="radio" name="who" value="Me and my spouse (2 people)">Me and my spouse (2 people)<br>
+                    <input class="spouse" type="radio" name="who" value="My family">My family
                 </form>
             </section>
             <section id="surcharge">
-                <h2 class="accordion">Question 1b: Does your spouse or domestic partner that you are enrolling in Geisinger benefits have group medical coverage available through his or her employer?</h2>
-                <form class="f1b">
+                <h2 class="accordion">Question 1b: Are you enrolling a spouse that has medical coverage available through his/her own employer?</h2>
+                <form id="f1b">
                     <input type="radio" name="surcharge" value="yes">Yes<br>
                     <input type="radio" name="surcharge" value="yes">No
                 </form>
@@ -90,7 +90,15 @@
             $('form')
                 .removeClass('active');
         })
-        $('#f1 input').click(function(){
+        $('.noSpouse').click(function(){
+            $('#f2').addClass('active');
+            $('#surcharge').removeClass('active');
+        })
+        $('.spouse').click(function(){
+            $('#f1b').addClass('active');
+            $('#surcharge').addClass('active');
+        })
+        $('#f1b input').click(function(){
             $('#f2').addClass('active');
         })
         $('#f2 input').click(function(){
