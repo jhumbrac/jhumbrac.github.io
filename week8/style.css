@@ -6,11 +6,11 @@ p + p { margin-top: 1em; }
 p + a { margin-top:1.5em; }
 article + article { margin-top:1em; }
 body {
-	color:#fff;
 	background-image:url('images/background.jpg');
 	background-attachment:fixed;
 	background-size:cover;
 	background-repeat: no-repeat;
+	color:#fff;
 	font-size:16px;
 	font-family: 'Roboto', sans-serif;
 	font-weight:100;
@@ -43,7 +43,6 @@ section#cast .players {
 	background:rgba(3,169,244,1);
 	border-radius:.5em;
 	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-	color:#fff;
 	float:left;
 	margin:.5%;
 	min-height:16em;
@@ -62,6 +61,7 @@ h1,h2,h3,h4,h5,h6 {
 h1 {
 	font-size:7em;
 	line-height:1em; /* one of the only tricky things about em's is that they inherit the font size, so in this case 1em on line-height is the equivalent of 7em font size since it's inheriting the above 7em */
+	text-shadow:1px 1px 2px rgba(0,0,0,.25);
 }
 p {
 	line-height:1.25em;
