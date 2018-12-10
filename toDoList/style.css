@@ -30,9 +30,6 @@ input[type="submit"] {
     background:#ff4181;
     color:#fff;
 }
-input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
-    background:#aaa;
-}
 button {
     background: none;
     color:inherit;
