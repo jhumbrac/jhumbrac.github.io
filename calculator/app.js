@@ -1,7 +1,7 @@
 const calculator = document.querySelector('form');
-const screen = document.querySelector('#screen');
+const inputField = document.querySelector('#screen');
 const numberBtn = document.querySelectorAll('.keypad button');
-calculator.addEventListener('submit', function() {
+calculator.addEventListener('submit', () => {
     event.preventDefault();
 });
 for(i = 0; i < numberBtn.length; i++) {
@@ -9,13 +9,17 @@ for(i = 0; i < numberBtn.length; i++) {
     numberBtn[i].addEventListener('click', function(){
         if(val < 10) {
             console.log(val);
+            inputField.value = val;
+            //screen.value = val;
         } else if(val === 10){ 
             console.log('.');
+            inputField.value = '.';
         } else if(val === 11) {
             console.log(0);
+            inputField.value = 0;
         } else {
-            console.log('clear');
-        };
-        
+            inputField.textContent = '';
+            inputField.value = '';
+        }
     });
 }
