@@ -1,0 +1,99 @@
+/* Loading in the fonts */
+@font-face {
+    font-family: "Swiss Med";
+    src: url("assets/SwissBTMed.woff") format("woff");
+}
+@font-face {
+    font-family: "Swiss Condensed";
+    src: url("assets/SwissBTBolCon.woff") format("woff");
+}
+@font-face {
+    font-family: "Swiss Outlines";
+    src: url("assets/SwissBTBolConOut.woff") format("woff");
+}
+/* Simple css reset to remove browser default margin and padding values */
+* { margin:0; padding:0; box-sizing:border-box; }
+body {
+    color:rgba(0,0,0,.85);
+    font-size:18px;
+    font-family:"Swiss Med", sans-serif;
+    line-height:1.3;
+}
+section {
+    padding:5em 0;
+}
+nav {
+    float:right;
+}
+nav a {
+    color:#fff;
+    display:inline-block;
+    padding:1em;
+    text-decoration:none;
+}
+h1, h2, h3, h4 {
+    font-family:"Swiss Condensed", sans-serif;
+    line-height:1;
+}
+h1 {
+    font-size: 18vw;
+    line-height: .8;
+    letter-spacing: -6px;
+}
+span {
+    font-family:"Swiss Outlines", "Swiss Condensed", sans-serif;
+}
+ul, ol {
+    padding-left:1.25em;
+}
+#intro {
+    background:#f63b34;
+    color:#fff;
+    padding: 5em 1em 0;
+}
+#intro p {
+    border-left:.25em dotted;
+    margin: 0em 0 0 1em;
+    padding:10em 0 0 .5em;
+    transform: translateY(15%);
+}
+#purpose {
+    padding:0;
+}
+#purpose h2 {
+    background:#84d0c4;
+    font-size: 9vw;
+    padding: 1em;
+    text-align:right;
+}
+#purpose > div {
+    float:left;
+    padding: 5em 2em;
+    width:50%;
+}
+#purpose div div {
+    margin-top:2em;
+}
+#plan {
+    background:#492b2d;
+    color: #fecb20;
+    padding: 10em 1em;
+}
+#plan div {
+    float:right;
+    margin-top: 2em;
+    width:75%;
+}
+#plan h2 {
+    font-size: 12vw;
+    line-height: .8;
+}
+#plan span {
+    display:block;
+    letter-spacing: -.05em;
+}
+.clearfix:after {
+    clear:both;
+    content:"";
+    display:block;
+}
