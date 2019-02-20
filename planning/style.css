@@ -31,7 +31,7 @@ nav a {
     padding:1em;
     text-decoration:none;
 }
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
     font-family:"Swiss Condensed", sans-serif;
     line-height:1;
 }
@@ -43,7 +43,7 @@ h1 {
 span {
     font-family:"Swiss Outlines", "Swiss Condensed", sans-serif;
 }
-ul, ol {
+ul {
     padding-left:1.25em;
 }
 #intro {
@@ -54,8 +54,9 @@ ul, ol {
 #intro p {
     border-left:.25em dotted;
     margin: 0em 0 0 1em;
-    padding:10em 0 0 .5em;
+    padding: 10em 0 0 .5em;
     transform: translateY(15%);
+    font-size: 1.5em;
 }
 #purpose {
     padding:0;
@@ -74,23 +75,68 @@ ul, ol {
 #purpose div div {
     margin-top:2em;
 }
-#plan {
+#plan h2 {
     background:#492b2d;
     color: #fecb20;
-    padding: 10em 1em;
-}
-#plan div {
-    float:right;
-    margin-top: 2em;
-    width:75%;
-}
-#plan h2 {
     font-size: 12vw;
     line-height: .8;
+    padding: 1em .25em;
 }
-#plan span {
+#plan h2 span {
     display:block;
     letter-spacing: -.05em;
+}
+#plan h3 {font-size: 2em;}
+.threeQuestions {
+    color:#fff;
+    margin-left:1em;
+    text-align:right;
+    transform: translateY(-100%);
+}
+#plan h4 {
+    font-size:1em;
+}
+#plan ol {
+    border-bottom: 1px solid;
+    list-style-position: inside;
+    padding-bottom: 1em;
+    height: 15em;
+}
+#plan li {
+    border-left: 1px solid;
+    font-size: 2em;
+    float: left;
+    height: 100%;
+    padding: 0 1em;
+    position: relative;
+    width: 33.33%;
+}
+#plan li:first-of-type {
+    border:none;
+}
+#plan li p {
+    font-size: .5em;
+    padding: 0 2em;
+    position:absolute;
+    bottom: 0;
+    right: 0;
+    text-align: right;  
+    width: 90%;
+}
+.warning {
+    background: #fecb20;
+    color: #492b2d;
+    font-size: 3vw;
+    padding: 2em 1em;
+}
+.warning h3 span {
+    display:block;
+    font-size:2em;
+    letter-spacing: -.05em;
+}
+.warning p {
+    font-size:.5em;
+    margin-top: 5em;
 }
 .clearfix:after {
     clear:both;
