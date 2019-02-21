@@ -142,6 +142,14 @@ ol li p {
     float:left;
     margin-right: 2em;
 }
+.cvsDiv .asterisk {
+    color: rgba(255,255,255,.55);
+    font-size:.75em;
+    position:absolute;
+    bottom: 5em;
+    right: -4.5em;
+    transform: rotate(-90deg);
+}
 .interact {
     clear:both;
     border-left: 1px solid;
@@ -157,8 +165,6 @@ ol li p {
     position:absolute;
     bottom: -2em;
     right: 1em;
-}
-#approach {
 }
 #approach h2 {
     font-size: 2em;
@@ -201,25 +207,26 @@ ol li p {
 .warning {
     background: #fecb20;
     color: #492b2d;
-    font-size: 3vw;
-    padding: 2em 1em;
+    font-size: 2em;
+    padding: 2em 1em 3em;
+    position:relative;
+}
+.warning h3 {
+    font-size:2em;
 }
 .warning h3 span {
-    display:block;
     font-size:2em;
-    letter-spacing: -.05em;
 }
 .warning p {
-    font-size:.5em;
-    margin-top: 5em;
-}
-.cvsDiv .asterisk {
-    color: rgba(255,255,255,.55);
     font-size:.75em;
+    margin-top: 1em;
+}
+.warning .asterisk {
+    font-size: .5em;
     position:absolute;
-    bottom: 5em;
-    right: -4.5em;
-    transform: rotate(-90deg);
+    right: -6.5em;
+    bottom: 8em;
+    transform:rotate(-90deg);
 }
 .asterisk:before {
     content:"\002A";
