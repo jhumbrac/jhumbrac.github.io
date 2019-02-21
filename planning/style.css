@@ -47,12 +47,11 @@ span {
     font-family:"Swiss Outlines", "Swiss Condensed", sans-serif;
 }
 ul {
+    margin-top: .25em;
     padding-left: 1em;
 }
 ol {
-    border-bottom: 1px solid;
     list-style-position: inside;
-    padding-bottom: 2em;
     height: 18em;
 }
 ol li {
@@ -73,8 +72,8 @@ ol li p {
     position:absolute;
     bottom: 1em;
     right: 0;
-    text-align: right;
-    width: 90%;
+    /* text-align: right; */
+    width: 75%;
 }
 #intro {
     background:#f63b34;
@@ -100,7 +99,6 @@ ol li p {
 }
 #purpose h3 {
     font-size:2em;
-    margin-bottom:.25em;
 }
 #purpose > div {
     float:left;
@@ -149,7 +147,7 @@ ol li p {
     border-left: 1px solid;
     margin:0 2em;
     min-height: 10em;
-    padding: .5em 0 .5em 1em;
+    padding: 1.5em 0 .5em 1em;
 }
 .interact p {
     margin-top: 1em;
@@ -175,12 +173,15 @@ ol li p {
     font-family: "Swiss Condensed", sans-serif;
     font-size: 2em;
 }
-#plan h2 {
-    background:#492b2d;
+#plan {
+    background: #492b2d;
     color: #fecb20;
+    padding: 7.5em 0;
+}
+#plan h2 {
     font-size: 12vw;
     line-height: .8;
-    padding: 1em .25em;
+    margin: 0 2rem .75em 2rem;
 }
 #plan h2 span {
     display:block;
