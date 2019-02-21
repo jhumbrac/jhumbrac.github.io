@@ -40,11 +40,41 @@ h1 {
     line-height: .8;
     letter-spacing: -6px;
 }
+h4 {
+    font-size:1.25em;
+}
 span {
     font-family:"Swiss Outlines", "Swiss Condensed", sans-serif;
 }
 ul {
-    padding-left:1.25em;
+    padding-left: 1em;
+}
+ol {
+    border-bottom: 1px solid;
+    list-style-position: inside;
+    padding-bottom: 2em;
+    height: 18em;
+}
+ol li {
+    border-left: 1px solid;
+    font-size: 2em;
+    float: left;
+    height: 100%;
+    padding: 0 1em;
+    position: relative;
+    width: 33.33%;
+}
+ol li:first-of-type {
+    border:none;
+}
+ol li p {
+    font-size: 1rem;
+    padding: 0 2em;
+    position:absolute;
+    bottom: 1em;
+    right: 0;
+    text-align: right;
+    width: 90%;
 }
 #intro {
     background:#f63b34;
@@ -59,7 +89,8 @@ ul {
     font-size: 1.5em;
 }
 #purpose {
-    padding:0;
+    padding: 0 0 10em;
+    background: #84d0c4;
 }
 #purpose h2 {
     background:#84d0c4;
@@ -67,9 +98,13 @@ ul {
     padding: 1em;
     text-align:right;
 }
+#purpose h3 {
+    font-size:2em;
+    margin-bottom:.25em;
+}
 #purpose > div {
     float:left;
-    padding: 5em 2em;
+    padding: 0 2em;
     width:50%;
 }
 #purpose div div {
@@ -78,9 +113,14 @@ ul {
 #contentVsStyle {
     background: rgba(0, 0, 0, .85);
     color: #fff;
+    padding: 10em 0;
 }
 #contentVsStyle h2 {
-    font-size:2em;
+    font-size: 2em;
+}
+#contentVsStyle span {
+    display:block;
+    font-size: 1.5em;
 }
 #contentVsStyle > h2 {
     margin-left:1em;
@@ -89,17 +129,16 @@ ul {
     overflow:hidden;
     font-size: .75em;
 }
-.cvsDiv {
-    margin: 1em 2em;
+#contentVsStyle > div {
+    position: relative;
+    width: calc(50% - 4em);
 }
 .cvsDiv {
     border-top:1px solid;
     float:left;
-    margin-bottom: 5em;
+    margin: 1em 2em 5em;
     min-height: 15em;
     padding-top: .5em;
-    position: relative;
-    width: calc(50% - 4em);
 }
 .cvsDiv h3 {
     float:left;
@@ -107,13 +146,34 @@ ul {
 }
 .interact {
     clear:both;
-    margin: 0 2em;
     border-left: 1px solid;
+    margin:0 2em;
+    min-height: 10em;
     padding: .5em 0 .5em 1em;
-    width: 66.66%;
 }
 .interact p {
-    margin:1em 0;
+    margin-top: 1em;
+}
+.interact .asterisk {
+    color: rgba(255,255,255,.55);
+    position:absolute;
+    bottom: -2em;
+    right: 1em;
+}
+#approach {
+}
+#approach h2 {
+    font-size: 2em;
+    margin: 0 0 1em 1em;
+}
+#approach h3 {
+    font-size: 1.25em;
+}
+#approach span {
+    color:#f63b34;
+    display:block;
+    font-family: "Swiss Condensed", sans-serif;
+    font-size: 2em;
 }
 #plan h2 {
     background:#492b2d;
@@ -129,40 +189,14 @@ ul {
 #plan h3 {font-size: 2em;}
 .threeQuestions {
     color:#fff;
-    margin-left:1em;
+    margin-right: .5em;
     text-align:right;
     transform: translateY(-100%);
 }
 #plan h4 {
-    font-size:1em;
+    /* font-size:1em; */
 }
-ol {
-    border-bottom: 1px solid;
-    list-style-position: inside;
-    padding-bottom: 2em;
-    height: 20em;
-}
-ol li {
-    border-left: 1px solid;
-    font-size: 2em;
-    float: left;
-    height: 100%;
-    padding: 0 1em;
-    position: relative;
-    width: 33.33%;
-}
-ol li:first-of-type {
-    border:none;
-}
-ol li p {
-    font-size: .5em;
-    padding: 0 2em;
-    position:absolute;
-    bottom: 1em;
-    right: 0;
-    text-align: right;
-    width: 90%;
-}
+
 .warning {
     background: #fecb20;
     color: #492b2d;
