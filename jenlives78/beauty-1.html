@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>&hearts; Jen Ives Design & Art Direction</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://use.typekit.net/aun6ona.css">
+	<!--[if lt IE 9]>
+            <script src="bower_components/html5shiv/dist/html5shiv.js"></script>
+        <![endif]-->
+    <!--[if lt IE 9]>
+   <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+</head>
+
+<body class="no-touch">
+	<header class="clearfix">
+		    <div class="black-logo">
+		    	<h1><a href="index.html">Jen Ives</a></h1>
+		    	<p>Design & Art Direction</p>
+            </div>
+            <nav class="black-nav">
+                <label for="toggle"><span class="wide"><span class="plus">+</span>Work</span><span class="mobile"><span class="plus">+</span>Menu</span></label>
+                <input type="checkbox" id="toggle">
+                <div class="navlinks">
+                    <div class="workmenu">
+                        <a href="beauty.html"><span>Beauty</span></a>
+                        <a href="fashion.html"><span>Fashion</span></a>
+                        <a href="kidswear.html"><span>Kidswear</span></a>
+                        <a href="food.html"><span>Food</span></a>
+                        <a href="interiors.html"><span>Interiors</span></a>
+                        <a href="seasonal.html"><span>Seasonal</span></a>
+                    </div>
+                    <a href="About" class="other-links"><span>About</span></a>
+                    <a href="mailto:jenlives78@gmail.com?subject=Website Enquiry" class="other-links" id="email"><span>Email</span></a>
+                </div>
+            </nav>
+	</header>
+
+            <div class="projectContainer">
+      		    <div class="mySlides">
+                    <img src="images/b25.jpg">
+                </div>
+                <div class="mySlides">
+                    <img src="images/b26.jpg">
+                </div>
+                <div class="mySlides">
+                    <img src="images/b27.jpg">
+                </div>
+                <div class="mySlides">
+                    <img src="images/b28.jpg">
+                </div>
+                <div class="mySlides">
+                    <img src="images/b29.jpg">
+                </div>
+                <div class="mySlides">
+                    <img src="images/b30.jpg">
+                </div>
+                <div class="mySlides">
+                    <img src="images/b31.jpg">
+                </div>
+                <div class="mySlides">
+                    <img src="images/b32.jpg">
+                </div>
+            </div>
+
+
+                <div class="controls">
+                <a class="prev" onclick="plusSlides(-1)">Previous</a>
+                <a class="next" onclick="plusSlides(1)">/ Next</a>
+                </div>
+
+                <div class="row">
+                    <div class="column">
+                        <img class="demo cursor" src="images/b25t.jpg"  onclick="currentSlide(1)" alt="Ren Flash Rinse">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="images/b26t.jpg"  onclick="currentSlide(2)" alt="Tangle Teaser">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="images/b27t.jpg"  onclick="currentSlide(3)" alt="Percy & Reed Wonder Cleanse and Nourish">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="images/b28t.jpg"  onclick="currentSlide(4)" alt="Bourjois Volume 1 Seconde Mascara">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="images/b29t.jpg"  onclick="currentSlide(5)" alt="James Read Self Tan">
+                    </div>    
+                    <div class="column">
+                        <img class="demo cursor" src="images/b30t.jpg"  onclick="currentSlide(6)" alt="Stilla Beauty Balm">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="images/b31t.jpg"  onclick="currentSlide(7)" alt="Josh Wood Guardian of Colour Root Consealer Spray">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="images/b32t.jpg"  onclick="currentSlide(8)" alt="Living Proof Blowout">
+                    </div>
+            </div>
+            
+            <hr>
+
+            <section class="project-info clearfix">
+                <div class="bottomSection" id="left">
+                    <h1 class="project-title">Beauty in a Flash</h1>
+                    <p class="team-info"><span class="bold">Marks & Spencer</span> Style & Living Magazine<br>
+                    <span class="bold">Photography</span> Luke Kirwan<br>
+                    <span class="bold">Paper Artist</span> Joy Horscroft, The Makery</p>
+                    <a href="beauty.html" class="back">BACK / <span class="section-link">BEAUTY</span></a>
+                </div> 
+                <div class="bottomSection">
+                    <p class="more">More beauty projects</p>
+                        <div class="thumbnails">
+                            <a href="beauty-2.html" class="more"><img src="images/b3t.jpg"></a>
+                            <a href="beauty-3.html" class="more"><img src="images/b10t.jpg"></a>
+                            <a href="beauty-4.html" class="more"><img src="images/b18t.jpg"></a>
+                        </div>
+                    <a href="beauty.html" class="backBottom">BACK / <span class="section-link">BEAUTY</span></a>
+                </div> 
+            </section>
+<footer>
+	<div>
+		<P id="copyright"><span id="year">&copy;2019</span> Design Jenny Ives </P>
+		<a href="#top" id="top-link"><span>Top</span></a>
+	</div>
+</footer>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+</body>
+</html>

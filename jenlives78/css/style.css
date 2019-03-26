@@ -1,0 +1,1027 @@
+
+@import url("https://use.typekit.net/aun6ona.css");
+
+*{
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+body{
+	font-size:16px;
+	font-family: futura-pt, proxima-nova, sans-serif;
+}
+.clearfix:after{
+	visibility: hidden;
+	height: 0;
+	font-size: 0;
+	content: " ";
+	display: block;
+	clear: both;
+}
+
+/*start of header stying*/
+header{
+	position: relative;
+	width: 100%;
+	z-index: 7;
+}
+.logo, .black-logo {
+	float: left;
+	margin-left: 3em;
+	margin-top: 2em;
+}
+.black-logo {
+	margin-bottom: 1em;
+	font-weight: 700;
+}
+.black-logo > h1 a{
+	color: #222;
+	font-weight: 700;
+}
+.black-logo > p{
+	color: #222;
+}
+h1  {
+	color: #fff;
+	font-family: futura-pt, sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 2.3em;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+}
+h1 > a{
+	text-decoration: none;
+	color: #fff;
+}
+p {
+	color: #fff;
+	font-family: proxima-nova, sans-serif;
+	font-style: normal;
+	font-weight: 100;
+	text-transform: uppercase;
+	font-size: 0.75em;
+	letter-spacing: 0.65em;
+	line-height: 1.5em;
+}
+
+/*start of nav styling*/
+.plus{
+	font-family: futura-pt, sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	}
+	#toggle{
+    display: none;
+	}
+	.mobile{
+	display: none;
+}
+nav {
+	margin-top: 2em;
+	margin-right: 2em;
+    float: right;
+    position:relative;
+}
+label {
+	color: #fff;
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.75em;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.2em;
+    padding: 1em;
+    display: inline-block;
+    cursor: pointer;
+}
+.black-nav label {
+	color: #222;
+}
+.black-nav > .navlinks .other-links {
+	color: #222;
+}
+nav a {
+    color: #fff;
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.75em;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.2em;
+    padding-top: 0.25em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+    display: inline-block;
+}
+/*nav a span {
+    padding-bottom: 8px: 
+}*/
+nav a:hover span{
+    border-bottom: 1px solid;
+    padding-bottom: 3px;   
+}
+.other-links{
+}
+.navlinks{
+    display: inline;
+}
+.workmenu {
+    display: none;
+    position: absolute;
+    background-color: rgba(21,19,24,.9);
+    min-width: 120px;
+	padding: 0.5em;
+    z-index: -1;
+    top:2.2em;
+}
+.workmenu a {
+    float: none;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 1.2em;
+    font-family: proxima-nova, sans-serif;
+    font-weight: 100;
+    font-size: 0.65em;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    text-transform: uppercase;
+    z-index: 1000;
+}
+
+/*sideBar styling*/
+.sideMenu {
+	position:fixed;
+	right:1em;
+	top:50%;
+	transform:translateY(-50%);
+	z-index: 8;
+}
+.sideMenu a {
+	width:15px;
+	height:15px;
+	border: 1px
+	solid #bfbfbf;
+	border-radius: 50%;
+	margin: 8px;
+	display: block;
+}
+.sideMenu a.active {
+	background:#fff; 
+}
+
+/*start of section styling*/
+.homepage section{
+	position: relative;
+	z-index: 0;
+	height: 95vh;
+	min-height: 20em;
+	padding: 2em;
+}
+.view {
+	font-family: proxima-nova, sans-serif;
+	font-style: normal;
+	font-weight: 100;
+	font-size: 0.75em;
+	text-transform: uppercase;
+	text-decoration: none;
+	text-align: center;
+	letter-spacing: 0.2em;
+	color: #bfbfbf;
+	background-color: rgb(21,19,24);
+	display: block;
+	position: absolute;
+	bottom: 0px;
+	left: 50%;
+	transform: translate(-50%, -25%);
+	padding: 10px;
+	width: 170px;
+	margin-left: 0 auto;
+	z-index: 11 ;
+}
+.section-link {
+	color: #fff;
+	font-weight: 400;
+}
+
+section a:hover span{
+	border-bottom: 0.5px solid;
+	padding-bottom: 3px;
+}
+
+#beauty {
+	background: url("../images/beauty-hero.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	z-index: 6;
+}
+#fashion {
+	background: url("../images/fashion-hero.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	z-index: 5;
+}
+#kids {
+	background: url("../images/kids-hero.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	z-index: 4;
+}
+#interiors {
+	background: url("../images/interiors-hero.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	z-index: 3;
+}
+#food {
+	background: url("../images/food-hero.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	z-index: 2;
+}
+#seasonal {
+	background: url("../images/seasonal-hero.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	z-index: 1;
+}
+/*end of section styling*/
+
+/*start of  gallery styling*/
+.gallery-wrapper{
+   	margin-left: 3em;
+   	margin-right: 3em;
+   	padding-top: 1em;
+/*    overflow: hidden;*/
+}
+
+.box {
+   float: left;
+   position: relative;
+   width: 16.6667%;
+   padding-bottom: 16.6667%;
+}
+.boxInner {
+   position: absolute;
+   left: 3px;
+   right: 3px;
+   top: 3px;
+   bottom: 3px;
+/*   overflow: hidden;*/
+}
+.boxInner img {
+   width: 100%;
+}
+.boxInner .titleBox {
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   margin-bottom: 0px;
+   background-color: rgba(21,19,24,.8);
+   color: #bfbfbf;
+   /*my type stying*/
+   padding: 10px;
+   text-align: center;
+   font-family: proxima-nova, sans-serif;
+   font-style: normal;
+   font-weight: 100;
+   font-size: 0.75em;
+   text-transform: uppercase;
+   text-decoration: none;
+   letter-spacing: 0.2em;
+   line-height: 2em;
+}
+.story {
+   color: #fff;
+   font-weight: 400;
+}
+.story:hover {
+	border-bottom: 0.5px solid;
+	padding-bottom: 3px;   
+}
+.titleBox:hover {
+background-color: rgba(21,19,24,.5);
+}
+.herostory:hover {
+	opacity: 0.5;
+	cursor: pointer;
+}
+
+body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleBox {
+	margin-bottom: 0;
+}
+
+/*start of project page styling*/
+.projectContainer {
+	/*max-width: 600px;*/
+	margin: 0 auto;
+	padding-bottom: 0.4em;
+}
+.mySlides img {
+	height:600px;
+	display:block;
+	margin:auto;
+}
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+/*controler*/
+.controls{
+  text-align: center;
+  padding-bottom: 0.5em;
+  margin: 0 auto;
+}
+
+.prev{
+	color: #222;
+	font-family: proxima-nova, sans-serif;
+	font-weight: 600;
+	font-size: 0.6em;
+	letter-spacing: 0.25em;
+	text-transform: uppercase;
+	text-align: center;
+	cursor: pointer;
+}
+
+.next{
+	color: #222;
+	font-family: proxima-nova, sans-serif;
+	font-weight: 600;
+	font-size: 0.6em;
+	letter-spacing: 0.25em;
+	text-transform: uppercase;
+	text-align: center;
+	cursor: pointer;
+}
+
+.row{
+	padding-bottom: 1.5em;
+	width: 600px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* 8 columns thumbnails side by side */
+.column {
+  width:12.5%;
+}
+.column img {
+	width:100%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.4;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+hr{
+	margin-left: 3em;
+	margin-right: 3em;
+	background-color: #ccc;
+	border: 0 none;
+	height: 1px;
+}
+
+/*start of bottom section styling*/
+#left{
+	margin-left: 1em;
+}
+
+.project-info{
+	padding: 1.5em 2em 0em 2em;
+}
+.bottomSection{
+	width: 32.7%;
+	float: left;
+}
+
+.project-title{
+	color: #222;
+	font-family: futura-pt, sans-serif;
+	font-weight: 700;
+	font-size: .85em;
+	letter-spacing: 0.25em;
+}
+
+.team-info{
+	margin-top: 0.8em;
+	padding-bottom: 2.2em;
+	color: #222;
+	font-family: proxima-nova, sans-serif;
+	font-weight: 100;
+	font-size: .6em;
+	letter-spacing: 0.25em;
+}
+
+.bold{
+	font-weight: 600;
+}
+
+.more{
+	color: #222;
+	font-family: proxima-nova, sans-serif;
+	font-weight: 600;
+	font-size: .6em;
+	letter-spacing: 0.25em;
+	text-align: center;
+	padding-bottom: 1em;
+}
+.thumbnails{
+	text-align: center;
+	padding: 0;
+}
+.thumbnails img{
+	width: 100px;
+}
+.thumbnails img:hover {
+	opacity: 0.4;
+}
+.back {
+	font-family: proxima-nova, sans-serif;
+	font-style: normal;
+	font-weight: 100;
+	font-size: 0.75em;
+	text-transform: uppercase;
+	text-decoration: none;
+	text-align: center;
+	letter-spacing: 0.2em;
+	color: #bfbfbf;
+	background-color: rgb(21,19,24);
+	display: block;
+	padding: 10px;
+	width: 170px;
+}
+
+.back-link a:hover span{
+	border-bottom: 0.5px solid;	
+	padding-bottom: 3px;   
+}
+.backBottom {
+	font-family: proxima-nova, sans-serif;
+	font-style: normal;
+	font-weight: 100;
+	font-size: 0.75em;
+	text-transform: uppercase;
+	text-decoration: none;
+	text-align: center;
+	letter-spacing: 0.2em;
+	color: #bfbfbf;
+	background-color: rgb(21,19,24);
+	display: block;
+	padding: 10px;
+	width: 170px;
+	display: none;
+}
+
+/*start of footer styling*/
+footer {
+	margin-left: 3em;
+	margin-bottom: 1em;
+	height: 3em;
+	width: 100%;
+	background-color: #fff;
+	position: relative;
+	z-index: 10;
+}
+footer a span {
+	padding-bottom: 8px; 
+}
+footer a:hover span{
+	border-bottom: 0.5px solid;	
+	padding-bottom: 3px;
+}
+#copyright {
+	color: #222;
+	font-family: proxima-nova, sans-serif;
+	font-style: normal;
+	font-weight: 100;
+	font-size: .6em;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	display: inline-block;
+	transform: translateY(100%);	
+}
+#year {
+	color: #222;
+	font-weight: 400;
+}
+#top-link {
+	color: #222;
+	font-family: proxima-nova, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 0.75em;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 0.2em;
+	text-align: center;
+	padding: 1em;
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 7.5em;
+}
+/*end of footer styling*/
+
+/*start of media queries*/
+
+@media only screen and (min-width:1601px) {
+#beauty {
+	background: url("../images/beauty-hero.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	z-index: 6;
+	}
+#fashion {
+	background: url("../images/fashion-hero.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	z-index: 5;
+	}
+#kids {
+	background: url("../images/kids-hero.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	z-index: 4;
+	}
+#interiors {
+	background: url("../images/interiors-hero.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	z-index: 3;
+	}
+#food {
+	background: url("../images/food-hero.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	z-index: 2;
+	}
+#seasonal {
+	background: url("../images/seasonal-hero.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	z-index: 1;
+	}
+}
+
+
+@media only screen and (max-width:1600px) and (min-width:1201px) {
+#beauty {
+	background: url("../images/beauty-2.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	z-index: 6;
+	}
+#fashion {
+	background: url("../images/fashion-2.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	z-index: 5;
+	}
+#kids {
+	background: url("../images/kids-2.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	z-index: 4;
+	}
+#interiors {
+	background: url("../images/interiors-2.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	z-index: 3;
+	}
+#food {
+	background: url("../images/food-2.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	z-index: 2;
+	}
+#seasonal {
+	background: url("../images/seasonal-2.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	z-index: 1;
+	}
+}
+
+
+@media only screen and (max-width:1488px) and (min-width: 1291px) {
+	.boxInner .titleBox {
+	font-size: 0.6em;
+	}
+}
+
+@media only screen and (max-width:1400px) {
+.mySlides img {
+	height:500px;
+	}
+.row {
+	max-width: 500px;
+	}
+}
+
+@media only screen and (min-width:1291px) {
+/*+Work menu*/
+	label:hover ~ .navlinks > .workmenu, .workmenu:hover {
+		display:block;
+	}
+}
+
+ /* Medium desktop: +Menu and 4 tiles */
+@media only screen and (max-width : 1290px) {
+	.box {
+     width: 25%;
+     padding-bottom: 25%;
+ 	}
+  	.other-links{
+ 	display: none;
+ 	}
+	nav { width: 120px; }
+	#toggle:checked + .navlinks, #toggle:checked + .navlinks .workmenu, #toggle:checked + .navlinks .other-links{
+    display: block;
+ 	}
+ 	.workmenu{
+    position:initial;
+	}
+ 	.navlinks{
+ 	position: absolute;
+ 	left: 0;
+ 	top: 2em;
+ 	}
+ 	.other-links {
+ 	background-color: rgba(21,19,24,.9);
+ 	}
+ 	#email{
+ 	padding-bottom: 2em;
+ 	}
+ 	.mobile{
+ 	display: block;
+ 	}
+ 	.wide{
+ 	display: none;
+ 	}
+	.black-nav > .navlinks .other-links {
+	color: #fff;
+	}
+}
+
+/*centering of nav*/
+@media only screen and (max-width: 1118px) {
+	.homepage section{
+	height: 75vh;
+	}
+	nav { width: 120px; }
+	#toggle:checked + .navlinks, #toggle:checked + .navlinks .workmenu, #toggle:checked + .navlinks .other-links{
+    display: block;
+    position:initial;
+ 	}
+	.black-logo, .logo {
+	float: none;
+	margin: 0 auto;
+	display: block;
+	padding-bottom: 0.5em;
+	margin-top: 1em;
+	}
+	h1 {
+	color: #222;
+	text-align: center;
+	}
+	h1 > a{
+	color: #222;
+	text-align: center;
+	}	
+	p {
+	color: #222;
+	text-align: center;
+	}
+	nav{
+	float: none;
+	text-align: center;
+	margin: 0 auto;
+	display: block;
+	}
+	.mobile{
+	color: #222;
+	padding-bottom: 0.7em;
+	}
+	label{
+	font-size: 0.8em;
+	}
+	.workmenu{
+	padding-top: 0px;
+	background: none;
+	}
+	.workmenu a{
+	text-align: center;
+	color: #222;
+	padding: 0.8em;
+	font-size: 0.8em;
+ 	}
+ 	.other-links{
+ 	background: none;
+	color: #222;
+	font-size: 0.8em;
+	padding: 0.8em;
+	}
+	#email{
+	padding-bottom: 3em;
+	}
+	.black-nav > .navlinks .other-links {
+	color: #222;
+	}
+	.project-info {
+		text-align: center;
+		width: 100%;
+		margin: 0 auto;
+	}
+	.bottomSection{
+		margin: 0 auto;
+		width: 100%;
+	}
+	.back{
+		display: none;
+	}
+	#left{
+		margin: auto 0;
+	}
+	.bottomSection img{
+		opacity: 1;
+	}
+	.backBottom{
+		display: inline-block;
+		text-align: center;
+		margin: auto 0;
+		margin-top: 20px;
+	}
+}
+
+/* Small desktop / ipad view: 3 tiles */
+@media only screen and (max-width:1030px) {
+   .box {
+      width: 33.3%;
+      padding-bottom: 33.3%;
+   }
+}
+
+@media only screen and (max-width: 1000px) {
+body{
+		font-size: 15px;
+	}
+}
+
+@media only screen and (max-width:1200px) and (min-width:701px) {
+	#beauty {
+	background: url("../images/beauty-3.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	z-index: 6;
+	}
+	#fashion {
+	background: url("../images/fashion-3.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	z-index: 5;
+	}
+	#kids {
+	background: url("../images/kids-3.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	z-index: 4;
+	}
+	#interiors {
+	background: url("../images/interiors-3.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	z-index: 3;
+	}
+	#food {
+	background: url("../images/food-3.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	z-index: 2;
+	}
+	#seasonal {
+	background: url("../images/seasonal-3.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	z-index: 1;
+	}
+}
+
+
+/* Tablet view: 2 tiles */
+@media only screen and (max-width: 756px) {
+	.box {
+    width: 50%;
+    padding-bottom: 50%;
+   }
+   .beauty-wrapper{
+   	margin-right: 1.5em;
+   	margin-left: 1.5em;
+   }
+}
+
+@media only screen and (max-width:700px) and (min-width:321px) {
+	.homepage section{
+		height: 100vw;
+		min-height: initial;
+	}
+	#beauty {
+	background: url("../images/beauty-4.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	z-index: 6;
+	}
+	#fashion {
+	background: url("../images/fashion-4.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	z-index: 5;
+	}
+	#kids {
+	background: url("../images/kids-4.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	z-index: 4;
+	}
+	#interiors {
+	background: url("../images/interiors-4.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	z-index: 3;
+	}
+	#food {
+	background: url("../images/food-4.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	z-index: 2;
+	}
+	#seasonal {
+	background: url("../images/seasonal-4.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	z-index: 1;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.row{
+	display: none;
+	}
+	.row12{
+	display: none;
+	}
+}
+
+
+@media only screen and (max-width:538px) and (min-width: 487px) {
+	.boxInner .titleBox {
+	font-size: 0.65em;
+	}
+}
+
+/* Smartphone view: 1 tile */
+@media only screen and (max-width: 487px) {
+	.gallery-wrapper{
+   	width: 85%;
+   	padding-top: 0;
+   	margin: 0 auto;
+/*    overflow: hidden;*/
+}
+	.boxInner .titleBox {
+	font-size: 0.75em;
+	}
+   .box {
+      width: 100%;
+      padding-bottom: 100%;
+   }
+   .nav {
+      display: none;
+   }
+
+hr{
+	margin-left: 2em;
+	margin-right: 2em;
+}
+   #top-link{
+   	display: block;
+	text-align: center;
+	right: 0em;
+	left: 0em;
+   }
+   #copyright{
+   	text-align: center;
+   	display: none;
+   }
+   footer{
+   	margin: auto 0;
+   }
+}
+
+@media only screen and (max-width: 550px) {
+	.mySlides img {
+	width:85%;
+	height: initial;
+	}
+}
+
+@media only screen and (max-width:320px) {
+	#beauty {
+	background: url("../images/beauty-5.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	z-index: 6;
+	}
+	#fashion {
+	background: url("../images/fashion-5.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	z-index: 5;
+	}
+	#kids {
+	background: url("../images/kids-5.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	z-index: 4;
+	}
+	#interiors {
+	background: url("../images/interiors-5.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	z-index: 3;
+	}
+	#food {
+	background: url("../images/food-5.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	z-index: 2;
+	}
+	#seasonal {
+	background: url("../images/seasonal-5.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	z-index: 1;
+	}
+}
+
+
