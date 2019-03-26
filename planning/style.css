@@ -1,0 +1,238 @@
+/* Loading in the fonts */
+@font-face {
+    font-family: "Swiss Med";
+    src: url("assets/SwissBTMed.woff") format("woff");
+}
+@font-face {
+    font-family: "Swiss Condensed";
+    src: url("assets/SwissBTBolCon.woff") format("woff");
+}
+@font-face {
+    font-family: "Swiss Outlines";
+    src: url("assets/SwissBTBolConOut.woff") format("woff");
+}
+/* Simple css reset to remove browser default margin and padding values */
+* { margin:0; padding:0; box-sizing:border-box; }
+body {
+    color:rgba(0,0,0,.85);
+    font-size: 20px;
+    font-family:"Swiss Med", sans-serif;
+    line-height:1.3;
+}
+section {
+    padding:5em 0;
+}
+nav {
+    float:right;
+}
+nav a {
+    color:#fff;
+    display:inline-block;
+    padding:1em;
+    text-decoration:none;
+}
+h1, h2, h3, h4, h5 {
+    font-family:"Swiss Condensed", sans-serif;
+    line-height:1;
+}
+h1 {
+    font-size: 18vw;
+    line-height: .8;
+    letter-spacing: -6px;
+}
+h4 {
+    font-size:1.25em;
+}
+span {
+    font-family:"Swiss Outlines", "Swiss Condensed", sans-serif;
+}
+ul {
+    margin-top: .25em;
+    padding-left: 1em;
+}
+ol {
+    list-style-position: inside;
+    height: 18em;
+}
+ol li {
+    border-left: 1px solid;
+    font-size: 2em;
+    float: left;
+    height: 100%;
+    padding: 0 1em;
+    position: relative;
+    width: 33.33%;
+}
+ol li:first-of-type {
+    border:none;
+}
+ol li p {
+    font-size: 1rem;
+    padding: 0 2em;
+    position:absolute;
+    bottom: 1em;
+    right: 0;
+    /* text-align: right; */
+    width: 75%;
+}
+#intro {
+    background:#f63b34;
+    color:#fff;
+    padding: 5em 1em 0;
+}
+#intro p {
+    border-left:.25em dotted;
+    margin: 0em 0 0 1em;
+    padding: 10em 0 0 .5em;
+    transform: translateY(15%);
+    font-size: 1.5em;
+}
+#purpose {
+    padding: 0 0 10em;
+    background: #84d0c4;
+}
+#purpose h2 {
+    background:#84d0c4;
+    font-size: 9vw;
+    padding: 1em;
+    text-align:right;
+}
+#purpose h3 {
+    font-size:2em;
+}
+#purpose > div {
+    float:left;
+    padding: 0 2em;
+    width:50%;
+}
+#purpose div div {
+    margin-top:2em;
+}
+#contentVsStyle {
+    background: rgba(0, 0, 0, .85);
+    color: #fff;
+    padding: 10em 0;
+}
+#contentVsStyle h2 {
+    font-size: 2em;
+}
+#contentVsStyle span {
+    display:block;
+    font-size: 1.5em;
+}
+#contentVsStyle > h2 {
+    margin-left:1em;
+}
+#contentVsStyle p {
+    overflow:hidden;
+    font-size: .75em;
+}
+#contentVsStyle > div {
+    position: relative;
+    width: calc(50% - 4em);
+}
+.cvsDiv {
+    border-top:1px solid;
+    float:left;
+    margin: 1em 2em 5em;
+    min-height: 15em;
+    padding-top: .5em;
+}
+.cvsDiv h3 {
+    float:left;
+    margin-right: 2em;
+}
+.cvsDiv .asterisk {
+    color: rgba(255,255,255,.55);
+    font-size:.75em;
+    position:absolute;
+    bottom: 5em;
+    right: -4.5em;
+    transform: rotate(-90deg);
+}
+.interact {
+    clear:both;
+    border-left: 1px solid;
+    margin:0 2em;
+    min-height: 10em;
+    padding: 1.5em 0 .5em 1em;
+}
+.interact p {
+    margin-top: 1em;
+}
+.interact .asterisk {
+    color: rgba(255,255,255,.55);
+    position:absolute;
+    bottom: -2em;
+    right: 1em;
+}
+#approach h2 {
+    font-size: 2em;
+    margin: 0 0 1em 1em;
+}
+#approach h3 {
+    font-size: 1.25em;
+}
+#approach span {
+    color:#f63b34;
+    display:block;
+    font-family: "Swiss Condensed", sans-serif;
+    font-size: 2em;
+}
+#plan {
+    background: #492b2d;
+    color: #fecb20;
+    padding: 7.5em 0;
+}
+#plan h2 {
+    font-size: 12vw;
+    line-height: .8;
+    margin: 0 2rem .75em 2rem;
+}
+#plan h2 span {
+    display:block;
+    letter-spacing: -.05em;
+}
+#plan h3 {font-size: 2em;}
+.threeQuestions {
+    color:#fff;
+    margin-right: .5em;
+    text-align:right;
+    transform: translateY(-100%);
+}
+#plan h4 {
+    /* font-size:1em; */
+}
+
+.warning {
+    background: #fecb20;
+    color: #492b2d;
+    font-size: 2em;
+    padding: 2em 1em 3em;
+    position:relative;
+}
+.warning h3 {
+    font-size:2em;
+}
+.warning h3 span {
+    font-size:2em;
+}
+.warning p {
+    font-size:.75em;
+    margin-top: 1em;
+}
+.warning .asterisk {
+    font-size: .5em;
+    position:absolute;
+    right: -6.5em;
+    bottom: 8em;
+    transform:rotate(-90deg);
+}
+.asterisk:before {
+    content:"\002A";
+}
+.clearfix:after {
+    clear:both;
+    content:"";
+    display:block;
+}
