@@ -35,7 +35,7 @@
 	</header>
 
 	<div class="sideMenu">
-	<a href="beauty.html"></a>
+	<a href="beauty.html" class="active"></a>
 	<a href="fashion.html"></a>
 	<a href="kidswear.html"></a>
 	<a href="food.html"></a>
@@ -75,7 +75,26 @@
 	</div>
 </footer>
 <script>
+	// Fetch the element
+	//var el = document.getElementById("seasonal");  
+	var el = document.querySelectorAll("#beauty, #fashion, #kids, #interiors, #food, #seasonal");
+	var elLength = el.length;
+	for (var i = 0; i < elLength; i++) {
+        //Do something
+		var distanceFromTop = el[i].getBoundingClientRect().top;
+		
+		if ( window.pageYOffset > distanceFromTop ) {
+			console.log(distanceFromTop);
+			el.classList.addClass('active');
+		} else {
+		 	console.log('nothing'); 
+		}
+    }
+	// Use the 'top' property of 'getBoundingClientRect()' to get the distance from top
 	
+
+	
+
 </script>
 </body>
 </html>
