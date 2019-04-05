@@ -5,6 +5,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" href="https://use.typekit.net/aun6ona.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 	<!--[if lt IE 9]>
             <script src="bower_components/html5shiv/dist/html5shiv.js"></script>
         <![endif]-->
@@ -75,26 +77,15 @@
 	</div>
 </footer>
 <script>
-	// Fetch the element
-	//var el = document.getElementById("seasonal");  
-	var el = document.querySelectorAll("#beauty, #fashion, #kids, #interiors, #food, #seasonal");
-	var elLength = el.length;
-	for (var i = 0; i < elLength; i++) {
-        //Do something
-		var distanceFromTop = el[i].getBoundingClientRect().top;
-		
-		if ( window.pageYOffset > distanceFromTop ) {
-			console.log(distanceFromTop);
-			el.classList.addClass('active');
-		} else {
-		 	console.log('nothing'); 
-		}
-    }
-	// Use the 'top' property of 'getBoundingClientRect()' to get the distance from top
-	
-
-	
-
+	$(window).scroll(function() {
+		var scrollDistance = $(window).scrollTop() + 100;
+		$('section').each(function(i) {
+				if ($(this).position().top <= scrollDistance) {
+						$('.sideMenu a.active').removeClass('active');
+						$('.sideMenu a').eq(i).addClass('active');
+				}
+		});
+	}).scroll();
 </script>
 </body>
 </html>
