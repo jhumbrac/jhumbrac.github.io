@@ -161,16 +161,26 @@ nav a:hover span{
 	transform:translateY(-50%);
 	z-index: 8;
 }
-.sideMenu a {
+.sideMenu a{
+	color:#fff0;
+	display:block;
+	text-align:right;
+	text-decoration:none;
+}
+.sideMenu a.active, .sideMenu a:hover {
+	color:#fff;
+}
+.sideMenu a:after {
+	content:"";
 	width:15px;
 	height:15px;
-	border: 1px
-	solid #bfbfbf;
+	border: 1px	solid #bfbfbf;
 	border-radius: 50%;
 	margin: 8px;
-	display: block;
+	display: inline-block;
+	vertical-align: middle;
 }
-.sideMenu a.active {
+.sideMenu a.active:after {
 	background:#fff; 
 }
 
@@ -504,7 +514,7 @@ hr{
 
 /*start of footer styling*/
 footer {
-	margin-left: 3em;
+	padding-left: 3em;
 	margin-bottom: 1em;
 	height: 3em;
 	width: 100%;
