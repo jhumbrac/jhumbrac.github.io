@@ -1,0 +1,159 @@
+<!doctype html>
+<html>
+<head>
+    <title>Geisenger Mock Results page</title>
+    <link rel="stylesheet" type="text/css" href="mock.css">
+    <script src="assets/jquery-3.2.1.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <header>
+        <nav>
+            <div>
+                <a href="#">home</a>
+                <a href="#">patient care</a>
+                <a href="#">health plan</a>
+                <a href="#">research</a>
+                <a href="#">education</a>
+                <a href="#" class="right cta">account</a>
+                <a href="#" class="right">careers</a>
+            </div>
+        </nav>
+        <div>
+            <img src="assets/logo.png" alt="Geisenger logo" class="logo">
+            <img src="assets/caring.svg" alt="Caring logo" class="caring">
+        </div>
+    </header>
+    <main id="results">
+        <h1>Results</h1>
+        <div class="mobileWrap">
+            <p class="instructions">Scroll left and right to compare plans</p>
+            <section>
+                <div id="key">
+                    <h2></h2>
+                    <p class="values"><span>Monthly premium</span></p>
+                    <p class="values"><span>Spousal surcharge</span></p>
+                    <p class="values"><span>Total monthly premium</span></p>
+
+                    <h3 class="values"><span>Your selected scenarios</span></h3>
+                    <p class="values"><span>Outpatient surgery</span></p>
+
+                    <h4 class="values"><span>Your total out of pocket costs</span></h4>
+
+                    <a href="https://www.geisinger.org/health-plan/providersearch/pgtg/geisinger-health-system-employee-plan" class="cta">Search our provider directory to find out your provider's category <span>&gt;</span></a> <!-- need the svg geisinger uses for this -->
+                </div>
+
+            </section>
+            <div class="slider-wrap">
+                <div class="slider" id="slider">
+                    <div class="holder clearfix">
+                        <section class="columns">
+                            <div id="t1">
+                                <h2><span>Category 1:</span><br>Geisinger Providers</h2>
+                                <p class="values"><span>$254.40</span></p>
+                                <p class="values"><span>$0.00</span></p>
+                                <p class="values"><span>$254.40</span></p>
+                                <h3 class="values"></h3>
+                                <p class="values"><span>$595.00</span></p>
+                                <h4 class="values"><span>$595.00</span></h4>
+                            </div>
+                            <h5 class="accordion"><span>+</span> Click for a cost breakdown</h5>
+                            <div class="moreInfo">
+                                <h3 class="values"><span>Acute care visit: $5</span></h3>
+                                <p class="values"><span>Copay: $5</span></p>
+
+                                <h3 class="values"><span>3 specialists visits: $90</span></h3>
+                                <p class="values"><span>Copays: 3 x $30 = $90</span></p>
+
+                                <h3 class="values"><span>Outpatient surgery: $500</span></h3>
+                                
+                                <p class="values"><span>Hospital/facility charges (up to deductible): $500</span></p>
+
+                                <h4 class="values"><span>Total: $595</span></h4>
+                            </div>
+                        </section>
+                        <section class="columns">
+                            <div id="t2">
+                                <h2><span>Category 2:</span><br>Geisinger partner providers</h2>
+                                <p class="values"><span>$254.40</span></p>
+                                <p class="values"><span>$0.00</span></p>
+                                <p class="values"><span>$254.40</span></p>
+                                <h3 class="values"></h3>
+                                <p class="values"><span>$1,120.00</span></p>
+                                <h4 class="values"><span>$1,120.00</span></h4>
+                            </div>
+                            <h5 class="accordion"><span>+</span> Click for a cost breakdown</h5>
+                            <div class="moreInfo">
+                                <h3 class="values"><span>Acute care visit: $5</span></h3>
+                                <p class="values"><span>Copay: $5</span></p>
+
+                                <h3 class="values"><span>3 specialists visits: $90</span></h3>
+                                <p class="values"><span>Copays: 3 x $30 = $90</span></p>
+
+                                <h3 class="values"><span>Outpatient surgery: $500</span></h3>
+                                
+                                <p class="values"><span>Hospital/facility charges (up to deductible): $500</span></p>
+
+                                <h4 class="values"><span>Total: $595</span></h4>
+                            </div>
+                        </section>
+                        <section class="columns">
+                            <div id="t3">
+                                <h2><span>Category 3:</span><br>Other participating providers</h2>
+                                <p class="values"><span>$254.40</span></p>
+                                <p class="values"><span>$0.00</span></p>
+                                <p class="values"><span>$254.40</span></p>
+                                <h3 class="values"></h3>
+                                <p class="values"><span>$2,320.00</span></p>
+                                <h4 class="values"><span>$2,320.00</span></h4>
+                            </div>
+                            <h5 class="accordion"><span>+</span> Click for a cost breakdown</h5>
+                            <div class="moreInfo">
+                                <h3 class="values"><span>Acute care visit: $5</span></h3>
+                                <p class="values"><span>Copay: $5</span></p>
+
+                                <h3 class="values"><span>3 specialists visits: $90</span></h3>
+                                <p class="values"><span>Copays: 3 x $30 = $90</span></p>
+
+                                <h3 class="values"><span>Outpatient surgery: $500</span></h3>
+                                
+                                <p class="values"><span>Hospital/facility charges (up to deductible): $500</span></p>
+
+                                <h4 class="values"><span>Total: $595</span></h4>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+    <script type="text/javascript">
+		jQuery(function($){
+			$( '.accordion' ).click(function(){
+				$(this).toggleClass('active');
+			})
+		})
+	</script>
+    
+    <!-- carousel -->
+
+<!--        <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+
+            for (i = 0; i < acc.length; i++) {
+              acc[i].onclick = function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight){
+                  panel.style.maxHeight = null;
+                } else {
+                  panel.style.maxHeight = panel.scrollHeight + "px";
+                } 
+              }
+            }
+        </script> -->
+</body>
+</html>
