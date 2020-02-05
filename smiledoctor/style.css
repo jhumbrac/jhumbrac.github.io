@@ -1,0 +1,148 @@
+* { margin:0; padding:0; box-sizing: border-box;}
+body {
+    color:rgba(0,0,0,.85);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:20px;
+    line-height: 1.3;
+}
+section {
+    padding: 5em 0;
+}
+footer {
+    background:#333;
+    height:20em;
+}
+input {
+    font:inherit;
+}
+textarea {
+    height:20em;
+}
+header {
+    float:left;
+    width:100%;
+}
+header div {
+    background:#25c347;
+    color: #fff;
+    padding: 0 1em;
+    text-align:right;
+}
+header div p {
+    float:left;
+}
+header div a {
+    color:inherit;
+    display:inline-block;
+    padding:.5em 1em;
+}
+header img {margin-top:1em;display: block; margin-left:1em;}
+header form { float:right; margin:1em 1em 0 0;}
+nav { float:left; }
+nav a {
+    color:inherit;
+    display:inline-block;
+    padding:1em;
+    text-decoration:none;
+}
+#intro {
+    background: url(img/jay.png);
+    background-size: 60%;
+    background-repeat:no-repeat;
+    background-position:bottom right;
+    height:100vh;
+    padding: 15em 0 0 5em;
+}
+#intro div {
+    /* color:#fff; */
+    width:50%;
+}
+#intro h1 {
+    margin-bottom:.25em;
+    font-size: 5em;
+    line-height: 1;
+}
+.cta {
+    color:#fff;
+    background:#117ac1; 
+    display:inline-block;
+    margin-top:1em;
+    padding:1em 2em;
+    text-decoration:none;
+}
+#friendly {
+    background:#117ac1;
+    color:#fff;
+    padding:5em;
+}
+#what-to-expect {text-align: center;padding: 10em 0;background: url(https://image.shutterstock.com/image-vector/dental-office-concept-flat-style-600w-582471940.jpg) no-repeat;background-size: cover;}
+#what-to-expect p {
+    display:inline-block;
+    padding: 3.5em 4em;
+    background:#25c347;
+    color:#fff;
+    border-radius:50%;
+    margin: 2em;
+}
+#smiles {
+    width:1200px;
+    margin:auto;
+}
+.review {
+    background:#117ac1;
+    color:#fff;
+    float:left;
+    margin:.5%;
+    padding:4em;
+    width:49%;
+}
+#free-consultation {
+}
+#free-consultation > * {
+    width:50%;
+    float:left;
+}
+#free-consultation > div {
+    padding: 2em;
+    position: sticky;
+    top: 0;
+}
+#consultationForm {
+    background:purple;
+    color: #fff;
+    padding:2em;
+}
+#consultationForm > * {
+    display:block;
+    width:100%;
+}
+#consultationForm label {
+}
+#consultationForm input {
+    margin-bottom: 2em;
+    padding: .5em 1em;
+}
+#consultationForm textarea {
+    margin-bottom:2em;
+}
+#consultationForm input[type="submit"]{
+    background: white;
+    border:none;
+    color: purple;
+    outline:none;
+    padding:1em 2em;
+}
+#locations { 
+    padding: 5em 0 0;
+}
+#financing {
+    background:#117ac1;
+    color:#fff;
+    padding:5em;
+    text-align: center;
+}
+.clearfix:after { 
+    display:block;
+    clear:both;
+    content:"";
+}
