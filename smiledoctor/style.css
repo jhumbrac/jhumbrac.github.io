@@ -85,6 +85,9 @@ h3 .cta {
     max-width: 30em;
     margin:auto;
 }
+#friendly h3 {
+    margin-top:1em;
+}
 #what-to-expect {text-align: center;padding: 15em 0 1em;background: url(img/waitingroom.jpg) no-repeat, #000;background-size: cover;background-position:bottom center;}
 #what-to-expect span {
     background: rgba(0,0,0,.5);
