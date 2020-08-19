@@ -102,16 +102,13 @@ h3 .cta {
     margin: 2em;
 }
 #smiles {
-    width:1200px;
+    max-width:60em;
     margin:auto;
 }
 .review {
-    background:#117ac1;
-    color:#fff;
     float:left;
-    margin:.5%;
-    padding:4em;
-    width:49%;
+    padding:4em 2em;
+    width:50%;
 }
 #free-consultation {
 }
