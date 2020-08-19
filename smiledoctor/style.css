@@ -85,7 +85,7 @@ h3 .cta {
     max-width: 30em;
     margin:auto;
 }
-#what-to-expect {text-align: center;padding: 10em 0;background: url(https://image.shutterstock.com/image-vector/dental-office-concept-flat-style-600w-582471940.jpg) no-repeat;background-size: cover;}
+#what-to-expect {text-align: center;padding: 10em 0 2.5em;background: url(img/waitingroom.jpg) no-repeat;background-size: cover; background-position:bottom center;}
 #what-to-expect p {
     display:inline-block;
     padding: 3.5em 4em;
