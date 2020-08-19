@@ -102,13 +102,16 @@ h3 .cta {
     margin: 2em;
 }
 #smiles {
-    max-width:60em;
+    width:1200px;
     margin:auto;
 }
 .review {
+    background:#117ac1;
+    color:#fff;
     float:left;
-    padding:4em 2em;
-    width:50%;
+    margin:.5%;
+    padding:4em;
+    width:49%;
 }
 #free-consultation {
 }
@@ -122,7 +125,7 @@ h3 .cta {
     top: 0;
 }
 #consultationForm {
-    background:purple;
+    background: #25c347;
     color: #fff;
     padding:2em;
 }
@@ -140,9 +143,9 @@ h3 .cta {
     margin-bottom:2em;
 }
 #consultationForm input[type="submit"]{
-    background: white;
+    background: #117ac1;
+    color: #fff;
     border:none;
-    color: purple;
     outline:none;
     padding:1em 2em;
 }
