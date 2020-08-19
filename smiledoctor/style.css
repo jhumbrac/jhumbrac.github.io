@@ -78,7 +78,12 @@ h3 .cta {
 #friendly {
     background:#117ac1;
     color:#fff;
+    font-size:1.25em;
     padding:5em;
+}
+#friendly div {
+    max-width: 30em;
+    margin:auto;
 }
 #what-to-expect {text-align: center;padding: 10em 0;background: url(https://image.shutterstock.com/image-vector/dental-office-concept-flat-style-600w-582471940.jpg) no-repeat;background-size: cover;}
 #what-to-expect p {
