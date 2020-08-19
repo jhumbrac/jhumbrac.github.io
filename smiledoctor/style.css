@@ -95,7 +95,7 @@ h3 .cta {
     margin: 2em;
 }
 #smiles {
-    width:1200px;
+    max-width: 60em;
     margin:auto;
 }
 .review {
