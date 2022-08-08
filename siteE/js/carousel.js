@@ -57,8 +57,8 @@ function initCarousel(carousel) {
     trigger: carousel,
     onDrag: updateProgress,
     allowContextMenu: true,
-    // Premium
-    inertia: true,
+    // // Premium
+    // inertia: true,
     onThrowUpdate: updateProgress,    
     snap: options    
   });
