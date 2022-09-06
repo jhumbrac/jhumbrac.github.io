@@ -321,7 +321,7 @@ header img {
 
 
 section {
-    padding: 8em 2em;
+    padding: 6em 2em;
 }
 
 
@@ -329,21 +329,25 @@ section {
 /* Single Platform Section */
 .single-platform {
     background-color: #000;
-    background-image: url(img/pinpng.com-responsive-png-272118.png);
+    background-image: url(img/bh_surface.png);
     background-repeat: no-repeat;
-    background-position: bottom 12em right;
+    background-position: bottom right;
     background-size: 50%;
     font-size: 1.5em;
     display: flex;
     flex-direction: column;
     gap: 2em;
-    justify-content: space-between;
     min-height: calc(100vh - 70px);
+    padding: 6em 2em 10em;
 }
 .single-platform-icons {
     display:  flex;
     gap: 2em;
     /* margin-top:2em; */
+}
+.single-platform-icons > div {
+    text-align: center;
+    width: 8em;
 }
 .single-platform-icons i {
     display: flex;
