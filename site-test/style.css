@@ -189,13 +189,13 @@ header img {
     height: calc(100vh - 78px);
     display: flex;
     flex-direction: column;
-    gap: 4em;
     justify-content: space-between;
     background-image: url(img/mudpie-hero.png);
     background-size: 70%;
     background-position: bottom 4em left 1.5em;
     background-repeat: no-repeat;
 }
+
 .hero h1 {
     font-size: 1em;
     max-width: 35em;
@@ -207,12 +207,7 @@ header img {
     align-self: flex-end;
     text-shadow: 1px 1px 2px rgba(0,0,0,.5);
 }
-@media (max-width: 850px) {
-    .hero h2 {
-        font-size: 1.5em;
-        padding-bottom: 4em;
-    }
-}
+
 .hero-footer {
     /* position: absolute; */
     bottom:1em;
@@ -726,5 +721,79 @@ footer i {
     }
     .single-platform {
         padding: 6em .75em 10em
+    }
+}
+@media (max-width: 900px) {
+    .carousel-item {
+        font-size: 1.25em;
+    }
+}
+@media (max-width: 875px) {
+    .hero {
+        height: calc(100vh - 85px);
+    }
+}
+@media (max-width: 850px) {
+    .hero {
+        font-size: 1em;
+    }
+    .hero h2 {
+        font-size: 2em;
+        padding-bottom: 4em;
+    }
+    .single-platform {
+        font-size: 1em;
+    }
+}
+@media (max-width: 700px) {
+    .five-reasons h2 {
+        font-size: 11vw;
+    }
+    .five-reasons h3 {
+        font-size: 3em;
+    }
+    .carousel-item > div {
+        width: 100%;
+        padding: 0 1em;
+    }
+    .customers h2 {
+        margin-left: initial;
+    }
+    .customer-logos img {
+        width: 40%;
+    }
+}
+@media (max-width: 600px) {
+    .hero {
+        background-image: none;
+        height: initial;
+        min-height: calc(100vh - 85px);
+    }
+    .hero-footer {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .single-platform-icons {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    footer {
+        font-size: 5vw;
+    }
+}
+@media (max-width: 500px) {
+    .carousel-item {
+        font-size: 1em;
+    }
+    .five-reasons p {
+        padding-right: 2em;
+    }
+    .customers h2 {
+        font-size: 1.25em;
+    }
+}
+@media (max-width: 405px) {
+    .customer-logos img {
+        width: 100%;
     }
 }
