@@ -275,6 +275,14 @@ header img {
 .cta span {
     font-size: 1.5em;
 }
+.cta span.hidden-mobile {
+    font-size: 1em;
+}
+@media (max-width: 500px) {
+    .cta span.hidden-mobile {
+        display: none;
+    }
+}
 
 .cta:before,
 .cta:after {
@@ -782,6 +790,9 @@ footer i {
     footer {
         font-size: 5vw;
     }
+    .carousel-item .cta {
+        font-size: 1em;
+    }
 }
 @media (max-width: 500px) {
     .carousel-item {
@@ -797,5 +808,11 @@ footer i {
 @media (max-width: 405px) {
     .customer-logos img {
         width: 100%;
+    }
+}
+
+@media (max-width: 380px) {
+    .links {
+        flex-flow: column nowrap;
     }
 }
