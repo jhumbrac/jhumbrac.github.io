@@ -480,8 +480,8 @@ section {
 .single-platform ol li {
     counter-increment: my-counter;
     margin-top:1em;
+    max-width: 34em;
     text-transform: capitalize;
-    width: 34em;
 }
 .single-platform ol li:before {
     color: #00d8ff;
