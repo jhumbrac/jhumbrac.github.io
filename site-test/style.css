@@ -804,6 +804,9 @@ footer i {
     .customers h2 {
         font-size: 1.25em;
     }
+    .five-reasons h3 {
+        font-size: 11vw;
+    }
 }
 @media (max-width: 405px) {
     .customer-logos img {
