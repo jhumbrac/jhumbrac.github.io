@@ -13,7 +13,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollToPlugin.min.js"></script>
         
     </head>
-    <body>
+    <body id="page">
         <a href="#hero" class="skip-link">Skip to the main content</a>
         <header>
             <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -27,6 +27,13 @@
                 </style>
                 <use xlink:href="#emunLogo" />
             </svg>
+            <button class="hamburger" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened')); expandPage()" aria-label="Main Menu">
+                <svg width="80" height="80" viewBox="0 0 100 100">
+                  <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                  <path class="line line2" d="M 20,50 H 80" />
+                  <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                </svg>
+              </button>
             <nav>
                 <a href="#power">The Power of <span class="color">1</span></a>
                 <a href="#reasons">Why EMUN<span class="color">1</span></a>
@@ -56,7 +63,7 @@
                             <svg class="circle-text" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
                             <text>
                                 <textPath xlink:href="#circle-path" text-anchor="start">
-                                    EMUN connect EMUN connect
+                                    EMUN connect EMUN connect 
                                 </textPath>
                             </text>
                             </svg>
@@ -179,7 +186,7 @@
                 <img src="img/logos/onecoast logo white.png" alt="onecoast logo" loading="lazy" width="316" height="55">
                 <img src="img/logos/John Richard logo white.png" alt="john richard logo" loading="lazy" width="311" height="89">
                 <img src="img/logos/KKLogo.png" alt="k&k interiors logo" loading="lazy" width="327" height="279">
-                <img src="img/logos/PF Harris logo.png" alt="pf harris logo" loading="lazy" width="341" height="111">
+                <!-- <img src="img/logos/PF Harris logo.png" alt="pf harris logo" loading="lazy" width="341" height="111"> -->
                 <img src="img/logos/PBK logo.png" alt="primatives by kathy logo" loading="lazy" width="298" height="146">
                 <img src="img/logos/TKG logo.png" alt="TKG logo" loading="lazy" width="202" height="202">
             </div>
@@ -292,5 +299,11 @@
         </svg>
         <script src="js/timeline.js"></script>
         <script src="js/carousel.js"></script>
+        <script>
+            let page = document.getElementById('page');
+            function expandPage () {
+                page.classList.toggle('expanded-nav')
+            }
+        </script>
     </body>
 </html>

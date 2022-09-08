@@ -10,6 +10,7 @@
     background-color: #ff00e1;
 }
 html {
+    overflow-x: hidden;
     scroll-behavior: smooth;
 }
 body {
@@ -58,9 +59,7 @@ nav > * {
     position: relative;
     z-index: 1;
 }
-nav > * + * {
-    margin-left: 1.5em;
-}
+
 nav > *:before,
 nav > *:after {
     display: block;
@@ -89,6 +88,94 @@ nav > *:hover:after {
 nav > *:hover .color {
     color: #00d8ff;
 }
+
+.hamburger {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    padding: 0;
+}
+.line {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 6;
+    transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+        stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.line1 {
+    stroke-dasharray: 60 207;
+    stroke-width: 6;
+}
+.line2 {
+    stroke-dasharray: 60 60;
+    stroke-width: 6;
+}
+.line3 {
+    stroke-dasharray: 60 207;
+    stroke-width: 6;
+}
+.opened .line1 {
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -134;
+    stroke-width: 6;
+}
+.opened .line2 {
+    stroke-dasharray: 1 60;
+    stroke-dashoffset: -30;
+    stroke-width: 6;
+}
+.opened .line3 {
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -134;
+    stroke-width: 6;
+}
+
+@media (min-width: 876px) {
+    nav > * + * {
+        margin-left: 1.5em;
+    }
+    .hamburger {
+        display: none;
+    }
+}
+@media (max-width: 875px) {
+    body {
+        position: relative;
+        transition: .333s ease-in-out;
+        z-index: 1;
+    }
+    nav {
+        background: #333;
+        height: 100vh;
+        left: 100%;
+        padding: 1em .75em;
+        position: absolute;
+        transition: .333s ease-in-out;
+        top: 0;
+        width: 22rem;
+        z-index: -1;
+    }
+    nav > * {
+        display: block;
+        font-size: 1.5em;
+    }
+    body.expanded-nav {
+        transform: translateX(-22em);
+    }
+}
+@media (max-width: 550px) {
+    body.expanded-nav {
+        transform: translateX(-16em);
+    }
+    nav {
+        width: 16rem;
+    }
+    nav > * {
+        font-size: 1em;
+    }
+}
+
 header img {
     width: 100%;
 }
@@ -98,11 +185,16 @@ header img {
 .hero {
     font-size: 1.5em;
     padding: 0 2em;
-    min-height: calc(100vh - 151px);
+    min-height: 32em;
+    height: calc(100vh - 78px);
     display: flex;
     flex-direction: column;
     gap: 4em;
     justify-content: space-between;
+    background-image: url(img/mudpie-hero.png);
+    background-size: 70%;
+    background-position: bottom 4em left 1.5em;
+    background-repeat: no-repeat;
 }
 .hero h1 {
     font-size: 1em;
@@ -110,9 +202,16 @@ header img {
 }
 .hero h2 {
     /* margin-top: 8%; */
-    font-size: 3.5vw;
+    font-size: 2.75vw;
     max-width: 18em;
     align-self: flex-end;
+    text-shadow: 1px 1px 2px rgba(0,0,0,.5);
+}
+@media (max-width: 850px) {
+    .hero h2 {
+        font-size: 1.5em;
+        padding-bottom: 4em;
+    }
 }
 .hero-footer {
     /* position: absolute; */
@@ -120,7 +219,7 @@ header img {
     left: 3em;
     right: 2em;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: space-between;
     gap: 1em;
     margin-bottom: 1em;
@@ -129,6 +228,11 @@ header img {
     display: flex;
     flex-flow: row nowrap;
     gap: 2em;
+}
+@media (max-width: 770px) {
+    .links {
+        gap: 1em;
+    }
 }
 .links .fa {
     color: #00d8ff;
@@ -331,16 +435,20 @@ section {
 /* Single Platform Section */
 .single-platform {
     background-color: #000;
-    background-image: url(img/bh_surface.png);
-    background-repeat: no-repeat;
-    background-position: bottom right;
-    background-size: 50%;
     font-size: 1.5em;
     display: flex;
     flex-direction: column;
     gap: 2em;
     min-height: calc(100vh - 70px);
     padding: 6em 2em 10em;
+}
+@media (min-width: 875px) {
+    .single-platform {
+        background-image: url(img/bh_surface.png);
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        background-size: 50%;
+    }
 }
 .single-platform-icons {
     display:  flex;
@@ -477,6 +585,11 @@ section {
     left: -.5em;
     text-transform: capitalize;
 }
+@media (max-width: 940px) {
+    .five-reasons h3 {
+        left: 0;
+    }
+}
 .five-reasons h3:before {
     content: "";
     display:  inline-block;
@@ -492,61 +605,62 @@ section {
     position: relative;
     left: 1em;
 }
-
-.relevant-experience {
-    background-image: url(img/ctg-phone.png);
-    background-position: bottom 2em right 4em;
-    background-repeat: no-repeat;
-    background-size: 600px;
-}
-.relevant-experience > div {
-    position: absolute;
-    top: 10em;
-    left: 6em
-}
-.transparency {
-    background-image: url(img/votivo-macbook.png);
-    background-position: bottom 5em left 2em;
-    background-repeat: no-repeat;
-    background-size: 50%;
-}
-.transparency > div {
-    position: absolute;
-    top: 10em;
-    right: 4em;
-}
-.customer-retention {
-    background-image: url(img/dashboard-phone.png);
-    background-position: bottom 2em left;
-    background-repeat: no-repeat;
-    background-size: 500px;
-}
-.customer-retention > div {
-    position: absolute;
-    top: 10em;
-    right: 6em;
-}
-.fully-integrated {
-    background-image: url(img/jr-macbook.png);
-    background-position: bottom 6em right 2em;
-    background-repeat: no-repeat;
-    background-size: 800px;
-}
-.fully-integrated > div {
-    position: absolute;
-    top: 8em;
-    left: 4em;
-}
-.functional-depth {
-    background-image: url(img/kk-tablet.png);
-    background-position: bottom 3em left 1em;
-    background-repeat: no-repeat;
-    background-size: 600px;
-}
-.functional-depth > div {
-    position: absolute;
-    top: 10em;
-    right: 4em;
+@media (min-width: 941px) {
+    .relevant-experience {
+        background-image: url(img/ctg-phone.png);
+        background-position: bottom 2em right 4em;
+        background-repeat: no-repeat;
+        background-size: 600px;
+    }
+    .relevant-experience > div {
+        position: absolute;
+        top: 10em;
+        left: 6em
+    }
+    .transparency {
+        background-image: url(img/votivo-macbook.png);
+        background-position: bottom 5em left 2em;
+        background-repeat: no-repeat;
+        background-size: 50%;
+    }
+    .transparency > div {
+        position: absolute;
+        top: 10em;
+        right: 4em;
+    }
+    .customer-retention {
+        background-image: url(img/dashboard-phone.png);
+        background-position: bottom 2em left;
+        background-repeat: no-repeat;
+        background-size: 500px;
+    }
+    .customer-retention > div {
+        position: absolute;
+        top: 10em;
+        right: 6em;
+    }
+    .fully-integrated {
+        background-image: url(img/jr-macbook.png);
+        background-position: bottom 6em right 2em;
+        background-repeat: no-repeat;
+        background-size: 800px;
+    }
+    .fully-integrated > div {
+        position: absolute;
+        top: 8em;
+        left: 4em;
+    }
+    .functional-depth {
+        background-image: url(img/kk-tablet.png);
+        background-position: bottom 3em left 1em;
+        background-repeat: no-repeat;
+        background-size: 600px;
+    }
+    .functional-depth > div {
+        position: absolute;
+        top: 10em;
+        right: 4em;
+    }
 }
 
 /* Customers Section */
@@ -600,4 +714,17 @@ footer i {
 }
 .fine-print {
     font-size: 1rem;
+}
+
+
+@media (max-width: 940px) {
+    header {
+        padding: .5em .75em;
+    }
+    .hero {
+        padding: 0 .75em;
+    }
+    .single-platform {
+        padding: 6em .75em 10em
+    }
 }
