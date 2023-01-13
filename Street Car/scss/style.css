@@ -1,0 +1,142 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: rgba(0, 0, 0, 0.85);
+  font-family: "Jost", sans-serif;
+  font-weight: 300;
+  font-feature-settings: "ss01" on;
+  font-size: 18px;
+}
+
+.display-none {
+  display: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 4em;
+  text-transform: uppercase;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10em;
+}
+header a {
+  color: inherit;
+  display: inline-block;
+  padding: 1em;
+  text-decoration: none;
+}
+header a:after {
+  display: none;
+}
+header nav {
+  order: 0;
+}
+header > svg {
+  order: 1;
+}
+header .social {
+  order: 2;
+}
+
+section,
+footer {
+  padding: 5em 1em;
+}
+
+footer {
+  background-color: #245289;
+  color: #fff;
+}
+footer svg .st0 {
+  fill: #fff;
+}
+
+a {
+  color: inherit;
+  position: relative;
+  text-decoration: none;
+  z-index: 1;
+}
+a:hover, a:focus {
+  color: #0A213D;
+}
+a:after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 0.333em;
+  background: #4D8BD6;
+  position: absolute;
+  bottom: 0.15em;
+  z-index: -1;
+  left: 0.333em;
+}
+
+#intro {
+  background-image: linear-gradient(rgba(36, 82, 137, 0.9490196078), rgba(36, 82, 137, 0.9490196078)), url(../images/wall2.jpg);
+  background-size: cover;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  font-size: 1.5em;
+  min-height: 100vh;
+}
+#intro svg {
+  fill: white;
+  width: 20em;
+  display: block;
+  margin: 0 auto;
+}
+#intro p {
+  max-width: 35em;
+}
+
+#about-us {
+  background-image: url(../images/wall1.jpg);
+  background-size: cover;
+  min-height: 90vh;
+}
+#about-us p {
+  max-width: 35em;
+}
+
+#news {
+  background-color: #8A3A32;
+  color: #fff;
+}
+#news .flex {
+  display: flex;
+  gap: 2em;
+}
+#news .flex article {
+  width: calc(50% - 1em);
+}
+#news a:hover, #news a:focus {
+  color: #fff;
+}
+#news a:after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 0.333em;
+  background: #0A213D;
+  position: absolute;
+  bottom: 0.15em;
+  z-index: -1;
+  left: 0.333em;
+}/*# sourceMappingURL=style.css.map */

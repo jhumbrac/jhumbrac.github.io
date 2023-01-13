@@ -1,0 +1,35 @@
+$primary: #245289;
+$primary-transparent: #245289f2;
+$dark-blue: #0A213D;
+$light-blue: #4D8BD6;
+$dark-brown: #3D2904;
+$light-brown: #8A6624;
+
+$triad-navy: #0A213D;
+$triad-red: #8A3A32;
+$triad-green: #768A16;
+$triad-hunter: #353D0D;
+
+@mixin underline($line-color) {
+    &:after {
+        display: block;
+        content: "";
+        width: 100%;
+        height: .333em;
+        background: $line-color;
+        position: absolute;
+        bottom: .15em;
+        z-index: -1;
+        left: .333em;
+    }
+}
+@mixin hover($hover-color) {
+    &:hover,
+    &:focus {
+        color: $hover-color;
+    }
+}
+@mixin transition {
+    transition: all 666ms cubic-bezier(.420, 0, .580, 1);
+    transition-timing-function: cubic-bezier(.420, 0, .580, 1);
+}

@@ -1,0 +1,120 @@
+@import "variables";
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    color: rgba(0,0,0,.85);
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+    font-feature-settings: "ss01" on;
+    font-size: 18px;
+}
+.display-none {
+    display: none;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+}
+h2 {
+    font-size: 4em;
+    text-transform: uppercase;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10em;
+
+    & a {
+        color: inherit;
+        display: inline-block;
+        padding: 1em;
+        text-decoration: none;
+
+        &:after {
+            display: none;
+        }
+    }
+    & nav {
+        order: 0;
+    }
+    & > svg {
+        order: 1; 
+    }
+    & .social {
+        order: 2;
+    }
+}
+section,
+footer {
+    padding: 5em 1em;
+}
+footer {
+    background-color: $primary;
+    color: #fff;
+
+    & svg .st0 {
+        fill: #fff;
+    }
+}
+a {
+    color: inherit;
+    position: relative;
+    text-decoration: none;
+    z-index: 1;
+
+    @include hover($dark-blue);
+    @include underline($light-blue);
+}
+
+#intro {
+    background-image: linear-gradient($primary-transparent, $primary-transparent), url(../images/wall2.jpg);
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    font-size: 1.5em;
+    min-height: 100vh;
+
+    & svg {
+        fill: white;
+        width: 20em;
+        display: block;
+        margin: 0 auto;
+    }
+    & p {
+        max-width: 35em;
+    }
+}
+#about-us {
+    background-image: url(../images/wall1.jpg);
+    background-size: cover;
+    min-height: 90vh;
+
+    & p {
+        max-width: 35em;
+    }
+}
+
+#news {
+    background-color: $triad-red;
+    color: #fff;
+
+    & .flex {
+        display: flex;
+        gap: 2em;
+
+        & article {
+            width: calc(50% - 1em);
+        }
+    }
+    & a {
+        @include hover(#fff);
+        @include underline($dark-blue);
+    }
+}
