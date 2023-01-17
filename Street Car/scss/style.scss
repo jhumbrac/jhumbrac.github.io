@@ -4,6 +4,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+}
 body {
     color: rgba(0,0,0,.85);
     font-family: 'Jost', sans-serif;
@@ -22,10 +25,13 @@ h2 {
     text-transform: uppercase;
 }
 header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 10em;
+    background-color: #fff;
+    box-shadow: 1px 1px 2px rgba(0,0,0,.25);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
 
     & a {
         color: inherit;
@@ -38,27 +44,52 @@ header {
         }
     }
     & nav {
-        order: 0;
+        & a {
+            padding: 2em 1em;
+        }
     }
-    & > svg {
-        order: 1; 
+    & #logo-round{
+        background-color: #fff;
+        border-radius: 50%;
+        
+        padding: .25em;
+        position: absolute;
+        left: 50%;
+        top: .2em;
+        transform: translateX(-50%);
+        width: 8em; 
     }
     & .social {
-        order: 2;
+        position: absolute;
+        right: 1em;
+        top: 50%;
+        transform: translateY(-50%);
     }
 }
-section,
+#intro,
 footer {
     padding: 5em 1em;
 }
 footer {
-    background-color: $primary;
+    background-color: $dark-blue;
     color: #fff;
+    display: flex;
+    gap: 2em;
+    align-items: center;
+    flex-direction: column;
 
-    & svg .st0 {
+    & svg .st0,
+    & svg {
         fill: #fff;
     }
+    .social {
+
+        a:after {
+            display: none;
+        }
+    }
 }
+
 a {
     color: inherit;
     position: relative;
@@ -68,18 +99,32 @@ a {
     @include hover($dark-blue);
     @include underline($light-blue);
 }
+.next-link {
+    color: inherit;
+    font-size: 2em;
+    position: absolute;
+    bottom: .5em;
+    left: 50%;
+    transform: translateX(-50%);
 
+    &:after {
+        display: none;
+    }
+}
 #intro {
-    background-image: linear-gradient($primary-transparent, $primary-transparent), url(../images/wall2.jpg);
+    // background-image: linear-gradient($primary-transparent, $primary-transparent), url(../images/wall2.jpg);
     background-size: cover;
+    background-color: $primary;
+    border-bottom: 2px solid;
     color: #fff;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     gap: 2em;
     font-size: 1.5em;
     min-height: 100vh;
+    overflow: hidden;
 
     & svg {
         fill: white;
@@ -87,8 +132,53 @@ a {
         display: block;
         margin: 0 auto;
     }
+    & h1 {
+        font-size: 4em;
+    }
+}
+#story {
+    background-color: $primary;
+    color: #fff;
+    padding: 0 1em;
+    position: relative;
+    width: 100%;
+    display: flex;
+    gap: 2em;
+
+    
     & p {
-        max-width: 35em;
+
+
+        & .title-case {
+            display: block;
+            font-size: 2em;
+        }
+    }
+    .wall-container {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        justify-content: center;
+        position: sticky;
+        top: 0;
+        flex-grow: 1;
+
+        & img {
+            filter: grayscale(100%);
+            display: block;
+            width: 100%;
+        }
+    }
+    .part-one,
+    .part-two {
+        color: #fff0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100vh;
+    }
+    .part-two {
+        justify-content: flex-start;
     }
 }
 #about-us {
@@ -100,21 +190,129 @@ a {
         max-width: 35em;
     }
 }
+#carter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5em 2em 0;
+    height: 100vh;
 
+    & .bio {
+        max-width: 40em;
+    }
+    & h2 {
+        color: $dark-blue;
+    }
+    & img {
+        max-height: 100%;
+    }
+}
+#gallery {
+    background-color: #fff;
+    padding-top: 5em;
+    transform-origin: top center;
+    z-index: 1;
+    overflow: hidden;
+}
+.grid-item { 
+    width: 25%;
+    padding: .5em;
+    & img {
+        width: 100%;
+    }
+}
+.grid-item--width2 { 
+    padding: .5em;
+    width: 50%;
+    z-index: 1;
+    & img {
+        width: 100%;
+    }
+}
 #news {
-    background-color: $triad-red;
-    color: #fff;
+    display: flex;
+    padding: 0;
+    align-items: stretch;
+    & > div {
+        padding: 10em 5em 5em;
+        flex: 1 1 0px;
 
-    & .flex {
-        display: flex;
-        gap: 2em;
-
-        & article {
-            width: calc(50% - 1em);
+        & h2 {
+            font-size: 2em;
         }
     }
+    .articles {
+        background-color: $triad-red;
+        color: #fff;
+
+        & article {
+            margin-top: 1em;
+
+            & + article {
+                margin-top: 2em;
+            }
+        }
+    }
+
+    
     & a {
         @include hover(#fff);
         @include underline($dark-blue);
     }
 }
+.follow {
+    background: $light-blue;
+    color: #fff;
+    
+    & form {
+        margin: 1em 0;
+        width: 100%;
+        & > div {
+            position: relative;
+            display: flex;
+
+            & input {
+                background-color: $dark-blue;
+                border: 1px solid $primary;
+                color: #fff;
+                font: inherit;
+                padding: 1.5rem;
+                flex-grow: 1;
+
+                &:focus {
+                    outline: none;
+                }
+            }
+            & [type=submit] {
+                flex-grow: 0;
+                color: #fff;
+                cursor: pointer;
+                padding: 1.5rem 3rem;
+            }
+            & label {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 1.5rem;
+                cursor: text;
+                @include transition;
+            }
+            & input:focus-within + label,
+            & input:valid + label {
+                color: $light-blue;
+                transform: translateY(-175%);
+                font-size: .75em;
+            }
+        }
+    }
+}
+.social {
+    & svg {
+        height: 2em;
+        width: 2em;
+        vertical-align: middle;
+    }
+}
+
+
+

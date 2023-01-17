@@ -6,12 +6,15 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;600&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="scss/style.css">
 
+		<script src="https://kit.fontawesome.com/3d4193de5b.js" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+		<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
     </head>
     <body>
-        <section id="intro">
-            <svg version="1.1" id="logo-round" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+		<header>
+			<!-- <a href="index.html"> -->
+				<svg version="1.1" id="logo-round" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 1000 1000" style="enable-background:new 0 0 1000 1000;" xml:space="preserve">
 <style type="text/css">
 	<!-- .st0{fill:#245289;} -->
@@ -454,34 +457,97 @@
 		<circle class="st0" cx="449.61" cy="806.71" r="4.78"/>
 	</g>
 </g>
-</svg>
-			<h1>Opening Spring 2023</h1>
-		
-            <p class="intro-text">At the turn of the 20th century, farms gave way to roads as the Western Business District was developed along Charlotte Pike. Among these new buildings stood Lovell, Gower, and Co Grocery, whose owners chose the location because of the nearby streetcar stop. More than 100 years later, Streetcar Taps and Garden will open its doors to provide a place to gather between Sylvan Park and the Nations. While the streetcars have long been decommissioned, we hope to provide a different sort of service to bring Nashville’s communities together.</p>
-        </section>
+	</svg>
+			<!-- </a> -->
+			<nav>
+				<!-- <a href="#story">About Streetcar</a> -->
+				<a href="#carter">Our Chef</a>
+				<a href="#news">In the News</a>
+			</nav>
+			<div class="social">
+				<a href="https://www.instagram.com/streetcar_nashville/" target="_blank">
+					<svg>
+						<use href="#instagram" />
+					</svg>
+				</a>
+			</div>
+        </header>
+        <section id="intro">
+            
+			<h1 class="intro-text">Opening Spring 2023</h1>
+			<a href="#" class="next-link"><i class="fa-solid fa-angles-down"></i></a>
+		</section>
+		<!-- <section id="story">
+			<div class="wall-container">
+				<img src="images/wall-left.jpg" class="wall-img" alt="Outside wall and mural of original grocery store">
+			</div>
+			<div class="story-container">
+				<div class="part-one">
+					<h2>Our Story</h2>
+					<p class="">At the turn of the 20th century, farms gave way to roads as the Western Business District was developed along Charlotte Pike. Among these new buildings stood Lovell, Gower, and Co Grocery, whose owners chose the location because of the nearby streetcar stop.</p>
+				</div>
+				<div class="part-two">
+					<p><span class="title-case">More than 100 years later...</span>Streetcar Taps and Garden will open its doors to provide a place to gather between Sylvan Park and the Nations. While the streetcars have long been decommissioned, we hope to provide a different sort of service to bring Nashville’s communities together.</p>
+				</div>
+			</div>
+        </section> -->
         <section id="carter">
-            <h2>Chef Carter Hach</h2>
-            <p>Under the direction of Chef Carter Hach, Streetcar Taps and Garden serves up seasonal menus, beer, wine, and cocktails in a turn of the century brick building that once housed West Nashville's first grocery. Locally owned and operated, Streetcar appreciates the rich history of Sylvan Park, Charlotte Pike, and the Nations.</p>
+			<div class="bio">
+				<h2>Chef Carter Hach</h2>
+				<p>Under the direction of Chef Carter Hach, Streetcar Taps and Garden serves up seasonal menus, beer, wine, and cocktails in a turn of the century brick building that once housed West Nashville's first grocery. Locally owned and operated, Streetcar appreciates the rich history of Sylvan Park, Charlotte Pike, and the Nations.</p>
+			</div>
+			<img src="images/chef.jpg" alt="Chef Carter Hach" class="headshot" />
         </section>
-        <section id="gallery">
-
+        <section id="gallery" class="grid">
+			
+			<div class="grid-item">
+				<img src="images/slider.jpg">
+			</div>
+			<div class="grid-item--width2">
+				<img src="images/okra.jpg" alt="okra">
+			</div>
+			<div class="grid-item">
+				<img src="images/bread.jpg">
+			</div>
+			<div class="grid-item">
+				<img src="images/philly.jpg">
+			</div>
+			<div class="grid-item">
+				<img src="images/wings.jpg">
+			</div>
+			<div class="grid-item">
+				<img src="images/bbq.jpg">
+			</div>
         </section>
         <section id="news">
-            <h2>Streetcar in the News</h2>
-			<div class="flex">
+			<div class="articles">		
+	            <h2>Streetcar in the News</h2>
 				<article>
-					<h3><a href="https://www.nashvillescene.com/food_drink/bites/two-new-restaurant-projects-announced-for-charlotte-avenue/article_64cb80d8-3458-11ed-9798-035f5b093eab.html" target="_blank">Two New Restaurant Projects Announced for Charlotte Avenue</a></h3>
+					<h3>Two New Restaurant Projects Announced for Charlotte Avenue</h3>
 					<h4>nashvillescene.com</h4>
 					<a href="https://www.nashvillescene.com/food_drink/bites/two-new-restaurant-projects-announced-for-charlotte-avenue/article_64cb80d8-3458-11ed-9798-035f5b093eab.html" target="_blank">View Article</a>
 				</article>
 				<article>
-					<h3><a href="https://gardenandgun.com/recipe/country-quiche-lorraine/" target="_blank">Country Quiche Lorraine</a></h3>
+					<h3>Country Quiche Lorraine</h3>
 					<h4>gardenandgun.com</h4>
 					<a href="https://gardenandgun.com/recipe/country-quiche-lorraine/" target="_blank">View Article</a>
 				</article>
 			</div>
+			<div class="follow">
+				<h2>Subscribe for the latest upates</h2>
+				<form>
+					<div>
+						<input type="text" id="femail" required/>
+						<label for="femail">Enter your email</label>
+						<input type="submit" value="Sign Up" />
+					</div>
+				</form>
+				<p>Stay up to date on the latest news related to our upcoming launch!</p>
+				
+			</div>
         </section>
         <footer>
+			
             <svg>
                 <use href="#logo-regular" style="fill: #fff;"/>
             </svg>
@@ -818,8 +884,9 @@
 </g>
         </svg>
         
-		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" id="instagram"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+		<svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" id="instagram"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
 </div>
 		<script src="animations.js"></script>
+		<script src="masonry.js"></script>
     </body>
 </html>
