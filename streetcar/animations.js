@@ -1,3 +1,16 @@
+let targetWidth = 850;
+let w = document.documentElement.clientWidth ||
+    document.body.clientWidth ||
+    window.innerWidth;
+let h = document.documentElement.clientHeight ||
+document.body.clientHeight ||
+window.innerHeight;
+let introLogoScale = 3;
+if (w > 529) {
+    introLogoScale =  h > 960 ? 4 : 3;
+}
+let introLogoPosition = h > 960 ? 400 : 300;
+
 const introTL = gsap.timeline({
     scrollTrigger: {
         trigger: "#intro",
@@ -49,81 +62,83 @@ const galleryTL = gsap.timeline({
 //         toggleActions: 'play none none reverse'
 //     }
 // });
+if (w >= 350 ) {
+    console.log(introLogoScale);
+    introTL.addLabel('start')
+    .fromTo(
+        "#logo-round", {
+            scale: introLogoScale, 
+            fill: "#fff",
+            backgroundColor: "transparent",
+            top: introLogoPosition
+        }, {
+            scale: 1, 
+            duration: .5,
+            fill: "#245289",
+            backgroundColor: "#fff",
+            boxShadow: "1px 1px 7px rgba(0,0,0,.25)",
+            top: 5
+        }, 0
+    ).fromTo(
+        'header', {
+            top: -100
+        }, {
+            top: 0
+        }, 0.1
+    ).addLabel('end');
+}
+if (w >= 800) {
+    carterTL.addLabel('carter-start')
+    .from(
+        '.bio', {
+            x: '30%'
+        }
+    )
+    .from(
+        ".bio h2", {
+            x: '5%',
+            opacity: 0
+        }, 0
+    ).from(
+        '.bio p', {
+            x: '-5%',
+            opacity: 0
+        }, 0
+    ).from(
+        '#carter img', {
+            y: '20%',
+            opacity: 0
+        }, 0
+    ).addLabel('end');
+}
+    // galleryTL.addLabel('gallery-start')
+    // .from(
+    //     '#gallery', {
+    //         scale: 2,
+    //         padding: 0,
+    //         duration: 1
+    //     }
+    // ).addLabel('gallery-end');
 
-introTL.addLabel('start')
-.fromTo(
-    "#logo-round", {
-        scale: 4, 
-        fill: "#fff",
-        backgroundColor: "transparent",
-        top: 400
-    }, {
-        scale: 1, 
-        duration: .5,
-        fill: "#245289",
-        backgroundColor: "#fff",
-        boxShadow: "1px 1px 7px rgba(0,0,0,.25)",
-        top: 5
-    }, 0
-).fromTo(
-    'header', {
-        top: -100
-    }, {
-        top: 0
-    }, 0.1
-).addLabel('end');
 
-carterTL.addLabel('carter-start')
-.from(
-    '.bio', {
-        x: '30%'
-    }
-)
-.from(
-    ".bio h2", {
-        x: '5%',
-        opacity: 0
-    }, 0
-).from(
-    '.bio p', {
-        x: '-5%',
-        opacity: 0
-    }, 0
-).from(
-    '#carter img', {
-        y: '20%',
-        opacity: 0
-    }, 0
-).addLabel('end');
+    // story1TL.addLabel('part-one')
+    // .to(
+    //     '.part-one', {     
+    //         color: '#ffff',
+    //         duration: 1
+    //     }
+    // ).addLabel('part-one-end');
 
-galleryTL.addLabel('gallery-start')
-.from(
-    '#gallery', {
-        scale: 2,
-        padding: 0,
-        duration: 1
-    }
-).addLabel('gallery-end');
-
-
-// story1TL.addLabel('part-one')
-// .to(
-//     '.part-one', {     
-//         color: '#ffff',
-//         duration: 1
-//     }
-// ).addLabel('part-one-end');
-
-// story2TL.addLabel('part-two')
-// .to(
-//     '.wall-img', {
-//         filter: 'grayscale(0)',
-//         duration: 2
-//     }, 0
-// )
-// .to(
-//     '.part-two', {
-//         color: '#ffff',
-//         duration: 1
-//     }, 0
-// ).addLabel('part-two-end')
+    // story2TL.addLabel('part-two')
+    // .to(
+    //     '.wall-img', {
+    //         filter: 'grayscale(0)',
+    //         duration: 2
+    //     }, 0
+    // )
+    // .to(
+    //     '.part-two', {
+    //         color: '#ffff',
+    //         duration: 1
+    //     }, 0
+    // ).addLabel('part-two-end')

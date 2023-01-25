@@ -3,13 +3,19 @@
     <head>
         <title>Streetcar Taps and Garden</title>
         <meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;600&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="scss/style.css">
+		
+		<link rel="stylesheet" type="text/css" href="slick/slick.min.css">
+    	<link rel="stylesheet" type="text/css" href="slick/accessible-slick-theme.min.css">
 
 		<script src="https://kit.fontawesome.com/3d4193de5b.js" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
-		<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
     </head>
     <body>
 		<header>
@@ -459,10 +465,18 @@
 </g>
 	</svg>
 			<!-- </a> -->
+			<button aria-label="open menu" class="show-mobile" id="hamburger">
+				<span></span>
+				<span></span>
+				<span></span>
+				Menu
+			</button>
 			<nav>
 				<!-- <a href="#story">About Streetcar</a> -->
+				<button class="show-mobile close">X</button>
 				<a href="#carter">Our Chef</a>
-				<a href="#news">In the News</a>
+				<a href="#news"><span class="hide-mobile">In the </span>News</a>
+				<a href="#map">Location</a>
 			</nav>
 			<div class="social">
 				<a href="https://www.instagram.com/streetcar_nashville/" target="_blank">
@@ -492,22 +506,28 @@
 			</div>
         </section> -->
         <section id="carter">
+			<img src="images/carter-headshot.jpg" alt="Chef Carter Hach" class="headshot" loading="lazy"/>
 			<div class="bio">
-				<h2>Chef Carter Hach</h2>
+				<h2><span class="second-line">Chef</span> Carter Hach</h2>
 				<p>Under the direction of Chef Carter Hach, Streetcar Taps and Garden serves up seasonal menus, beer, wine, and cocktails in a turn of the century brick building that once housed West Nashville's first grocery. Locally owned and operated, Streetcar appreciates the rich history of Sylvan Park, Charlotte Pike, and the Nations.</p>
 			</div>
-			<img src="images/chef.jpg" alt="Chef Carter Hach" class="headshot" />
         </section>
-        <section id="gallery" class="grid">
+        <section id="gallery" class="grid-gallery">
 			
 			<div class="grid-item">
-				<img src="images/slider.jpg">
+				<img src="images/smoker2.jpeg">
 			</div>
-			<div class="grid-item--width2">
+			<div class="grid-item">
 				<img src="images/okra.jpg" alt="okra">
 			</div>
 			<div class="grid-item">
 				<img src="images/bread.jpg">
+			</div>
+			<div class="grid-item">
+				<img src="images/hats.jpg">
+			</div>
+			<div class="grid-item">
+				<img src="images/smoker1.jpeg">
 			</div>
 			<div class="grid-item">
 				<img src="images/philly.jpg">
@@ -516,9 +536,16 @@
 				<img src="images/wings.jpg">
 			</div>
 			<div class="grid-item">
+				<img src="images/meatball.jpeg">
+			</div>
+			<div class="grid-item">
 				<img src="images/bbq.jpg">
 			</div>
         </section>
+
+
+
+
         <section id="news">
 			<div class="articles">		
 	            <h2>Streetcar in the News</h2>
@@ -533,16 +560,8 @@
 					<a href="https://gardenandgun.com/recipe/country-quiche-lorraine/" target="_blank">View Article</a>
 				</article>
 			</div>
-			<div class="follow">
-				<h2>Subscribe for the latest upates</h2>
-				<form>
-					<div>
-						<input type="text" id="femail" required/>
-						<label for="femail">Enter your email</label>
-						<input type="submit" value="Sign Up" />
-					</div>
-				</form>
-				<p>Stay up to date on the latest news related to our upcoming launch!</p>
+			<div class="follow" id="map">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2783.234563522565!2d-86.84780632068095!3d36.1522250277057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8864616bf38799cb%3A0x38a3d3f24c607efb!2s4916%20Charlotte%20Pike%2C%20Nashville%2C%20TN%2037209!5e1!3m2!1sen!2sus!4v1674663448179!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 				
 			</div>
         </section>
@@ -887,6 +906,29 @@
 		<svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" id="instagram"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
 </div>
 		<script src="animations.js"></script>
-		<script src="masonry.js"></script>
+		<script type="text/javascript" src="slick/slick.min.js"></script>
+		<script>
+			$(document).ready(function() {
+				$('.grid-gallery').slick({
+					dots: true,
+					infinite: true,
+					speed: 300,
+					slidesToShow: 1,
+					centerMode: true,
+					arrows: false,
+					variableWidth: true
+				});
+
+				$('#hamburger').click(function() {
+					$('nav').toggleClass('open')
+				});
+				$('.close').click(function() {
+					$('nav').toggleClass('open')
+				});
+				$('nav a').click(function() {
+					$('nav').toggleClass('open')
+				});
+			});
+		</script>
     </body>
 </html>
